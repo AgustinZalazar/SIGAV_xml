@@ -186,4 +186,26 @@
         fpJzQuzv82/kkqz5y4103S893VHHLqGCvgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="Btn_AgregarFamiliaUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJMAAAAiCAYAAABbc+vFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVHhe7dohS0NhGIZh/5IYhkUsS2PBprCqDMaKmiyz
+        zDIWTGpxMBgmuyZ/gAvGDVYHy1s66ZXnO7AxOXA4+MT7gasc3njzpXNweFQPwIGYYENMsCEm2BATbIgJ
+        NtuYOt27+J7+BGNVpmZ694NdTNc3vfTx8up2rzSgjJr5+PyKwfApj2k2X8T5RbvwGChzcnoW6/Umj0n7
+        ewBUoRETLDRigoVGTLDQiAkWGjHBQiMmWGjEBAuNmGChERMsNGKChUZMsNCICRYaMcFCIyZYaMQEC42Y
+        YKGlmJbLVTSarcIjoEztuBFZluUxPb+MYzJ5LzwEyvQfHtN/4CkmeR29paeKsapTSHqdtjEB/0VMsCEm
+        2BATbIgJJvX4BchrU/wOOmcwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnAgregarPatenteUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJMAAAAiCAYAAABbc+vFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVHhe7dohS0NhGIZh/5IYhkUsS2PBprCqDMaKmiyz
+        zDIWTGpxMBgmuyZ/gAvGDVYHy1s66ZXnO7AxOXA4+MT7gasc3njzpXNweFQPwIGYYENMsCEm2BATbIgJ
+        NtuYOt27+J7+BGNVpmZ694NdTNc3vfTx8up2rzSgjJr5+PyKwfApj2k2X8T5RbvwGChzcnoW6/Umj0n7
+        ewBUoRETLDRigoVGTLDQiAkWGjHBQiMmWGjEBAuNmGChERMsNGKChUZMsNCICRYaMcFCIyZYaMQEC42Y
+        YKGlmJbLVTSarcIjoEztuBFZluUxPb+MYzJ5LzwEyvQfHtN/4CkmeR29paeKsapTSHqdtjEB/0VMsCEm
+        2BATbIgJJvX4BchrU/wOOmcwAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

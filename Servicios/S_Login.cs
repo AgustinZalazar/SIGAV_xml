@@ -1,5 +1,4 @@
-﻿using EE;
-using SIGAV_Interfaces;
+﻿using SIGAV_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +9,7 @@ namespace Servicios
 {
     public class S_Login
     {
-        private static S_Login instance = null;
+        private static S_Login instance;
 
         private IUsuario _usuario;
         public IUsuario Usuario
@@ -20,16 +19,31 @@ namespace Servicios
                 return _usuario;
             }
         }
-
-        public void Login(IUsuario usuario)
+        private static object _lock = new Object();
+        public static void Login(IUsuario usuario)
         {
-            _usuario = usuario;
+            lock (_lock)
+            {
+                if (instance == null)
+                {
+                    instance = new S_Login();
+                    instance._usuario = usuario;
+                }
+                else
+                {
+                    throw new Exception("sesion ya iniciada");
+                }
+            }
+            
         }
 
         public void Logout()
         {
-            _usuario = null;
-            instance = null;
+            if (instance != null)
+            {
+                _usuario = null;
+                instance = null;
+            }           
         }
 
         private S_Login(){}

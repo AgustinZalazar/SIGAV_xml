@@ -12,7 +12,7 @@ namespace Servicios.Composite
         {
             get
             {
-                return null;
+                return new List<Permiso>();
             }
         }
 

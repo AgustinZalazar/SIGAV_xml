@@ -66,6 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composite\BE_Familia.cs" />
+    <Compile Include="Composite\BE_Patente.cs" />
+    <Compile Include="Composite\BE_Permiso.cs" />
     <Compile Include="EE-Bitacora.cs" />
     <Compile Include="EE_Cliente.cs" />
     <Compile Include="EE_Compra.cs" />

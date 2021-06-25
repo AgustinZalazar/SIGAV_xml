@@ -216,10 +216,6 @@
       <Project>{8D33714A-83D2-47BB-BD95-28E78957E55A}</Project>
       <Name>SIGAV-Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SIGAV_BLL_Seguridad\SIGAV_BLL_Seguridad.csproj">
-      <Project>{7906e08a-c731-403e-b511-c3bfaf51a656}</Project>
-      <Name>SIGAV_BLL_Seguridad</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

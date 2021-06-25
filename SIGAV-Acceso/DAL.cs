@@ -12,9 +12,9 @@ namespace SIGAV_Acceso
     public class DAL
     {
 
-        private string CadenaC = @"Data Source=.\SQL_UAI;Initial Catalog=SIGAV;Integrated Security=True";
+        private string CadenaC = @"Data Source=DESKTOP-21VAQP0\SQLEXPRESS;Initial Catalog=SIGAV;Integrated Security=True";
 
-        public SqlConnection connection = new SqlConnection(@"Data Source=.\SQL_UAI;Initial Catalog=SIGAV;Integrated Security=True");
+        public SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-21VAQP0\SQLEXPRESS;Initial Catalog=SIGAV;Integrated Security=True");
         private SqlTransaction Trans;
         private SqlCommand cmd;
 
@@ -96,7 +96,7 @@ namespace SIGAV_Acceso
                 cmd.Transaction = Trans;
 
 
-                if ((hdatos != null))
+                if (hdatos != null)
                 {
                     foreach (string NombreParametro in hdatos.Keys)
                     {
@@ -145,6 +145,29 @@ namespace SIGAV_Acceso
             return Dt;
 
 
+        }
+
+        public DataSet Leer2(string Consulta_SQL)
+        {
+            DataSet Ds = new DataSet();
+            try
+            {
+                SqlDataAdapter Da = new SqlDataAdapter(Consulta_SQL, connection);
+                Da.Fill(Ds);
+            }
+            catch (SqlException ex)
+            { 
+                throw ex; 
+            }
+            catch (Exception ex)
+            { 
+                throw ex; 
+            }
+            finally
+            { 
+                connection.Close();
+            }
+            return Ds;
         }
     }
 }

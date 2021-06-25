@@ -71,6 +71,7 @@
     <Compile Include="MPPUsuario.cs" />
     <Compile Include="MPP_Cliente.cs" />
     <Compile Include="MPP_Compra.cs" />
+    <Compile Include="MPP_Permisos.cs" />
     <Compile Include="MPP_Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,9 +86,17 @@
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
       <Name>SIGAV-EE</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Servicios\SIGAV-Servicios.csproj">
+      <Project>{83d1d7ab-f898-4111-b8e7-de3efc3f3f34}</Project>
+      <Name>SIGAV-Servicios</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SIGAV-Acceso\SIGAV-Acceso.csproj">
       <Project>{cc5931f8-e918-43c1-aa74-63cc2a137079}</Project>
       <Name>SIGAV-Acceso</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIGAV-Interfaces\SIGAV-Interfaces.csproj">
+      <Project>{8d33714a-83d2-47bb-bd95-28e78957e55a}</Project>
+      <Name>SIGAV-Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,21 +1,20 @@
-﻿using SIGAV_BLL;
-using SIGAV_Interfaces;
+﻿using SIGAV_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EE;
 
 namespace Servicios.Multi_idioma
 {
     public static class Traduccion
     {
         static List<IObservador> observers = new List<IObservador>();
-        static EE.EE_Idioma idiomaSeleccionado;
-        static BLL_Traducir bLL_Traducir = new BLL_Traducir();
+        static EE_Idioma idiomaSeleccionado;
 
-        public static void Idioma(EE.EE_Idioma idioma)
+        public static void Idioma(EE_Idioma idioma)
         {
             idiomaSeleccionado = idioma;                   
             Notificar();
@@ -46,7 +45,7 @@ namespace Servicios.Multi_idioma
         public static string traducir(string key)
         {
            
-            return (from EE.EE_Traduccion traduccion in idiomaSeleccionado.Traducciones
+            return (from EE_Traduccion traduccion in idiomaSeleccionado.Traducciones
                     where traduccion.Tag.CompareTo(key) == 0 
                     select traduccion).FirstOrDefault()?.Descripcion;
         }

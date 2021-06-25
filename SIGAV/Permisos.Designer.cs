@@ -41,8 +41,6 @@
             this.BtnModificarUser = new Bunifu.Framework.UI.BunifuImageButton();
             this.BtnEliminarPermiso = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAgregarPermisos = new Bunifu.Framework.UI.BunifuImageButton();
-            this.LBFamilias = new System.Windows.Forms.ListBox();
-            this.LBPatentes = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,6 +49,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.BtnEliminarPatente = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BtnEliminarFamilia = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnConfigurarFamilia = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cbFamilia = new System.Windows.Forms.ComboBox();
+            this.cbPatentes = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BtnModificarUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEliminarPermiso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarPermisos)).BeginInit();
@@ -84,7 +85,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(543, 218);
+            this.label2.Location = new System.Drawing.Point(406, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 55;
@@ -202,30 +203,12 @@
             this.btnAgregarPermisos.Zoom = 10;
             this.btnAgregarPermisos.Click += new System.EventHandler(this.BtnAgregarPermisos_Click);
             // 
-            // LBFamilias
-            // 
-            this.LBFamilias.FormattingEnabled = true;
-            this.LBFamilias.Location = new System.Drawing.Point(547, 253);
-            this.LBFamilias.Name = "LBFamilias";
-            this.LBFamilias.Size = new System.Drawing.Size(517, 173);
-            this.LBFamilias.TabIndex = 58;
-            this.LBFamilias.SelectedIndexChanged += new System.EventHandler(this.LBFamilias_SelectedIndexChanged);
-            // 
-            // LBPatentes
-            // 
-            this.LBPatentes.FormattingEnabled = true;
-            this.LBPatentes.Location = new System.Drawing.Point(547, 457);
-            this.LBPatentes.Name = "LBPatentes";
-            this.LBPatentes.Size = new System.Drawing.Size(517, 173);
-            this.LBPatentes.TabIndex = 59;
-            this.LBPatentes.SelectedIndexChanged += new System.EventHandler(this.LBPatentes_SelectedIndexChanged);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(543, 434);
+            this.label5.Location = new System.Drawing.Point(406, 477);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 20);
             this.label5.TabIndex = 60;
@@ -271,10 +254,10 @@
             this.Btn_AgregarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
             this.Btn_AgregarFamilia.IdleForecolor = System.Drawing.Color.White;
             this.Btn_AgregarFamilia.IdleLineColor = System.Drawing.Color.White;
-            this.Btn_AgregarFamilia.Location = new System.Drawing.Point(377, 274);
+            this.Btn_AgregarFamilia.Location = new System.Drawing.Point(410, 334);
             this.Btn_AgregarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_AgregarFamilia.Name = "Btn_AgregarFamilia";
-            this.Btn_AgregarFamilia.Size = new System.Drawing.Size(163, 59);
+            this.Btn_AgregarFamilia.Size = new System.Drawing.Size(221, 43);
             this.Btn_AgregarFamilia.TabIndex = 63;
             this.Btn_AgregarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_AgregarFamilia.Click += new System.EventHandler(this.Btn_AgregarFamilia_Click);
@@ -297,10 +280,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(378, 343);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(410, 574);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(163, 59);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(221, 44);
             this.bunifuThinButton21.TabIndex = 64;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.BunifuThinButton21_Click);
@@ -334,12 +317,13 @@
             this.BtnEliminarPatente.IdleFillColor = System.Drawing.Color.Transparent;
             this.BtnEliminarPatente.IdleForecolor = System.Drawing.Color.White;
             this.BtnEliminarPatente.IdleLineColor = System.Drawing.Color.White;
-            this.BtnEliminarPatente.Location = new System.Drawing.Point(379, 503);
+            this.BtnEliminarPatente.Location = new System.Drawing.Point(661, 576);
             this.BtnEliminarPatente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnEliminarPatente.Name = "BtnEliminarPatente";
-            this.BtnEliminarPatente.Size = new System.Drawing.Size(163, 59);
+            this.BtnEliminarPatente.Size = new System.Drawing.Size(243, 42);
             this.BtnEliminarPatente.TabIndex = 67;
             this.BtnEliminarPatente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnEliminarPatente.Click += new System.EventHandler(this.BtnEliminarPatente_Click);
             // 
             // BtnEliminarFamilia
             // 
@@ -359,12 +343,60 @@
             this.BtnEliminarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
             this.BtnEliminarFamilia.IdleForecolor = System.Drawing.Color.White;
             this.BtnEliminarFamilia.IdleLineColor = System.Drawing.Color.White;
-            this.BtnEliminarFamilia.Location = new System.Drawing.Point(378, 434);
+            this.BtnEliminarFamilia.Location = new System.Drawing.Point(661, 334);
             this.BtnEliminarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnEliminarFamilia.Name = "BtnEliminarFamilia";
-            this.BtnEliminarFamilia.Size = new System.Drawing.Size(163, 59);
+            this.BtnEliminarFamilia.Size = new System.Drawing.Size(243, 41);
             this.BtnEliminarFamilia.TabIndex = 66;
             this.BtnEliminarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnConfigurarFamilia
+            // 
+            this.btnConfigurarFamilia.ActiveBorderThickness = 1;
+            this.btnConfigurarFamilia.ActiveCornerRadius = 5;
+            this.btnConfigurarFamilia.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnConfigurarFamilia.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnConfigurarFamilia.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnConfigurarFamilia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.btnConfigurarFamilia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfigurarFamilia.BackgroundImage")));
+            this.btnConfigurarFamilia.ButtonText = "Configurar Familia";
+            this.btnConfigurarFamilia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigurarFamilia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfigurarFamilia.ForeColor = System.Drawing.Color.White;
+            this.btnConfigurarFamilia.IdleBorderThickness = 1;
+            this.btnConfigurarFamilia.IdleCornerRadius = 5;
+            this.btnConfigurarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnConfigurarFamilia.IdleForecolor = System.Drawing.Color.White;
+            this.btnConfigurarFamilia.IdleLineColor = System.Drawing.Color.White;
+            this.btnConfigurarFamilia.Location = new System.Drawing.Point(729, 272);
+            this.btnConfigurarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfigurarFamilia.Name = "btnConfigurarFamilia";
+            this.btnConfigurarFamilia.Size = new System.Drawing.Size(155, 39);
+            this.btnConfigurarFamilia.TabIndex = 68;
+            this.btnConfigurarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConfigurarFamilia.Click += new System.EventHandler(this.btnConfigurarFamilia_Click);
+            // 
+            // cbFamilia
+            // 
+            this.cbFamilia.FormattingEnabled = true;
+            this.cbFamilia.Items.AddRange(new object[] {
+            "Familia",
+            "Patente"});
+            this.cbFamilia.Location = new System.Drawing.Point(410, 285);
+            this.cbFamilia.Name = "cbFamilia";
+            this.cbFamilia.Size = new System.Drawing.Size(294, 21);
+            this.cbFamilia.TabIndex = 69;
+            // 
+            // cbPatentes
+            // 
+            this.cbPatentes.FormattingEnabled = true;
+            this.cbPatentes.Items.AddRange(new object[] {
+            "Familia",
+            "Patente"});
+            this.cbPatentes.Location = new System.Drawing.Point(410, 519);
+            this.cbPatentes.Name = "cbPatentes";
+            this.cbPatentes.Size = new System.Drawing.Size(294, 21);
+            this.cbPatentes.TabIndex = 70;
             // 
             // Permisos
             // 
@@ -372,6 +404,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1093, 642);
+            this.Controls.Add(this.cbPatentes);
+            this.Controls.Add(this.cbFamilia);
+            this.Controls.Add(this.btnConfigurarFamilia);
             this.Controls.Add(this.BtnEliminarPatente);
             this.Controls.Add(this.BtnEliminarFamilia);
             this.Controls.Add(this.label8);
@@ -380,8 +415,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.LBPatentes);
-            this.Controls.Add(this.LBFamilias);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.TxtIDPermisos);
             this.Controls.Add(this.label2);
@@ -420,8 +453,6 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox LBFamilias;
-        private System.Windows.Forms.ListBox LBPatentes;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
@@ -430,5 +461,8 @@
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnEliminarPatente;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnEliminarFamilia;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnConfigurarFamilia;
+        private System.Windows.Forms.ComboBox cbFamilia;
+        private System.Windows.Forms.ComboBox cbPatentes;
     }
 }

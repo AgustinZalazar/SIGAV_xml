@@ -85,12 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EE\SIGAV-EE.csproj">
-      <Project>{156CC006-5819-4F1B-87A6-D50CD0168E22}</Project>
+      <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
       <Name>SIGAV-EE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SIGAV-BLL\SIGAV-BLL.csproj">
-      <Project>{575ca320-3f42-4560-ae02-42969f6521be}</Project>
-      <Name>SIGAV-BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\SIGAV-Interfaces\SIGAV-Interfaces.csproj">
       <Project>{8D33714A-83D2-47BB-BD95-28E78957E55A}</Project>

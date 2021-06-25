@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Servicios.Composite;
+using EE.Composite;
 using SIGAV_BLL;
-using SIGAV_BLL_Seguridad;
 
 namespace SIGAV
 {
@@ -22,38 +21,40 @@ namespace SIGAV
             LlenarListaDePermisos();
             
         }
-        IList<Permiso> lista_permisos;
-        BLL_Permiso bLL_Permiso = new BLL_Permiso();
-        List<Permiso> list_permisos = new List<Permiso>();
-        Familia obj_familia = new Familia();
-        Patente obj_patente = new Patente();
+        IList<BE_Permiso> lista_permisos;
+        BLL_Permisos bLL_Permiso = new BLL_Permisos();
+        List<BE_Permiso> list_permisos = new List<BE_Permiso>();
+        BE_Familia obj_familia = new BE_Familia();
+        BE_Familia selected_familia;
+        BE_Patente obj_patente = new BE_Patente();
         public void LlenarListaDePermisos()
         {
             list_permisos = bLL_Permiso.ListarPatente();
-            LBPatentes.DataSource = list_permisos;
-            LBPatentes.DisplayMember = "Nombre";
+            cbPatentes.DataSource = list_permisos;
+            cbPatentes.DisplayMember = "Nombre";
         }
 
         public void LlenarListaDePermisos_Familia()
         {
             list_permisos = bLL_Permiso.ListarFamilias();
-            LBFamilias.DataSource = list_permisos;
-            LBFamilias.DisplayMember = "Nombre";
-        }
-
-
-        void AddNode(Permiso permiso, TreeNode node = null)
-        {
-            TreeNode newNode = new TreeNode(permiso.Nombre);
-            newNode.Tag = permiso;
-
-            if (node == null)
-                treeview_Permisos.Nodes.Add(newNode);
-            else
-                node.Nodes.Add(newNode);
+            cbFamilia.DataSource = list_permisos;
+            cbFamilia.DisplayMember = "Nombre";
 
         }
-        void graficar(IList<Permiso> lista, int? idPadre = null)
+
+
+        //void AddNode(Permiso permiso, TreeNode node = null)
+        //{
+        //    TreeNode newNode = new TreeNode(permiso.Nombre);
+        //    newNode.Tag = permiso;
+
+        //    if (node == null)
+        //        treeview_Permisos.Nodes.Add(newNode);
+        //    else
+        //        node.Nodes.Add(newNode);
+
+        //}
+        void graficar(IList<BE_Permiso> lista, int? idPadre = null)
         {
             foreach (var l in lista)
             {
@@ -65,23 +66,80 @@ namespace SIGAV
                 if (l.ObtenerHijo != null && l.ObtenerHijo.Count > 0) graficar(l.ObtenerHijo , l.ID);
             }
         }
+        void MostrarFamilia(bool init)
+        {
+            if (selected_familia == null) return;
+
+
+            IList<BE_Permiso> flia = null;
+            if (init)
+            {
+                //traigo los hijos de la base
+                flia = bLL_Permiso.ListarArbolByFamilia("=" + selected_familia.ID);
+
+
+                foreach (var i in flia)
+                    selected_familia.agregarHijo(i);
+            }
+            else
+            {
+                flia = selected_familia.ObtenerHijo;
+            }
+
+            this.treeview_Permisos.Nodes.Clear();
+
+            TreeNode root = new TreeNode(selected_familia.Nombre);
+            root.Tag = selected_familia;
+            this.treeview_Permisos.Nodes.Add(root);
+
+            foreach (var item in flia)
+            {
+                MostrarEnTreeView(root, item);
+            }
+
+            treeview_Permisos.ExpandAll();
+        }
+        void MostrarEnTreeView(TreeNode tn, BE_Permiso c)
+        {
+            TreeNode n = new TreeNode(c.Nombre);
+            tn.Tag = c;
+            tn.Nodes.Add(n);
+            if (c.ObtenerHijo != null)
+                foreach (var item in c.ObtenerHijo)
+                {
+                    MostrarEnTreeView(n, item);
+                }
+
+        }
         private void BunifuThinButton21_Click(object sender, EventArgs e)
         {
-            Permiso permiso_patente = (Permiso)LBPatentes.SelectedItem;
+            BE_Permiso permiso_patente = (BE_Permiso)cbPatentes.SelectedItem;
+            if (selected_familia != null)
+            {
+                if (permiso_patente != null)
+                {
+                    var existe = bLL_Permiso.Existe(selected_familia, permiso_patente.ID);
+                    if (existe) MessageBox.Show("Ya existe esta patente en la familia");
+                    else
+                    {
+                        selected_familia.agregarHijo(permiso_patente);
+                        bLL_Permiso.InsertarPatenteEnFamilia(permiso_patente, selected_familia);
+                        MostrarFamilia(false);
+                    }
 
-            Permiso permiso_familia = (Permiso)LBFamilias.SelectedItem;
-            bLL_Permiso.InsertarPatenteEnFamilia(permiso_patente, permiso_familia);
-            treeview_Permisos.Nodes.Clear();
-            lista_permisos = bLL_Permiso.ListarArbol();
-            graficar(lista_permisos);
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona una familia de la lista");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una familia");
+            }
         }
 
-        private void LBFamilias_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            obj_patente = (Patente)LBFamilias.SelectedItem;
-            TxtIDPermisos.Text = Convert.ToString(obj_patente.ID);
-            txtNombrePermisos.Text = obj_patente.Nombre;
-        }
+
 
         private void BtnAgregarPermisos_Click(object sender, EventArgs e)
         {
@@ -107,13 +165,12 @@ namespace SIGAV
         {
             treeview_Permisos.Nodes.Clear();
             lista_permisos = bLL_Permiso.ListarArbol();
-            graficar(lista_permisos);
         }
 
         private void Btn_AgregarFamilia_Click(object sender, EventArgs e)
         {
-            Permiso permiso_patente = null;
-            Permiso permiso_familia = (Permiso)LBFamilias.SelectedItem;
+            BE_Permiso permiso_patente = null;
+            BE_Permiso permiso_familia = (BE_Permiso)cbFamilia.SelectedItem;
             bLL_Permiso.InsertarPatenteEnFamilia(permiso_familia, permiso_patente);
         }
 
@@ -130,11 +187,18 @@ namespace SIGAV
             
         }
 
-        private void LBPatentes_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnConfigurarFamilia_Click(object sender, EventArgs e)
         {
-            obj_patente = (Patente)LBPatentes.SelectedItem;
-            TxtIDPermisos.Text = Convert.ToString(obj_patente.ID);
-            txtNombrePermisos.Text = obj_patente.Nombre;
+            var tmp = (BE_Familia)this.cbFamilia.SelectedItem;
+            selected_familia = new BE_Familia();
+            selected_familia.ID = tmp.ID;
+            selected_familia.Nombre = tmp.Nombre;
+            MostrarFamilia(true);
+        }
+
+        private void BtnEliminarPatente_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

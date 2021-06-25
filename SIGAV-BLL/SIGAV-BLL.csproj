@@ -89,6 +89,14 @@
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
       <Name>SIGAV-EE</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Servicios\SIGAV-Servicios.csproj">
+      <Project>{83d1d7ab-f898-4111-b8e7-de3efc3f3f34}</Project>
+      <Name>SIGAV-Servicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIGAV-Interfaces\SIGAV-Interfaces.csproj">
+      <Project>{8d33714a-83d2-47bb-bd95-28e78957e55a}</Project>
+      <Name>SIGAV-Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SIGAV-MPP\SIGAV-MPP.csproj">
       <Project>{8f33c1de-29a9-4ddf-854b-184441d88595}</Project>
       <Name>SIGAV-MPP</Name>

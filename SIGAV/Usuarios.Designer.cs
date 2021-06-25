@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,8 +48,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtUserID = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.lbFamilias = new System.Windows.Forms.ListBox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.cbFamilia = new System.Windows.Forms.ComboBox();
+            this.cbPatentes = new System.Windows.Forms.ComboBox();
+            this.Btn_AgregarFamiliaUser = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAgregarPatenteUser = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TV_PermisosUser = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnModificarUser)).BeginInit();
@@ -97,21 +101,21 @@
             // 
             // DGVUsers
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DGVUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGVUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.DGVUsers.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DGVUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVUsers.DoubleBuffered = true;
             this.DGVUsers.EnableHeadersVisualStyles = false;
@@ -120,7 +124,7 @@
             this.DGVUsers.Location = new System.Drawing.Point(25, 244);
             this.DGVUsers.Name = "DGVUsers";
             this.DGVUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGVUsers.Size = new System.Drawing.Size(478, 377);
+            this.DGVUsers.Size = new System.Drawing.Size(342, 377);
             this.DGVUsers.TabIndex = 18;
             this.DGVUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGVUsers_CellMouseClick);
             // 
@@ -250,7 +254,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(594, 213);
+            this.label2.Location = new System.Drawing.Point(726, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 20);
             this.label2.TabIndex = 38;
@@ -279,29 +283,100 @@
             this.TxtUserID.Size = new System.Drawing.Size(56, 22);
             this.TxtUserID.TabIndex = 39;
             // 
-            // lbFamilias
-            // 
-            this.lbFamilias.BackColor = System.Drawing.Color.Gainsboro;
-            this.lbFamilias.FormattingEnabled = true;
-            this.lbFamilias.Location = new System.Drawing.Point(598, 244);
-            this.lbFamilias.Name = "lbFamilias";
-            this.lbFamilias.Size = new System.Drawing.Size(376, 381);
-            this.lbFamilias.TabIndex = 41;
-            this.lbFamilias.SelectedIndexChanged += new System.EventHandler(this.LbFamilias_SelectedIndexChanged);
-            // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(524, 409);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(385, 396);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 45);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 54);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton1.TabIndex = 42;
             this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Visible = false;
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
+            // 
+            // cbFamilia
+            // 
+            this.cbFamilia.FormattingEnabled = true;
+            this.cbFamilia.Location = new System.Drawing.Point(466, 327);
+            this.cbFamilia.Name = "cbFamilia";
+            this.cbFamilia.Size = new System.Drawing.Size(165, 21);
+            this.cbFamilia.TabIndex = 43;
+            // 
+            // cbPatentes
+            // 
+            this.cbPatentes.FormattingEnabled = true;
+            this.cbPatentes.Location = new System.Drawing.Point(466, 450);
+            this.cbPatentes.Name = "cbPatentes";
+            this.cbPatentes.Size = new System.Drawing.Size(165, 21);
+            this.cbPatentes.TabIndex = 44;
+            // 
+            // Btn_AgregarFamiliaUser
+            // 
+            this.Btn_AgregarFamiliaUser.ActiveBorderThickness = 1;
+            this.Btn_AgregarFamiliaUser.ActiveCornerRadius = 5;
+            this.Btn_AgregarFamiliaUser.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_AgregarFamiliaUser.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_AgregarFamiliaUser.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_AgregarFamiliaUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.Btn_AgregarFamiliaUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_AgregarFamiliaUser.BackgroundImage")));
+            this.Btn_AgregarFamiliaUser.ButtonText = "Asignar familia";
+            this.Btn_AgregarFamiliaUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_AgregarFamiliaUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_AgregarFamiliaUser.ForeColor = System.Drawing.Color.White;
+            this.Btn_AgregarFamiliaUser.IdleBorderThickness = 1;
+            this.Btn_AgregarFamiliaUser.IdleCornerRadius = 5;
+            this.Btn_AgregarFamiliaUser.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_AgregarFamiliaUser.IdleForecolor = System.Drawing.Color.White;
+            this.Btn_AgregarFamiliaUser.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_AgregarFamiliaUser.Location = new System.Drawing.Point(475, 372);
+            this.Btn_AgregarFamiliaUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_AgregarFamiliaUser.Name = "Btn_AgregarFamiliaUser";
+            this.Btn_AgregarFamiliaUser.Size = new System.Drawing.Size(147, 34);
+            this.Btn_AgregarFamiliaUser.TabIndex = 64;
+            this.Btn_AgregarFamiliaUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_AgregarFamiliaUser.Click += new System.EventHandler(this.Btn_AgregarFamiliaUser_Click);
+            // 
+            // btnAgregarPatenteUser
+            // 
+            this.btnAgregarPatenteUser.ActiveBorderThickness = 1;
+            this.btnAgregarPatenteUser.ActiveCornerRadius = 5;
+            this.btnAgregarPatenteUser.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnAgregarPatenteUser.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnAgregarPatenteUser.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnAgregarPatenteUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.btnAgregarPatenteUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarPatenteUser.BackgroundImage")));
+            this.btnAgregarPatenteUser.ButtonText = "Asignar patente";
+            this.btnAgregarPatenteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarPatenteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPatenteUser.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarPatenteUser.IdleBorderThickness = 1;
+            this.btnAgregarPatenteUser.IdleCornerRadius = 5;
+            this.btnAgregarPatenteUser.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnAgregarPatenteUser.IdleForecolor = System.Drawing.Color.White;
+            this.btnAgregarPatenteUser.IdleLineColor = System.Drawing.Color.White;
+            this.btnAgregarPatenteUser.Location = new System.Drawing.Point(475, 506);
+            this.btnAgregarPatenteUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarPatenteUser.Name = "btnAgregarPatenteUser";
+            this.btnAgregarPatenteUser.Size = new System.Drawing.Size(147, 34);
+            this.btnAgregarPatenteUser.TabIndex = 65;
+            this.btnAgregarPatenteUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregarPatenteUser.Click += new System.EventHandler(this.btnAgregarPatenteUser_Click);
+            // 
+            // TV_PermisosUser
+            // 
+            this.TV_PermisosUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TV_PermisosUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.TV_PermisosUser.ForeColor = System.Drawing.Color.White;
+            this.TV_PermisosUser.LineColor = System.Drawing.Color.Gray;
+            this.TV_PermisosUser.Location = new System.Drawing.Point(730, 244);
+            this.TV_PermisosUser.Name = "TV_PermisosUser";
+            this.TV_PermisosUser.Size = new System.Drawing.Size(330, 377);
+            this.TV_PermisosUser.TabIndex = 66;
             // 
             // Usuarios
             // 
@@ -309,8 +384,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1093, 642);
+            this.Controls.Add(this.TV_PermisosUser);
+            this.Controls.Add(this.btnAgregarPatenteUser);
+            this.Controls.Add(this.Btn_AgregarFamiliaUser);
+            this.Controls.Add(this.cbPatentes);
+            this.Controls.Add(this.cbFamilia);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Controls.Add(this.lbFamilias);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.TxtUserID);
             this.Controls.Add(this.label2);
@@ -361,7 +440,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtUserID;
-        private System.Windows.Forms.ListBox lbFamilias;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.ComboBox cbFamilia;
+        private System.Windows.Forms.ComboBox cbPatentes;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_AgregarFamiliaUser;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAgregarPatenteUser;
+        private System.Windows.Forms.TreeView TV_PermisosUser;
     }
 }

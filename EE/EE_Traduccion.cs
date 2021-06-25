@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace EE
 {
   public  class EE_Traduccion
-    {
+  {
         private string tag;
 
         public string Tag
@@ -25,5 +25,5 @@ namespace EE
 
         public int ID_Idioma { get; set; }
 
-    }
+  }
 }

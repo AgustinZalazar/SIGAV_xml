@@ -47,8 +47,8 @@ namespace SIGAV
                 EE_Usuario _User = _Login.Logear(Txt_Username.Text, S_Encriptado.Encriptar(Txt_Password.Text));
                 if (_User != null)
                 {
-                    Login login_f = new Login();
-                    S_Login.ObtenerSesion.Login(_User);
+                    //Login login_f = new Login();
+                    S_Login.Login(_User);
                     MessageBox.Show("Inicio de sesion correcto");
                     bitacora.Usuario = _User;
                     bitacora.Hora = DateTime.Now.Hour;

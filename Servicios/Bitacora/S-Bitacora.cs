@@ -1,5 +1,5 @@
 ﻿using EE;
-using SIGAV_BLL;
+//using SIGAV_BLL;
 using SIGAV_Interfaces;
 using System;
 using System.Collections.Generic;
@@ -38,9 +38,9 @@ namespace Servicios.Bitacora
 
         public static void InsertarBitacora(EE_Bitacora bitacora)
         {
-            BLL_Bitacora bll_Bitacora = new BLL_Bitacora();
-            bll_Bitacora.InsertarBitacora(bitacora);
+            //BLL_Bitacora bll_Bitacora = new BLL_Bitacora();
+            //bll_Bitacora.InsertarBitacora(bitacora);
         }
-        
+
     }
 }
