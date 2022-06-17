@@ -10,21 +10,21 @@ namespace SIGAV_BLL
 {
     public class BLL_Usuario
     {
-        public bool CrearUser(EE_Usuario _Usuario)
+        public bool CrearUser(BE_Usuario _Usuario)
         {
             MPPUsuario MPP_User = new MPPUsuario();
             bool resultado;
             resultado = MPP_User.CrearUser(_Usuario);
             return resultado;
         }
-        public bool ModificarUser(EE_Usuario _Usuario)
+        public bool ModificarUser(BE_Usuario _Usuario)
         {
             MPPUsuario MPP_User = new MPPUsuario();
             bool resultado;
             resultado = MPP_User.CrearUser(_Usuario);
             return resultado;
         }
-        public bool EliminarUser(EE_Usuario _Usuario)
+        public bool EliminarUser(BE_Usuario _Usuario)
         {
             MPPUsuario MPP_User = new MPPUsuario();
             bool resultado;
@@ -32,9 +32,9 @@ namespace SIGAV_BLL
             return resultado;
         }
 
-        public List<EE_Usuario> ListarUsers()
+        public List<BE_Usuario> ListarUsers()
         {
-            List<EE_Usuario> List_User = new List<EE_Usuario>();
+            List<BE_Usuario> List_User = new List<BE_Usuario>();
             MPPUsuario MPP_User = new MPPUsuario();
             return List_User = MPP_User.ListarUsuarios();
         }

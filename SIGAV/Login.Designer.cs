@@ -33,7 +33,6 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Btn_IniciarSesion = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_Register = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Txt_Password = new System.Windows.Forms.TextBox();
@@ -119,19 +118,6 @@
             this.Btn_Register.TabIndex = 4;
             this.Btn_Register.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_Register.Visible = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(13, 499);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(145, 13);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Me olvide la contraseña";
-            this.linkLabel1.Visible = false;
             // 
             // pictureBox1
             // 
@@ -234,7 +220,6 @@
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Btn_Register);
             this.Controls.Add(this.Btn_IniciarSesion);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -260,7 +245,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_IniciarSesion;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_Register;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox Txt_Password;

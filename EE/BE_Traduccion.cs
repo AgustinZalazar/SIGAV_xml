@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EE
 {
-  public  class EE_Traduccion
+  public  class BE_Traduccion
   {
         private string tag;
 

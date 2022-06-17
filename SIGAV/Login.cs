@@ -44,7 +44,7 @@ namespace SIGAV
             BLL_Login _Login = new BLL_Login();
             if (Txt_Username.Text != "" && Txt_Password.Text != "")
             {
-                EE_Usuario _User = _Login.Logear(Txt_Username.Text, S_Encriptado.Encriptar(Txt_Password.Text));
+                BE_Usuario _User = _Login.Logear(Txt_Username.Text, S_Encriptado.Encriptar(Txt_Password.Text));
                 if (_User != null)
                 {
                     //Login login_f = new Login();

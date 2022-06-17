@@ -12,9 +12,9 @@ namespace Servicios.Multi_idioma
     public static class Traduccion
     {
         static List<IObservador> observers = new List<IObservador>();
-        static EE_Idioma idiomaSeleccionado;
+        static BE_Idioma idiomaSeleccionado;
 
-        public static void Idioma(EE_Idioma idioma)
+        public static void Idioma(BE_Idioma idioma)
         {
             idiomaSeleccionado = idioma;                   
             Notificar();
@@ -45,7 +45,7 @@ namespace Servicios.Multi_idioma
         public static string traducir(string key)
         {
            
-            return (from EE_Traduccion traduccion in idiomaSeleccionado.Traducciones
+            return (from BE_Traduccion traduccion in idiomaSeleccionado.Traducciones
                     where traduccion.Tag.CompareTo(key) == 0 
                     select traduccion).FirstOrDefault()?.Descripcion;
         }

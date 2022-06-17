@@ -9,10 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Servicios.Multi_idioma;
+using SIGAV_Interfaces;
 
 namespace SIGAV
 {
-    public partial class Clientes : Form
+    public partial class Clientes : Form, IObservador
     {
         public Clientes()
         {
@@ -20,7 +22,8 @@ namespace SIGAV
             ActualizarDGV();
         }
         BLL_Cliente bll_cliente = new BLL_Cliente();
-        EE_Cliente ee_Cliente = new EE_Cliente();
+        BE_Cliente ee_Cliente = new BE_Cliente();
+        BE_Idioma eE_Idioma = new BE_Idioma();
         public void ActualizarDGV()
         {
             DGVCliente.DataSource = null;
@@ -56,6 +59,7 @@ namespace SIGAV
         private void Clientes_Load(object sender, EventArgs e)
         {
             ActualizarDGV();
+            ChangeLenguage();
         }
 
         private void BtnUpdateCliente_Click(object sender, EventArgs e)
@@ -86,7 +90,7 @@ namespace SIGAV
         {
             if (e.ColumnIndex != 0)
             {
-                ee_Cliente = (EE_Cliente)DGVCliente.Rows[e.RowIndex].DataBoundItem;
+                ee_Cliente = (BE_Cliente)DGVCliente.Rows[e.RowIndex].DataBoundItem;
                 txtIDCliente.Text = Convert.ToString(ee_Cliente.ID);
                 txtNombreCliente.Text = ee_Cliente.Nombre;
                 txtApellidoCliente.Text = ee_Cliente.Apellido;
@@ -99,25 +103,16 @@ namespace SIGAV
             
         }
 
-        private void BunifuImageButton1_Click(object sender, EventArgs e)
+        void ChangeLenguage()
         {
-            try
-            {
-                if (txt_buscador.Text != "")
-                {
-                    DGVCliente.DataSource = null;
-                    DGVCliente.DataSource = bll_cliente.ListarCliente(txt_buscador.Text);
-                }
-                else
-                {
-                    ActualizarDGV();
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            eE_Idioma = EE.BE_Idioma.SharedData.SelectedLenguage;
+            Traduccion.Añadir(this);
+            Traduccion.Idioma(eE_Idioma);
+            update();
+        }
+        public void update()
+        {
+            Traduccion.Traducir(this);
         }
     }
 }

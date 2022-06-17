@@ -95,6 +95,12 @@
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard-Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Envios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Envios.Designer.cs">
+      <DependentUpon>Envios.cs</DependentUpon>
     </Compile>
     <Compile Include="Idiomas.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,12 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="404-NotFound.resx">
       <DependentUpon>404-NotFound.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,11 +166,17 @@
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard-Menu.resx">
       <DependentUpon>Dashboard-Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Envios.resx">
+      <DependentUpon>Envios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Idiomas.resx">
       <DependentUpon>Idiomas.cs</DependentUpon>
@@ -179,6 +203,9 @@
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,9 +227,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\EE\SIGAV-EE.csproj">
+    <ProjectReference Include="..\EE\SIGAV-BE.csproj">
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
-      <Name>SIGAV-EE</Name>
+      <Name>SIGAV-BE</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicios\SIGAV-Servicios.csproj">
       <Project>{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}</Project>

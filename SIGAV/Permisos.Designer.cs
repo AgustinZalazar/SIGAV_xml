@@ -89,6 +89,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 55;
+            this.label2.Tag = "Familias:";
             this.label2.Text = "Familias:";
             // 
             // treeview_Permisos
@@ -112,6 +113,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 48;
+            this.label4.Tag = "Nombre:";
             this.label4.Text = "Nombre:";
             // 
             // txtNombrePermisos
@@ -134,6 +136,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(196, 20);
             this.label3.TabIndex = 44;
+            this.label3.Tag = "Agregar, eliminar permisos";
             this.label3.Text = "Agregar, eliminar permisos";
             // 
             // bunifuSeparator1
@@ -159,6 +162,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 25);
             this.label1.TabIndex = 41;
+            this.label1.Tag = "Permisos";
             this.label1.Text = "Permisos";
             // 
             // BtnModificarUser
@@ -212,6 +216,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 20);
             this.label5.TabIndex = 60;
+            this.label5.Tag = "Patentes:";
             this.label5.Text = "Patentes:";
             // 
             // comboBox1
@@ -234,6 +239,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 16);
             this.label6.TabIndex = 62;
+            this.label6.Tag = "Tipo:";
             this.label6.Text = "Tipo:";
             // 
             // Btn_AgregarFamilia
@@ -259,6 +265,7 @@
             this.Btn_AgregarFamilia.Name = "Btn_AgregarFamilia";
             this.Btn_AgregarFamilia.Size = new System.Drawing.Size(221, 43);
             this.Btn_AgregarFamilia.TabIndex = 63;
+            this.Btn_AgregarFamilia.Tag = "Agregar Familia al arbol";
             this.Btn_AgregarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_AgregarFamilia.Click += new System.EventHandler(this.Btn_AgregarFamilia_Click);
             // 
@@ -285,6 +292,7 @@
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(221, 44);
             this.bunifuThinButton21.TabIndex = 64;
+            this.bunifuThinButton21.Tag = "Agregar Patente a la familia";
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.BunifuThinButton21_Click);
             // 
@@ -297,6 +305,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 20);
             this.label8.TabIndex = 65;
+            this.label8.Tag = "Arbol:";
             this.label8.Text = "Arbol:";
             // 
             // BtnEliminarPatente
@@ -322,6 +331,7 @@
             this.BtnEliminarPatente.Name = "BtnEliminarPatente";
             this.BtnEliminarPatente.Size = new System.Drawing.Size(243, 42);
             this.BtnEliminarPatente.TabIndex = 67;
+            this.BtnEliminarPatente.Tag = "Eliminar Patente de la familia";
             this.BtnEliminarPatente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnEliminarPatente.Click += new System.EventHandler(this.BtnEliminarPatente_Click);
             // 
@@ -348,6 +358,7 @@
             this.BtnEliminarFamilia.Name = "BtnEliminarFamilia";
             this.BtnEliminarFamilia.Size = new System.Drawing.Size(243, 41);
             this.BtnEliminarFamilia.TabIndex = 66;
+            this.BtnEliminarFamilia.Tag = "Eliminar Familia del arbol";
             this.BtnEliminarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConfigurarFamilia
@@ -373,6 +384,7 @@
             this.btnConfigurarFamilia.Name = "btnConfigurarFamilia";
             this.btnConfigurarFamilia.Size = new System.Drawing.Size(155, 39);
             this.btnConfigurarFamilia.TabIndex = 68;
+            this.btnConfigurarFamilia.Tag = "Configurar Familia";
             this.btnConfigurarFamilia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnConfigurarFamilia.Click += new System.EventHandler(this.btnConfigurarFamilia_Click);
             // 

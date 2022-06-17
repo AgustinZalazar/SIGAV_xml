@@ -35,7 +35,6 @@
             this.DGVProducto = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtIDProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txt_buscador = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPrecio = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtDescripcion = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtNombreProd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -43,14 +42,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnUpdateProducto = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnDeleteProducto = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAgregarProducto = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtTipo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtCantidad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarProducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // DGVProducto
@@ -129,29 +125,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(24, 16);
             this.label11.TabIndex = 74;
+            this.label11.Tag = "ID:";
             this.label11.Text = "ID:";
-            // 
-            // txt_buscador
-            // 
-            this.txt_buscador.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_buscador.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_buscador.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_buscador.ForeColor = System.Drawing.Color.White;
-            this.txt_buscador.HintForeColor = System.Drawing.Color.White;
-            this.txt_buscador.HintText = "";
-            this.txt_buscador.isPassword = false;
-            this.txt_buscador.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txt_buscador.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_buscador.LineMouseHoverColor = System.Drawing.Color.DimGray;
-            this.txt_buscador.LineThickness = 3;
-            this.txt_buscador.Location = new System.Drawing.Point(659, 256);
-            this.txt_buscador.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_buscador.Name = "txt_buscador";
-            this.txt_buscador.Size = new System.Drawing.Size(219, 31);
-            this.txt_buscador.TabIndex = 72;
-            this.txt_buscador.Text = "Nombre";
-            this.txt_buscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_buscador.Visible = false;
             // 
             // txtPrecio
             // 
@@ -219,6 +194,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 16);
             this.label6.TabIndex = 61;
+            this.label6.Tag = "Precio:";
             this.label6.Text = "Precio:";
             // 
             // label5
@@ -230,6 +206,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 16);
             this.label5.TabIndex = 60;
+            this.label5.Tag = "Descripcion:";
             this.label5.Text = "Descripcion:";
             // 
             // label4
@@ -241,6 +218,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 59;
+            this.label4.Tag = "Nombre:";
             this.label4.Text = "Nombre:";
             // 
             // label3
@@ -253,19 +231,6 @@
             this.label3.Size = new System.Drawing.Size(245, 20);
             this.label3.TabIndex = 58;
             this.label3.Text = "Agregar, eliminar y editar clientes:";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(550, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 16);
-            this.label2.TabIndex = 55;
-            this.label2.Text = "Buscar producto:";
-            this.label2.Visible = false;
             // 
             // bunifuSeparator1
             // 
@@ -290,6 +255,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 25);
             this.label1.TabIndex = 53;
+            this.label1.Tag = "Productos";
             this.label1.Text = "Productos";
             // 
             // pictureBox1
@@ -346,21 +312,6 @@
             this.btnAgregarProducto.Zoom = 10;
             this.btnAgregarProducto.Click += new System.EventHandler(this.BtnAgregarProducto_Click);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(885, 263);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(24, 24);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.bunifuImageButton1.TabIndex = 50;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Visible = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // txtTipo
             // 
             this.txtTipo.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -408,6 +359,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 16);
             this.label7.TabIndex = 78;
+            this.label7.Tag = "Tipo:";
             this.label7.Text = "Tipo:";
             // 
             // label8
@@ -419,6 +371,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 16);
             this.label8.TabIndex = 77;
+            this.label8.Tag = "Cantidad:";
             this.label8.Text = "Cantidad:";
             // 
             // Productos
@@ -434,7 +387,6 @@
             this.Controls.Add(this.DGVProducto);
             this.Controls.Add(this.txtIDProducto);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txt_buscador);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombreProd);
@@ -444,12 +396,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUpdateProducto);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeleteProducto);
             this.Controls.Add(this.btnAgregarProducto);
-            this.Controls.Add(this.bunifuImageButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Productos";
             this.Text = "Productos";
@@ -459,7 +409,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,7 +419,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DGVProducto;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtIDProducto;
         private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_buscador;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPrecio;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtDescripcion;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNombreProd;
@@ -480,12 +428,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton btnUpdateProducto;
-        private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton btnDeleteProducto;
         private Bunifu.Framework.UI.BunifuImageButton btnAgregarProducto;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTipo;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtCantidad;
         private System.Windows.Forms.Label label7;

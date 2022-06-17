@@ -84,9 +84,9 @@
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EE\SIGAV-EE.csproj">
+    <ProjectReference Include="..\EE\SIGAV-BE.csproj">
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
-      <Name>SIGAV-EE</Name>
+      <Name>SIGAV-BE</Name>
     </ProjectReference>
     <ProjectReference Include="..\SIGAV-Interfaces\SIGAV-Interfaces.csproj">
       <Project>{8D33714A-83D2-47BB-BD95-28E78957E55A}</Project>

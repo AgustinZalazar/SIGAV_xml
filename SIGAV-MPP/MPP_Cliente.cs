@@ -13,7 +13,7 @@ namespace SIGAV_MPP
     public class MPP_Cliente
     {
 
-        public bool CrearCliente(EE_Cliente _Cliente)
+        public bool CrearCliente(BE_Cliente _Cliente)
         {
             DAL dal = new DAL();
             Hashtable hs = new Hashtable();
@@ -32,7 +32,7 @@ namespace SIGAV_MPP
             return resultado;
         }
 
-        public bool UpdateCliente(EE_Cliente _Cliente)
+        public bool UpdateCliente(BE_Cliente _Cliente)
         {
             DAL dal = new DAL();
             Hashtable hs = new Hashtable();
@@ -50,7 +50,7 @@ namespace SIGAV_MPP
             resultado = dal.Escribir(consulta, hs);
             return resultado;
         }
-        public bool EliminarUser(EE_Cliente _Cliente)
+        public bool EliminarUser(BE_Cliente _Cliente)
         {
             DAL dal = new DAL();
             Hashtable hs = new Hashtable();
@@ -60,20 +60,20 @@ namespace SIGAV_MPP
             resultado = dal.Escribir("S_BajaCliente", hs);
             return resultado;
         }
-        public List<EE_Cliente> ListarClientes()
+        public List<BE_Cliente> ListarClientes()
         {
             DAL dal = new DAL();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
-            List<EE_Cliente> list_clientes = new List<EE_Cliente>();
-            EE_Cliente cliente = default(EE_Cliente);
+            List<BE_Cliente> list_clientes = new List<BE_Cliente>();
+            BE_Cliente cliente = default(BE_Cliente);
 
             ds = dal.Leer("S_ListarClientes", null);
             if (ds.Tables[0].Rows.Count > 0)
             {
                 foreach (DataRow item in ds.Tables[0].Rows)
                 {
-                    cliente = new EE_Cliente();
+                    cliente = new BE_Cliente();
                     cliente.ID = Convert.ToInt32(item["ID_Cliente"]);
                     cliente.Nombre = item["Nombre"].ToString();
                     cliente.Apellido = item["Apellido"].ToString();
@@ -92,13 +92,13 @@ namespace SIGAV_MPP
             }
         }
 
-        public List<EE_Cliente> ListarCliente(string nombre_cliente)
+        public List<BE_Cliente> ListarCliente(string nombre_cliente)
         {
             DAL dal = new DAL();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
-            List<EE_Cliente> list_clientes = new List<EE_Cliente>();
-            EE_Cliente cliente = default(EE_Cliente);
+            List<BE_Cliente> list_clientes = new List<BE_Cliente>();
+            BE_Cliente cliente = default(BE_Cliente);
             Hashtable hs = new Hashtable();
             hs.Add("@Nombre", nombre_cliente);
 
@@ -107,7 +107,7 @@ namespace SIGAV_MPP
             {
                 foreach (DataRow item in ds.Tables[0].Rows)
                 {
-                    cliente = new EE_Cliente();
+                    cliente = new BE_Cliente();
                     cliente.ID = Convert.ToInt32(item["ID_Cliente"]);
                     cliente.Nombre = item["Nombre"].ToString();
                     cliente.Apellido = item["Apellido"].ToString();

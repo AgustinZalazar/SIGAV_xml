@@ -21,8 +21,10 @@ namespace SIGAV
             InitializeComponent();
         }
 
-        EE.EE_Idioma eE_Idioma = new EE.EE_Idioma();
+        EE.BE_Idioma eE_Idioma = new EE.BE_Idioma();
         private Form activeForm = null;
+        BLL_Permisos _Permisos = new BLL_Permisos();
+
         private void openChildForm(Form childForm)
         {
             if (activeForm!=null)
@@ -110,13 +112,14 @@ namespace SIGAV
         {             
             EnlazarIdiomas();       
             update();
-            ShowLogin();  
+            ShowLogin();
+            HideForms();
         }
 
         void EnlazarIdiomas()
         {
             BLL_Idioma bLL_Idioma = new BLL_Idioma();
-            List<EE.EE_Idioma> list_idiomas = new List<EE.EE_Idioma>();
+            List<EE.BE_Idioma> list_idiomas = new List<EE.BE_Idioma>();
             CB_Idioma2.DataSource = bLL_Idioma.ListarIdiomas();
             CB_Idioma2.DisplayMember = "Nombre";
             if (CB_Idioma2.Items.Count>0)
@@ -142,9 +145,8 @@ namespace SIGAV
 
         private void BunifuFlatButton8_Click(object sender, EventArgs e)
         {
-            S_Login log = S_Login.ObtenerSesion;          
+            S_Login log = S_Login.ObtenerSesion;
             log.Logout();
-            
             ShowLogin();
         }
 
@@ -173,8 +175,9 @@ namespace SIGAV
 
         private void CB_Idioma2_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            eE_Idioma = (EE.EE_Idioma)CB_Idioma2.SelectedItem;
+            eE_Idioma = (EE.BE_Idioma)CB_Idioma2.SelectedItem;
             Traduccion.Añadir(this);
+            EE.BE_Idioma.SharedData.SelectedLenguage = eE_Idioma;
             Traduccion.Idioma(eE_Idioma);
         }
 
@@ -186,6 +189,62 @@ namespace SIGAV
         private void BunifuFlatButton12_Click(object sender, EventArgs e)
         {
             openChildForm(new BACK_UP());
+        }
+
+        void HideForms()
+        {
+            S_Login log = S_Login.ObtenerSesion;
+            EE.BE_Usuario user = (EE.BE_Usuario)log.Usuario;
+            _Permisos.ListUserByPermisos(user);
+            foreach (var item in user.Permisos)
+            {
+                
+                foreach (var subitem in item.ObtenerHijo)
+                {
+                    if (item.Nombre == "Gerente de ventas" || item.Nombre == "Administrar ventas" || item.Nombre == "Administrador de Ventas" || subitem.Nombre == "Administrar ventas")
+                    {
+                        this.bunifuFlatButton7.Visible = false;
+                        this.bunifuFlatButton5.Visible = false;
+                        this.bunifuFlatButton2.Visible = false;
+                        this.bunifuFlatButton6.Visible = false;
+                        this.btnEnvios.Visible = false;
+                    }
+                    if (item.Nombre == "Gerente de compras" || item.Nombre == "Administrador de Compras")
+                    {
+                        this.bunifuFlatButton3.Visible = false;
+                        this.bunifuFlatButton11.Visible = false;
+                        this.bunifuFlatButton5.Visible = false;
+                        this.bunifuFlatButton3.Visible = false;
+                        this.bunifuFlatButton6.Visible = false;
+                        this.btnEnvios.Visible = false;
+                    }
+                    if (item.Nombre == "Administrador de Envios" || item.Nombre == "Ver envios")
+                    {
+                        this.bunifuFlatButton2.Visible = false;
+                        this.bunifuFlatButton3.Visible = false;
+                        this.bunifuFlatButton11.Visible = false;
+                        this.bunifuFlatButton5.Visible = false;
+                        this.bunifuFlatButton3.Visible = false;
+                        this.bunifuFlatButton6.Visible = false;
+                        this.bunifuFlatButton4.Visible = false;
+                    }
+                }
+            }
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Venta());
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Compra());
+        }
+
+        private void btnEnvios_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Envios());
         }
     }
 }

@@ -69,14 +69,15 @@
     <Compile Include="Composite\BE_Familia.cs" />
     <Compile Include="Composite\BE_Patente.cs" />
     <Compile Include="Composite\BE_Permiso.cs" />
-    <Compile Include="EE-Bitacora.cs" />
-    <Compile Include="EE_Cliente.cs" />
-    <Compile Include="EE_Compra.cs" />
-    <Compile Include="EE_Idioma.cs" />
-    <Compile Include="EE_Producto.cs" />
-    <Compile Include="EE_Traduccion.cs" />
-    <Compile Include="EE_Usuario.cs" />
-    <Compile Include="EE_Venta.cs" />
+    <Compile Include="BE-Bitacora.cs" />
+    <Compile Include="BE_Cliente.cs" />
+    <Compile Include="BE_Compra.cs" />
+    <Compile Include="BE_Envios.cs" />
+    <Compile Include="BE_Idioma.cs" />
+    <Compile Include="BE_Producto.cs" />
+    <Compile Include="BE_Traduccion.cs" />
+    <Compile Include="BE_Usuario.cs" />
+    <Compile Include="BE_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

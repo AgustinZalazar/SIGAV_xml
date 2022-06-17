@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EE
 {
-    public class EE_Producto
+    public class BE_Producto
     {
         public int ID { get; set; }
         public string Nombre { get; set; }

@@ -97,7 +97,7 @@ namespace SIGAV_MPP
             return lista;
         }
 
-        public void ListUserByPermisos(EE_Usuario user)
+        public void ListUserByPermisos(BE_Usuario user)
         {
 
             DataSet ds = new DataSet();

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Panel_Menu = new System.Windows.Forms.Panel();
+            this.btnEnvios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_idioma = new System.Windows.Forms.Panel();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -63,6 +64,7 @@
             // Panel_Menu
             // 
             this.Panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Panel_Menu.Controls.Add(this.btnEnvios);
             this.Panel_Menu.Controls.Add(this.bunifuFlatButton8);
             this.Panel_Menu.Controls.Add(this.panel_idioma);
             this.Panel_Menu.Controls.Add(this.bunifuFlatButton9);
@@ -78,8 +80,47 @@
             this.Panel_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Panel_Menu.Location = new System.Drawing.Point(0, 0);
             this.Panel_Menu.Name = "Panel_Menu";
-            this.Panel_Menu.Size = new System.Drawing.Size(250, 749);
+            this.Panel_Menu.Size = new System.Drawing.Size(250, 952);
             this.Panel_Menu.TabIndex = 0;
+            // 
+            // btnEnvios
+            // 
+            this.btnEnvios.Activecolor = System.Drawing.Color.Gray;
+            this.btnEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnEnvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEnvios.BorderRadius = 0;
+            this.btnEnvios.ButtonText = "Envios";
+            this.btnEnvios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnvios.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEnvios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEnvios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnvios.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEnvios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEnvios.Iconimage")));
+            this.btnEnvios.Iconimage_right = null;
+            this.btnEnvios.Iconimage_right_Selected = null;
+            this.btnEnvios.Iconimage_Selected = null;
+            this.btnEnvios.IconMarginLeft = 0;
+            this.btnEnvios.IconMarginRight = 0;
+            this.btnEnvios.IconRightVisible = true;
+            this.btnEnvios.IconRightZoom = 0D;
+            this.btnEnvios.IconVisible = true;
+            this.btnEnvios.IconZoom = 40D;
+            this.btnEnvios.IsTab = true;
+            this.btnEnvios.Location = new System.Drawing.Point(0, 843);
+            this.btnEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEnvios.Name = "btnEnvios";
+            this.btnEnvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnEnvios.OnHovercolor = System.Drawing.Color.DimGray;
+            this.btnEnvios.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEnvios.selected = false;
+            this.btnEnvios.Size = new System.Drawing.Size(250, 54);
+            this.btnEnvios.TabIndex = 14;
+            this.btnEnvios.Tag = "Envios";
+            this.btnEnvios.Text = "Envios";
+            this.btnEnvios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEnvios.Textcolor = System.Drawing.Color.White;
+            this.btnEnvios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnvios.Click += new System.EventHandler(this.btnEnvios_Click);
             // 
             // bunifuFlatButton8
             // 
@@ -502,6 +543,7 @@
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // bunifuFlatButton2
             // 
@@ -540,6 +582,7 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -578,6 +621,7 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Visible = false;
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // panel2
@@ -623,14 +667,14 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1103, 749);
+            this.panelChildForm.Size = new System.Drawing.Size(1260, 952);
             this.panelChildForm.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(475, 200);
+            this.pictureBox2.Location = new System.Drawing.Point(554, 302);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(286, 296);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -641,7 +685,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1353, 749);
+            this.ClientSize = new System.Drawing.Size(1510, 952);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.Panel_Menu);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
@@ -686,6 +730,7 @@
         private System.Windows.Forms.ComboBox CB_Idioma2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton12;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEnvios;
     }
 }
 

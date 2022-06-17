@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EE
 {
-    public class EE_Idioma
+    public class BE_Idioma
     {
 
         private int id;
@@ -25,14 +25,19 @@ namespace EE
             set { nombre = value; }
         }
 
-        private List<EE_Traduccion> traducciones = new List<EE_Traduccion>();
+        private List<BE_Traduccion> traducciones = new List<BE_Traduccion>();
 
-        public List<EE_Traduccion> Traducciones
+        public List<BE_Traduccion> Traducciones
         {
             get { return traducciones; }
             set { traducciones = value; }
 
         }
 
+        public static class SharedData
+        {
+            public static BE_Idioma SelectedLenguage { get; set; }
+        }
+        
     }
 }

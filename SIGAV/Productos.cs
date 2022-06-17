@@ -20,7 +20,7 @@ namespace SIGAV
             ActualizarDGV();
         }
         BLL_Producto bll_Producto = new BLL_Producto();
-        EE_Producto ee_producto = new EE_Producto();
+        BE_Producto ee_producto = new BE_Producto();
         public void ActualizarDGV()
         {
             DGVProducto.DataSource = null;
@@ -72,7 +72,7 @@ namespace SIGAV
         {
             if (e.ColumnIndex != 0)
             {
-                ee_producto = (EE_Producto)DGVProducto.Rows[e.RowIndex].DataBoundItem;
+                ee_producto = (BE_Producto)DGVProducto.Rows[e.RowIndex].DataBoundItem;
                 txtIDProducto.Text = ee_producto.ID.ToString();
                 txtNombreProd.Text = ee_producto.Nombre;
                 txtDescripcion.Text = ee_producto.Descripcion;

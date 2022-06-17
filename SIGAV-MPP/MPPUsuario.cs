@@ -12,7 +12,7 @@ namespace SIGAV_MPP
 {
     public class MPPUsuario
     {
-        public bool CrearUser(EE_Usuario User)
+        public bool CrearUser(BE_Usuario User)
         {
             DAL dal = new DAL();
             Hashtable hs = new Hashtable();
@@ -21,11 +21,12 @@ namespace SIGAV_MPP
             string consulta = "S_AltaUser";
             hs.Add("@Username", User.Username);
             hs.Add("@Password", User.Password);
-
+            hs.Add("@Nombre", User.nombre);
+            hs.Add("@Empresa", User.empresa);
             resultado = dal.Escribir(consulta, hs);
             return resultado;
         }
-        public bool EliminarUser(EE_Usuario User)
+        public bool EliminarUser(BE_Usuario User)
         {
             DAL dal = new DAL();
             Hashtable hs = new Hashtable();
@@ -36,13 +37,14 @@ namespace SIGAV_MPP
             return resultado;
         }
 
-        public EE_Usuario ListarUn_User(EE_Usuario User)
+        public BE_Usuario ListarUn_User(BE_Usuario User)
         {
             DAL dal = new DAL();
             DataSet ds = new DataSet();
             Hashtable hs = new Hashtable();
-            EE_Usuario e_Usuario = default(EE_Usuario);
+            BE_Usuario e_Usuario = default(BE_Usuario);
 
+            hs.Add("@ID_User", User.ID);
             hs.Add("@Username", User.Username);
             hs.Add("@Password", User.Password);
 
@@ -52,11 +54,14 @@ namespace SIGAV_MPP
             {
                 foreach (DataRow item in ds.Tables[0].Rows)
                 {
-                    e_Usuario = new EE_Usuario();
+                    e_Usuario = new BE_Usuario();
+                    e_Usuario.ID = Convert.ToInt32(item["ID_User"]);
                     e_Usuario.Username = item["Username"].ToString();
                     e_Usuario.Password = item["Password"].ToString();
+                    e_Usuario.nombre = item["Nombre"].ToString();
+                    e_Usuario.empresa = item["Empresa"].ToString();
                 }
-                return User;
+                return e_Usuario;
             }
             else
             {
@@ -64,23 +69,25 @@ namespace SIGAV_MPP
             }
         }
 
-        public List<EE_Usuario> ListarUsuarios()
+        public List<BE_Usuario> ListarUsuarios()
         {
             DAL dal = new DAL();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
-            List<EE_Usuario> list_users = new List<EE_Usuario>();
-            EE_Usuario User = default(EE_Usuario);
+            List<BE_Usuario> list_users = new List<BE_Usuario>();
+            BE_Usuario User = default(BE_Usuario);
 
             ds = dal.Leer("S_ListarUsuarios", null);
             if (ds.Tables[0].Rows.Count > 0)
             {
                 foreach (DataRow item in ds.Tables[0].Rows)
                 {
-                    User = new EE_Usuario();
+                    User = new BE_Usuario();
                     User.ID = Convert.ToInt32(item["ID_User"]);
                     User.Username = item["Username"].ToString();
                     User.Password = item["Password"].ToString();
+                    User.nombre = item["Nombre"].ToString();
+                    User.empresa = item["Empresa"].ToString();
 
                     list_users.Add(User);
                 }

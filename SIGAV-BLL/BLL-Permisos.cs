@@ -68,7 +68,7 @@ namespace SIGAV_BLL
             bool resultado = mPP_AsignarPermisos.AsignarPermisos(id_permiso, id_usuario);
             return resultado;
         }
-        public void ListUserByPermisos(EE_Usuario user)
+        public void ListUserByPermisos(BE_Usuario user)
         {
             MPP_Permisos mPP_ListUserByPermisos = new MPP_Permisos();
             mPP_ListUserByPermisos.ListUserByPermisos(user);

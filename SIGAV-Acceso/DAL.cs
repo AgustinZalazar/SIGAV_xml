@@ -12,9 +12,9 @@ namespace SIGAV_Acceso
     public class DAL
     {
 
-        private string CadenaC = @"Data Source=DESKTOP-21VAQP0\SQLEXPRESS;Initial Catalog=SIGAV;Integrated Security=True";
+        private string CadenaC = @"Data Source=.;Initial Catalog=SIGAV;Integrated Security=True";
 
-        public SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-21VAQP0\SQLEXPRESS;Initial Catalog=SIGAV;Integrated Security=True");
+        public SqlConnection connection = new SqlConnection(@"Data Source=.;Initial Catalog=SIGAV;Integrated Security=True");
         private SqlTransaction Trans;
         private SqlCommand cmd;
 

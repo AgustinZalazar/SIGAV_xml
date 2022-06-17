@@ -155,7 +155,6 @@ namespace SIGAV
             {
                 obj_patente.Nombre = txtNombrePermisos.Text;
                 obj_patente.Es_Patente = true;
-                //obj_familia.agregarHijo(obj_patente);
                 bLL_Permiso.CrearPatente(obj_patente);
                 LlenarListaDePermisos();
             }
@@ -169,9 +168,31 @@ namespace SIGAV
 
         private void Btn_AgregarFamilia_Click(object sender, EventArgs e)
         {
-            BE_Permiso permiso_patente = null;
             BE_Permiso permiso_familia = (BE_Permiso)cbFamilia.SelectedItem;
-            bLL_Permiso.InsertarPatenteEnFamilia(permiso_familia, permiso_patente);
+
+            if (selected_familia != null)
+            {
+                if (permiso_familia != null)
+                {
+                    var existe = bLL_Permiso.Existe(selected_familia, permiso_familia.ID);
+                    if (existe) MessageBox.Show("Ya existe esta Familia.");
+                    else
+                    {
+                        selected_familia.agregarHijo(permiso_familia);
+                        bLL_Permiso.InsertarPatenteEnFamilia(permiso_familia, selected_familia);
+                        MostrarFamilia(false);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona una familia de la lista");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una familia");
+            }
         }
 
         private void BtnEliminarPermiso_Click(object sender, EventArgs e)

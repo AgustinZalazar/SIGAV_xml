@@ -84,6 +84,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 45;
+            this.label4.Tag = "Idioma";
             this.label4.Text = "Idioma:";
             // 
             // txtIdioma
@@ -106,6 +107,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(247, 20);
             this.label3.TabIndex = 43;
+            this.label3.Tag = "Agregar, eliminar y editar Idiomas:";
             this.label3.Text = "Agregar, eliminar y editar Idiomas:";
             // 
             // bunifuSeparator1
@@ -131,6 +133,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 41;
+            this.label1.Tag = "Idiomas";
             this.label1.Text = "Idiomas";
             // 
             // DGVIdiomas
@@ -228,6 +231,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 53;
+            this.label2.Tag = "Idiomas";
             this.label2.Text = "Idiomas:";
             // 
             // label5
@@ -239,6 +243,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 20);
             this.label5.TabIndex = 54;
+            this.label5.Tag = "Traducciones";
             this.label5.Text = "Traducciones:";
             // 
             // Idiomas
@@ -263,6 +268,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Idiomas";
             this.Text = "Idiomas";
+            this.Load += new System.EventHandler(this.Idiomas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVIdiomas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEliminarUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarUser)).EndInit();

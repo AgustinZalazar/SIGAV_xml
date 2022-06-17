@@ -8,13 +8,15 @@ using EE.Composite;
 
 namespace EE
 {
-    public class EE_Usuario : IUsuario
+    public class BE_Usuario : IUsuario
     {
         List<BE_Permiso> _permisos;
         public int ID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public EE_Usuario()
+        public string empresa { get; set; }
+        public string nombre { get; set; }
+        public BE_Usuario()
         {
             _permisos = new List<BE_Permiso>();
         }

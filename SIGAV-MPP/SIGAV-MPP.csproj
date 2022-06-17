@@ -67,12 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MPP-Bitacora.cs" />
+    <Compile Include="MPP_Envios.cs" />
     <Compile Include="MPP_Idioma.cs" />
     <Compile Include="MPPUsuario.cs" />
     <Compile Include="MPP_Cliente.cs" />
     <Compile Include="MPP_Compra.cs" />
     <Compile Include="MPP_Permisos.cs" />
     <Compile Include="MPP_Producto.cs" />
+    <Compile Include="MPP_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,9 +84,9 @@
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EE\SIGAV-EE.csproj">
+    <ProjectReference Include="..\EE\SIGAV-BE.csproj">
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
-      <Name>SIGAV-EE</Name>
+      <Name>SIGAV-BE</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicios\SIGAV-Servicios.csproj">
       <Project>{83d1d7ab-f898-4111-b8e7-de3efc3f3f34}</Project>

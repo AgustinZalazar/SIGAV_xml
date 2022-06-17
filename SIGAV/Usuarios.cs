@@ -12,10 +12,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Servicios.Multi_idioma;
+using SIGAV_Interfaces;
 
 namespace SIGAV
 {
-    public partial class Usuarios : Form
+    public partial class Usuarios : Form, IObservador
     {
         public Usuarios()
         {
@@ -25,9 +27,11 @@ namespace SIGAV
             LlenarListaDePermisos();
         }
         BLL_Usuario BLL_User = new BLL_Usuario();
-        EE_Usuario EE_User = new EE_Usuario();
+        BE_Usuario EE_User = new BE_Usuario();
         BLL_Permisos bLL_Permiso = new BLL_Permisos();
         List<BE_Permiso> list_permisos = new List<BE_Permiso>();
+        BE_Idioma eE_Idioma = new BE_Idioma();
+        EE.BE_Traduccion ee_Traduccion = new BE_Traduccion();
 
         Patente familia = new Patente();
         public void LlenarListaDePermisos()
@@ -51,9 +55,11 @@ namespace SIGAV
 
         public void LimpiartTxts()
         {
-            EE_User.Username = "";
-            EE_User.Password = "";
+            txtUsername.Text = "";
+            txtPassword.Text = "";
             TxtUserID.Text = "";
+            txtNombre.Text = "";
+            txtEmpresa.Text = "";
         }
         public void ActualizarDGvUsers()
         {
@@ -66,6 +72,8 @@ namespace SIGAV
             {
                 EE_User.Username = txtUsername.Text;
                 EE_User.Password = S_Encriptado.Encriptar(txtPassword.Text);
+                EE_User.nombre = txtNombre.Text;
+                EE_User.empresa = txtEmpresa.Text;
                 BLL_User.CrearUser(EE_User);
                 MessageBox.Show("Usuario agregado con exito.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ActualizarDGvUsers();
@@ -85,8 +93,8 @@ namespace SIGAV
                 EE_User.Username = txtUsername.Text;
                 MessageBox.Show("Desea eliminar  " + EE_User.Username + "?", "Alerta", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
                 BLL_User.EliminarUser(EE_User);
-                LimpiartTxts();
                 ActualizarDGvUsers();
+                LimpiartTxts();
             }
             else
             {
@@ -98,10 +106,12 @@ namespace SIGAV
         {
             if (e.ColumnIndex != 0)
             {
-                EE_User = (EE_Usuario)DGVUsers.Rows[e.RowIndex].DataBoundItem;
+                EE_User = (BE_Usuario)DGVUsers.Rows[e.RowIndex].DataBoundItem;
                 TxtUserID.Text = Convert.ToString(EE_User.ID);
                 txtUsername.Text = EE_User.Username;
                 txtPassword.Text = EE_User.Password;
+                txtNombre.Text = EE_User.nombre;
+                txtEmpresa.Text = EE_User.empresa;
                 bLL_Permiso.ListUserByPermisos(EE_User);
                 MostrarPermisos(EE_User);
             }
@@ -118,7 +128,7 @@ namespace SIGAV
             }
 
         }
-        void MostrarPermisos(EE_Usuario user)
+        void MostrarPermisos(BE_Usuario user)
         {
             this.TV_PermisosUser.Nodes.Clear();
             TreeNode root = new TreeNode(user.Username);
@@ -133,15 +143,7 @@ namespace SIGAV
         }
         private void BunifuImageButton1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //bLL_Permiso.AsignarPermisos(familia.ID, EE_User.ID);
-                MessageBox.Show("Por favor reloguea para aplicar los permisos", "Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void Btn_AgregarFamiliaUser_Click(object sender, EventArgs e)
@@ -207,6 +209,23 @@ namespace SIGAV
             {
                 MessageBox.Show("Seleccione un usuario");
             }
+        }
+
+        void ChangeLenguage()
+        {
+            eE_Idioma = EE.BE_Idioma.SharedData.SelectedLenguage;
+            Traduccion.Añadir(this);
+            Traduccion.Idioma(eE_Idioma);
+            update();
+        }
+        public void update()
+        {
+            Traduccion.Traducir(this);
+        }
+
+        private void Usuarios_Load(object sender, EventArgs e)
+        {
+            ChangeLenguage();
         }
     }
 }

@@ -32,12 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAgregarCliente = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnDeleteCliente = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnUpdateCliente = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,33 +52,16 @@
             this.txtDireccion = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtCelular = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtEmpresa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txt_buscador = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.DTPFechaNac = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txtIDCliente = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.DGVCliente = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCliente)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(892, 263);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(24, 24);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.bunifuImageButton1.TabIndex = 6;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
             // 
             // btnAgregarCliente
             // 
@@ -119,6 +100,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 25);
             this.label1.TabIndex = 9;
+            this.label1.Tag = "Clientes-Title";
             this.label1.Text = "Clientes";
             // 
             // bunifuSeparator1
@@ -134,18 +116,6 @@
             this.bunifuSeparator1.TabIndex = 10;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(557, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 16);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Buscar clientes:";
             // 
             // btnUpdateCliente
             // 
@@ -182,6 +152,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 20);
             this.label3.TabIndex = 15;
+            this.label3.Tag = "Agregar, eliminar y editar clientes:";
             this.label3.Text = "Agregar, eliminar y editar clientes:";
             // 
             // label4
@@ -193,6 +164,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 24;
+            this.label4.Tag = "Nombre:";
             this.label4.Text = "Nombre:";
             // 
             // label5
@@ -204,6 +176,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 16);
             this.label5.TabIndex = 25;
+            this.label5.Tag = "Apellido:";
             this.label5.Text = "Apellido:";
             // 
             // label6
@@ -215,6 +188,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 16);
             this.label6.TabIndex = 26;
+            this.label6.Tag = "Telefono:";
             this.label6.Text = "Telefono:";
             // 
             // label7
@@ -226,6 +200,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 16);
             this.label7.TabIndex = 27;
+            this.label7.Tag = "Dirección:";
             this.label7.Text = "Dirección:";
             // 
             // label8
@@ -237,6 +212,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 16);
             this.label8.TabIndex = 28;
+            this.label8.Tag = "Empresa";
             this.label8.Text = "Empresa:";
             // 
             // label9
@@ -248,6 +224,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 16);
             this.label9.TabIndex = 29;
+            this.label9.Tag = "Fecha Nac:";
             this.label9.Text = "Fecha Nac:";
             // 
             // label10
@@ -259,6 +236,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 16);
             this.label10.TabIndex = 30;
+            this.label10.Tag = "Celular:";
             this.label10.Text = "Celular:";
             // 
             // txtNombreCliente
@@ -375,27 +353,6 @@
             this.txtEmpresa.TabIndex = 37;
             this.txtEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txt_buscador
-            // 
-            this.txt_buscador.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_buscador.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_buscador.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_buscador.ForeColor = System.Drawing.Color.White;
-            this.txt_buscador.HintForeColor = System.Drawing.Color.White;
-            this.txt_buscador.HintText = "";
-            this.txt_buscador.isPassword = false;
-            this.txt_buscador.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txt_buscador.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_buscador.LineMouseHoverColor = System.Drawing.Color.DimGray;
-            this.txt_buscador.LineThickness = 3;
-            this.txt_buscador.Location = new System.Drawing.Point(666, 256);
-            this.txt_buscador.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_buscador.Name = "txt_buscador";
-            this.txt_buscador.Size = new System.Drawing.Size(219, 31);
-            this.txt_buscador.TabIndex = 38;
-            this.txt_buscador.Text = "Nombre";
-            this.txt_buscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // DTPFechaNac
             // 
             this.DTPFechaNac.BackColor = System.Drawing.Color.Transparent;
@@ -487,7 +444,6 @@
             this.Controls.Add(this.txtIDCliente);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.DTPFechaNac);
-            this.Controls.Add(this.txt_buscador);
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.txtDireccion);
@@ -504,18 +460,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUpdateCliente);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeleteCliente);
             this.Controls.Add(this.btnAgregarCliente);
-            this.Controls.Add(this.bunifuImageButton1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Clientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateCliente)).EndInit();
@@ -527,12 +480,10 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton btnAgregarCliente;
         private Bunifu.Framework.UI.BunifuImageButton btnDeleteCliente;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton btnUpdateCliente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
@@ -549,7 +500,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtDireccion;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtCelular;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmpresa;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_buscador;
         private Bunifu.Framework.UI.BunifuDatepicker DTPFechaNac;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtIDCliente;
         private System.Windows.Forms.Label label11;
