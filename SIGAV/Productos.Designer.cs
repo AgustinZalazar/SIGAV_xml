@@ -98,6 +98,9 @@
             // 
             // txtIDProducto
             // 
+            this.txtIDProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtIDProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtIDProducto.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtIDProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIDProducto.Enabled = false;
             this.txtIDProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -111,6 +114,7 @@
             this.txtIDProducto.LineThickness = 3;
             this.txtIDProducto.Location = new System.Drawing.Point(120, 98);
             this.txtIDProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIDProducto.MaxLength = 32767;
             this.txtIDProducto.Name = "txtIDProducto";
             this.txtIDProducto.Size = new System.Drawing.Size(240, 24);
             this.txtIDProducto.TabIndex = 75;
@@ -130,6 +134,9 @@
             // 
             // txtPrecio
             // 
+            this.txtPrecio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPrecio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtPrecio.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPrecio.ForeColor = System.Drawing.Color.White;
@@ -142,6 +149,7 @@
             this.txtPrecio.LineThickness = 3;
             this.txtPrecio.Location = new System.Drawing.Point(120, 195);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecio.MaxLength = 32767;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(240, 24);
             this.txtPrecio.TabIndex = 68;
@@ -149,6 +157,9 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDescripcion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtDescripcion.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtDescripcion.ForeColor = System.Drawing.Color.White;
@@ -161,6 +172,7 @@
             this.txtDescripcion.LineThickness = 3;
             this.txtDescripcion.Location = new System.Drawing.Point(120, 163);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(240, 24);
             this.txtDescripcion.TabIndex = 67;
@@ -168,6 +180,9 @@
             // 
             // txtNombreProd
             // 
+            this.txtNombreProd.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombreProd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNombreProd.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreProd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreProd.ForeColor = System.Drawing.Color.White;
@@ -180,6 +195,7 @@
             this.txtNombreProd.LineThickness = 3;
             this.txtNombreProd.Location = new System.Drawing.Point(120, 127);
             this.txtNombreProd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreProd.MaxLength = 32767;
             this.txtNombreProd.Name = "txtNombreProd";
             this.txtNombreProd.Size = new System.Drawing.Size(240, 23);
             this.txtNombreProd.TabIndex = 66;
@@ -190,12 +206,12 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(31, 201);
+            this.label6.Location = new System.Drawing.Point(16, 203);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 16);
+            this.label6.Size = new System.Drawing.Size(103, 16);
             this.label6.TabIndex = 61;
             this.label6.Tag = "Precio:";
-            this.label6.Text = "Precio:";
+            this.label6.Text = "Precio x unidad:";
             // 
             // label5
             // 
@@ -228,9 +244,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(19, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(245, 20);
+            this.label3.Size = new System.Drawing.Size(262, 20);
             this.label3.TabIndex = 58;
-            this.label3.Text = "Agregar, eliminar y editar clientes:";
+            this.label3.Text = "Agregar, eliminar y editar productos:";
             // 
             // bunifuSeparator1
             // 
@@ -314,6 +330,9 @@
             // 
             // txtTipo
             // 
+            this.txtTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTipo.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTipo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTipo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtTipo.ForeColor = System.Drawing.Color.White;
@@ -326,6 +345,7 @@
             this.txtTipo.LineThickness = 3;
             this.txtTipo.Location = new System.Drawing.Point(492, 129);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipo.MaxLength = 32767;
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(240, 24);
             this.txtTipo.TabIndex = 80;
@@ -333,6 +353,9 @@
             // 
             // txtCantidad
             // 
+            this.txtCantidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCantidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCantidad.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCantidad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtCantidad.ForeColor = System.Drawing.Color.White;
@@ -345,6 +368,7 @@
             this.txtCantidad.LineThickness = 3;
             this.txtCantidad.Location = new System.Drawing.Point(492, 97);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCantidad.MaxLength = 32767;
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(240, 24);
             this.txtCantidad.TabIndex = 79;

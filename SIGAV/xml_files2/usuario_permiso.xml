@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>1-F6</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>4-F3</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>4-P4</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>2-F6</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>2-P2</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>2-F4</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>5-F4</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>6-F6</id_usuario_permiso>
+  </user_permiso>
+  <user_permiso>
+    <id_usuario_permiso>7-F1</id_usuario_permiso>
+  </user_permiso>
+</user_permiso>

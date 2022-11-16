@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGAV-MPP", "SIGAV-MPP\SIGA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGAV-Acceso", "SIGAV-Acceso\SIGAV-Acceso.csproj", "{CC5931F8-E918-43C1-AA74-63CC2A137079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGAV-Interfaces", "SIGAV-Interfaces\SIGAV-Interfaces.csproj", "{8D33714A-83D2-47BB-BD95-28E78957E55A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGAV-Servicios", "Servicios\SIGAV-Servicios.csproj", "{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstallerSIGAV", "InstallerSIGAV\InstallerSIGAV.vdproj", "{793C68DD-23C2-4F28-B5C9-D9A633DEAD58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,12 @@ Global
 		{CC5931F8-E918-43C1-AA74-63CC2A137079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC5931F8-E918-43C1-AA74-63CC2A137079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC5931F8-E918-43C1-AA74-63CC2A137079}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D33714A-83D2-47BB-BD95-28E78957E55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D33714A-83D2-47BB-BD95-28E78957E55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D33714A-83D2-47BB-BD95-28E78957E55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D33714A-83D2-47BB-BD95-28E78957E55A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83D1D7AB-F898-4111-B8E7-DE3EFC3F3F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793C68DD-23C2-4F28-B5C9-D9A633DEAD58}.Debug|Any CPU.ActiveCfg = Debug
+		{793C68DD-23C2-4F28-B5C9-D9A633DEAD58}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

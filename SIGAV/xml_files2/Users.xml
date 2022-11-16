@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Usuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Usuario ID="1">
+    <Username>admin</Username>
+    <Password>GaKFQUS2Oo92F6byJQGbEg==</Password>
+    <empresa>Corralon El Lider</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>agustin</nombre>
+    <puntaje>5</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="2">
+    <Username>admin_ventas</Username>
+    <Password>qxGL/tdRug8W9OcF0leTsw==</Password>
+    <empresa>Corralon El Lider</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Jose Zalazar</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="3">
+    <Username>ventas</Username>
+    <Password>18t5O1GaqJuwWgPcdYBsIQ==</Password>
+    <empresa>Corralon El Lider</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Pepe</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="4">
+    <Username>admin_ofertas</Username>
+    <Password>SIHw4xb8SRpt6uoEWHEIrQ==</Password>
+    <empresa>Corralon El Lider</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Pablo Olivetto</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="5">
+    <Username>deposito</Username>
+    <Password>F5riTANAcp5tFZiTin51iA==</Password>
+    <empresa>Corralon El Lider</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Pedro</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="6">
+    <Username>admin_riva</Username>
+    <Password>GaKFQUS2Oo92F6byJQGbEg==</Password>
+    <empresa>RIVA</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>luis</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="7">
+    <Username>admin_ventas_riva</Username>
+    <Password>qXK+wR/Wc1JQwwEpTI95xw==</Password>
+    <empresa>RIVA</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Jorge</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+  <BE_Usuario ID="8">
+    <Username>ventas_riva</Username>
+    <Password>fm4mJKtf+aLcy/TOEvw77Q==</Password>
+    <empresa>RIVA</empresa>
+    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <nombre>Alfonso</nombre>
+    <puntaje>0</puntaje>
+    <Permisos />
+  </BE_Usuario>
+</ArrayOfBE_Usuario>

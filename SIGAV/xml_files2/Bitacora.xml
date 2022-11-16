@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEE_Bitacora xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EE_Bitacora ID_Bitacora="1">
+    <Usuario>agustin</Usuario>
+    <Log>System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SIGAV.Clientes.btnAgregarCliente_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Clientes.cs:línea 71</Log>
+    <Fecha>2022-07-27T19:06:42.4102378-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="2">
+    <Usuario>agustin</Usuario>
+    <Log>Error en el documento XML (11, 6).</Log>
+    <Fecha>2022-07-29T17:05:10.52449-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="3">
+    <Usuario>agustin2</Usuario>
+    <Log>Error en el documento XML (11, 5).</Log>
+    <Fecha>2022-07-30T01:28:19.8323873-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="4">
+    <Usuario>agustin2</Usuario>
+    <Log>Error en el documento XML (24, 5).</Log>
+    <Fecha>2022-07-30T01:32:49.3106804-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="5">
+    <Usuario>agustin2</Usuario>
+    <Log>Referencia a objeto no establecida como instancia de un objeto.</Log>
+    <Fecha>2022-08-01T11:14:11.5835504-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="6">
+    <Usuario>agustin2</Usuario>
+    <Log>Error en el documento XML (24, 5).</Log>
+    <Fecha>2022-08-01T11:16:14.1230177-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="7">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:57:29.0982251-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="8">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:57:43.918744-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="9">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:58:08.8337576-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="10">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:58:17.3803284-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="11">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:59:19.9851293-03:00</Fecha>
+  </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="12">
+    <Usuario>agustin</Usuario>
+    <Log>System.Security.Cryptography.CryptographicException: Datos incorrectos.
+
+   en System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   en System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   en System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   en Servicios.S_Encriptado.Desencriptar(String textoEncriptado) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\Servicios\S_Encriptado.cs:línea 62
+   en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
+    <Fecha>2022-08-06T20:59:24.8724495-03:00</Fecha>
+  </EE_Bitacora>
+</ArrayOfEE_Bitacora>

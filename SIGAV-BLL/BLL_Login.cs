@@ -16,7 +16,12 @@ namespace SIGAV_BLL
             MPPUsuario MPP_User = new MPPUsuario();
             return User = MPP_User.ListarUn_User(_Usuario);
         }
-
+        public BE_Usuario ListarUnUserXML(BE_Usuario _Usuario)
+        {
+            BE_Usuario User = new BE_Usuario();
+            MPPUsuario MPP_User = new MPPUsuario();
+            return User = MPP_User.ListarUn_UserXML(_Usuario);
+        }
         public BE_Usuario Logear(string Username, string Password)
         {
             BE_Usuario _Usuario = new BE_Usuario();
@@ -25,9 +30,16 @@ namespace SIGAV_BLL
 
             _Usuario.Username = Username;
             _Usuario.Password = Password;
-            _Usuario2 = _Login.ListarUnUser(_Usuario);
+            _Usuario2 = _Login.ListarUnUserXML(_Usuario);
 
             return _Usuario2;
+        }
+
+        public bool CrearUserXML(BE_Usuario _Usuario)
+        {
+            bool resultado = new bool();
+            MPPUsuario MPP_User = new MPPUsuario();
+            return resultado = MPP_User.CrearUserXML(_Usuario);
         }
     }
 }

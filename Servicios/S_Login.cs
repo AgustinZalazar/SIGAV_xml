@@ -1,9 +1,9 @@
-﻿using SIGAV_Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EE;
 
 namespace Servicios
 {
@@ -11,8 +11,8 @@ namespace Servicios
     {
         private static S_Login instance;
 
-        private IUsuario _usuario;
-        public IUsuario Usuario
+        private BE_Usuario _usuario;
+        public BE_Usuario Usuario
         {
             get
             {
@@ -20,7 +20,7 @@ namespace Servicios
             }
         }
         private static object _lock = new Object();
-        public static void Login(IUsuario usuario)
+        public static void Login(BE_Usuario usuario)
         {
             lock (_lock)
             {

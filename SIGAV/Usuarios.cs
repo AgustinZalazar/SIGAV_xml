@@ -12,12 +12,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Servicios.Multi_idioma;
-using SIGAV_Interfaces;
 
 namespace SIGAV
 {
-    public partial class Usuarios : Form, IObservador
+    public partial class Usuarios : Form
     {
         public Usuarios()
         {
@@ -29,22 +27,25 @@ namespace SIGAV
         BLL_Usuario BLL_User = new BLL_Usuario();
         BE_Usuario EE_User = new BE_Usuario();
         BLL_Permisos bLL_Permiso = new BLL_Permisos();
-        List<BE_Permiso> list_permisos = new List<BE_Permiso>();
-        BE_Idioma eE_Idioma = new BE_Idioma();
+        List<BE_Familia> list_permisos_familia = new List<BE_Familia>();
+        List<BE_Patente> list_permisos_patente = new List<BE_Patente>();
         EE.BE_Traduccion ee_Traduccion = new BE_Traduccion();
+        EE_Bitacora bitacora = new EE_Bitacora();
+        BLL_Bitacora bll_bitacora = new BLL_Bitacora();
+        S_Login log = S_Login.ObtenerSesion;
 
         Patente familia = new Patente();
         public void LlenarListaDePermisos()
         {
-            list_permisos = bLL_Permiso.ListarPatente();
-            cbPatentes.DataSource = list_permisos;
+            list_permisos_patente = bLL_Permiso.ListarPermisos_Patente();
+            cbPatentes.DataSource = list_permisos_patente;
             cbPatentes.DisplayMember = "Nombre";
         }
 
         public void LlenarListaDePermisos_Familia()
         {
-            list_permisos = bLL_Permiso.ListarFamilias();
-            cbFamilia.DataSource = list_permisos;
+            list_permisos_familia = bLL_Permiso.ListarPermisos_Familia();
+            cbFamilia.DataSource = list_permisos_familia;
             cbFamilia.DisplayMember = "Nombre";
 
         }
@@ -55,26 +56,41 @@ namespace SIGAV
 
         public void LimpiartTxts()
         {
-            txtUsername.Text = "";
-            txtPassword.Text = "";
-            TxtUserID.Text = "";
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+            txtID.Text = "";
             txtNombre.Text = "";
             txtEmpresa.Text = "";
+            txtDireccion.Text = "";
         }
         public void ActualizarDGvUsers()
         {
             DGVUsers.DataSource = null;
-            DGVUsers.DataSource = BLL_User.ListarUsers();
+            DGVUsers.DataSource = BLL_User.ListarUsers(log.Usuario.empresa);
+            DGVUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+        public int obtenerUltimoID()
+        {
+            List<BE_Usuario> lista = BLL_User.ListarUsers(log.Usuario.empresa);
+            int lastID = 1;
+            if (lista.Count > 0)
+            {
+                lastID = lista.Last().ID + 1;
+            }
+            return lastID;
         }
         private void BunifuImageButton2_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUsername.Text) && !string.IsNullOrEmpty(txtPassword.Text))
+            if (!string.IsNullOrEmpty(txtUsuario.Text) && !string.IsNullOrEmpty(txtContraseña.Text))
             {
-                EE_User.Username = txtUsername.Text;
-                EE_User.Password = S_Encriptado.Encriptar(txtPassword.Text);
-                EE_User.nombre = txtNombre.Text;
-                EE_User.empresa = txtEmpresa.Text;
-                BLL_User.CrearUser(EE_User);
+                BE_Usuario new_user = new BE_Usuario();
+                new_user.ID = obtenerUltimoID();
+                new_user.Username = txtUsuario.Text;
+                new_user.Password = S_Encriptado.Encriptar(txtContraseña.Text);
+                new_user.nombre = txtNombre.Text;
+                new_user.empresa = txtEmpresa.Text;
+                new_user.direccion_empresa = txtDireccion.Text;
+                BLL_User.CrearUser(new_user);
                 MessageBox.Show("Usuario agregado con exito.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ActualizarDGvUsers();
                 LimpiartTxts();
@@ -87,19 +103,29 @@ namespace SIGAV
 
         private void BtnEliminarUser_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(TxtUserID.Text))
+            try
             {
-                EE_User.ID = Convert.ToInt32(TxtUserID.Text);
-                EE_User.Username = txtUsername.Text;
-                MessageBox.Show("Desea eliminar  " + EE_User.Username + "?", "Alerta", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
-                BLL_User.EliminarUser(EE_User);
-                ActualizarDGvUsers();
-                LimpiartTxts();
+                if (!string.IsNullOrEmpty(txtID.Text))
+                {
+                    MessageBox.Show("Desea eliminar  " + EE_User.Username + "?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    BLL_User.EliminarUser(EE_User);
+                    ActualizarDGvUsers();
+                    LimpiartTxts();
+                }
+                else
+                {
+                    MessageBox.Show("Error,seleccione un usuario");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error,seleccione un usuario");
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void DGVUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -107,12 +133,12 @@ namespace SIGAV
             if (e.ColumnIndex != 0)
             {
                 EE_User = (BE_Usuario)DGVUsers.Rows[e.RowIndex].DataBoundItem;
-                TxtUserID.Text = Convert.ToString(EE_User.ID);
-                txtUsername.Text = EE_User.Username;
-                txtPassword.Text = EE_User.Password;
+                txtID.Text = Convert.ToString(EE_User.ID);
+                txtUsuario.Text = EE_User.Username;
+                txtContraseña.Text = EE_User.Password;
                 txtNombre.Text = EE_User.nombre;
                 txtEmpresa.Text = EE_User.empresa;
-                bLL_Permiso.ListUserByPermisos(EE_User);
+                txtDireccion.Text = EE_User.direccion_empresa;
                 MostrarPermisos(EE_User);
             }
         }
@@ -131,6 +157,8 @@ namespace SIGAV
         void MostrarPermisos(BE_Usuario user)
         {
             this.TV_PermisosUser.Nodes.Clear();
+
+            if (user.Permisos.Count == 0)  bLL_Permiso.ListUserByPermisos(EE_User);
             TreeNode root = new TreeNode(user.Username);
 
             foreach (var item in user.Permisos)
@@ -141,91 +169,227 @@ namespace SIGAV
             this.TV_PermisosUser.Nodes.Add(root);
             this.TV_PermisosUser.ExpandAll();
         }
-        private void BunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Btn_AgregarFamiliaUser_Click(object sender, EventArgs e)
         {
-            if (EE_User != null)
+            try
             {
-                var familia = (BE_Familia)cbFamilia.SelectedItem;
-                if (familia != null)
+                if (EE_User != null)
                 {
-                    var esta = false;
-                    foreach (var item in EE_User.Permisos)
+                    var familia = (BE_Familia)cbFamilia.SelectedItem;
+                    if (familia != null)
                     {
-                        if (bLL_Permiso.Existe(item, familia.ID))
+                        var esta = false;
+                        foreach (var item in EE_User.Permisos)
                         {
-                            esta = true;
+                            if (bLL_Permiso.Existe(item, familia.ID))
+                            {
+                                esta = true;
+                            }
+                        }
+
+                        if (esta)
+                            MessageBox.Show("El usuario ya tiene la familia seleccionada");
+                        else
+                        {
+                            bLL_Permiso.AsignarPermisos(familia.ID, EE_User.ID);
+                            EE_User.Permisos.Add(familia);
+                            MostrarPermisos(EE_User);
                         }
                     }
-
-                    if (esta)
-                        MessageBox.Show("El usuario ya tiene la familia seleccionada");
-                    else
-                    {                   
-                        bLL_Permiso.AsignarPermisos(familia.ID, EE_User.ID);
-                        EE_User.Permisos.Add(familia);
-                        MostrarPermisos(EE_User);                    
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un usuario");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Seleccione un usuario");
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-     
+            
         }
 
         private void btnAgregarPatenteUser_Click(object sender, EventArgs e)
         {
-            if (EE_User != null)
+            try
             {
-                var patente = (BE_Patente)cbPatentes.SelectedItem;
-                if (patente != null)
+                if (EE_User != null)
                 {
-                    var esta = false;
-                    foreach (var item in EE_User.Permisos)
+                    var patente = (BE_Patente)cbPatentes.SelectedItem;
+                    if (patente != null)
                     {
-                        if (bLL_Permiso.Existe(item, patente.ID))
+                        var esta = false;
+                        foreach (var item in EE_User.Permisos)
                         {
-                            esta = true;
+                            if (bLL_Permiso.Existe(item, patente.ID))
+                            {
+                                esta = true;
+                            }
+                        }
+
+                        if (esta)
+                            MessageBox.Show("El usuario ya tiene la patente seleccionada");
+                        else
+                        {
+                            bLL_Permiso.AsignarPermisos(patente.ID, EE_User.ID);
+                            EE_User.Permisos.Add(patente);
+                            MostrarPermisos(EE_User);
                         }
                     }
-
-                    if (esta)
-                        MessageBox.Show("El usuario ya tiene la patente seleccionada");
-                    else
-                    {
-                        bLL_Permiso.AsignarPermisos(patente.ID, EE_User.ID);
-                        EE_User.Permisos.Add(patente);
-                        MostrarPermisos(EE_User);
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un usuario");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Seleccione un usuario");
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiartTxts();
+        }
+
+        private void BtnModificarUser_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (EE_User != null)
+                {
+                    BE_Usuario updated_user = new BE_Usuario();
+                    updated_user.ID = Convert.ToInt32(txtID.Text);
+                    updated_user.Username = txtUsuario.Text;
+                    if (EE_User.Password == txtContraseña.Text)
+                    {
+                        updated_user.Password = txtContraseña.Text;
+                    }
+                    else
+                    {
+                        updated_user.Password = S_Encriptado.Encriptar(txtContraseña.Text);
+                    }
+                    updated_user.nombre = txtNombre.Text;
+                    updated_user.empresa = txtEmpresa.Text;
+                    updated_user.direccion_empresa = txtDireccion.Text;
+                    BLL_User.UpdateUser(updated_user);
+                    ActualizarDGvUsers();
+                    LimpiartTxts();
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un usuario");
+                }                 
+            }
+            catch (Exception ex)
+            {
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        void ChangeLenguage()
+        private void btnEliminarFamilia_Click(object sender, EventArgs e)
         {
-            eE_Idioma = EE.BE_Idioma.SharedData.SelectedLenguage;
-            Traduccion.Añadir(this);
-            Traduccion.Idioma(eE_Idioma);
-            update();
-        }
-        public void update()
-        {
-            Traduccion.Traducir(this);
+            try
+            {
+                if (EE_User != null)
+                {
+                    var familia = (BE_Familia)cbFamilia.SelectedItem;
+                    if (familia != null)
+                    {
+                        var esta = false;
+                        foreach (var item in EE_User.Permisos)
+                        {
+                            if (bLL_Permiso.Existe(item, familia.ID))
+                            {
+                                esta = true;
+                            }
+                        }
+
+                        if (!esta)
+                            MessageBox.Show("El usuario no tiene la familia seleccionada");
+                        else
+                        {
+                            bLL_Permiso.DeleteUsuario_Permiso(EE_User, familia.ID);
+                            MostrarPermisos(EE_User);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void Usuarios_Load(object sender, EventArgs e)
+        private void btnEliminarPatente_Click(object sender, EventArgs e)
         {
-            ChangeLenguage();
+            try
+            {
+                if (EE_User != null)
+                {
+                    var patente = (BE_Patente)cbPatentes.SelectedItem;
+                    if (patente != null)
+                    {
+                        var esta = false;
+                        foreach (var item in EE_User.Permisos)
+                        {
+                            if (bLL_Permiso.Existe(item, patente.ID))
+                            {
+                                esta = true;
+                            }
+                        }
+
+                        if (!esta)
+                            MessageBox.Show("El usuario no tiene la patente seleccionada");
+                        else
+                        {
+                            bLL_Permiso.DeleteUsuario_Permiso(EE_User, patente.ID);
+                            MostrarPermisos(EE_User);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.ToString();
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

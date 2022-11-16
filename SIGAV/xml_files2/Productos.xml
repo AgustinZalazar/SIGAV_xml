@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Producto ID="1">
+    <Nombre>Cemento</Nombre>
+    <Descripcion>Bolsa</Descripcion>
+    <Cantidad>300</Cantidad>
+    <Precio>4000</Precio>
+    <Tipo>Aditivos  Pegamentos</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="2">
+    <Nombre>Cal</Nombre>
+    <Descripcion>bolsa 1kg</Descripcion>
+    <Cantidad>180</Cantidad>
+    <Precio>2500</Precio>
+    <Tipo>Aditivos Pegamentos</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="3">
+    <Nombre>Revoque Fino</Nombre>
+    <Descripcion>bolsa 3kg</Descripcion>
+    <Cantidad>75</Cantidad>
+    <Precio>3000</Precio>
+    <Tipo>Aditivos Pegamentos</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="4">
+    <Nombre>Hierros</Nombre>
+    <Descripcion>varillas</Descripcion>
+    <Cantidad>125</Cantidad>
+    <Precio>1500</Precio>
+    <Tipo>Hierros</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="5">
+    <Nombre>Mallas de hierro</Nombre>
+    <Descripcion>15x15</Descripcion>
+    <Cantidad>200</Cantidad>
+    <Precio>3700</Precio>
+    <Tipo>Hierros</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="6">
+    <Nombre>Clavos</Nombre>
+    <Descripcion>bolsa de 20 clavos</Descripcion>
+    <Cantidad>500</Cantidad>
+    <Precio>1500</Precio>
+    <Tipo>Hierros</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="7">
+    <Nombre>Arena</Nombre>
+    <Descripcion>bolson de 1000kg</Descripcion>
+    <Cantidad>40</Cantidad>
+    <Precio>7000</Precio>
+    <Tipo>Aridos</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="8">
+    <Nombre>Piedra</Nombre>
+    <Descripcion>piedra 6 20</Descripcion>
+    <Cantidad>58</Cantidad>
+    <Precio>3000</Precio>
+    <Tipo>Aridos</Tipo>
+    <Empresa>Corralon El Lider</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="9">
+    <Nombre>Cal</Nombre>
+    <Descripcion>bolsa 1kg</Descripcion>
+    <Cantidad>50</Cantidad>
+    <Precio>2500</Precio>
+    <Tipo>Aditivos Pegamentos</Tipo>
+    <Empresa>RIVA</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="10">
+    <Nombre>Revoque Fino</Nombre>
+    <Descripcion>bolsa 3kg</Descripcion>
+    <Cantidad>3</Cantidad>
+    <Precio>3000</Precio>
+    <Tipo>Aditivos Pegamentos</Tipo>
+    <Empresa>RIVA</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="11">
+    <Nombre>Mallas de hierro</Nombre>
+    <Descripcion>15x15</Descripcion>
+    <Cantidad>50</Cantidad>
+    <Precio>3700</Precio>
+    <Tipo>Hierros</Tipo>
+    <Empresa>RIVA</Empresa>
+  </BE_Producto>
+  <BE_Producto ID="12">
+    <Nombre>Piedra</Nombre>
+    <Descripcion>piedra 6 20</Descripcion>
+    <Cantidad>58</Cantidad>
+    <Precio>3000</Precio>
+    <Tipo>Aridos</Tipo>
+    <Empresa>RIVA</Empresa>
+  </BE_Producto>
+</ArrayOfBE_Producto>

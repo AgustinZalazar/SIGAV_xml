@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Cliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Cliente ID="1">
+    <Nombre>Pedro</Nombre>
+    <Apellido>Zalazar</Apellido>
+    <Telefono>1144556688</Telefono>
+    <Direccion>Calle 1234</Direccion>
+    <Celular>1144556688</Celular>
+    <Nombre_Empresa>RIVA</Nombre_Empresa>
+  </BE_Cliente>
+  <BE_Cliente ID="2">
+    <Nombre>Luis</Nombre>
+    <Apellido>Rodriguez</Apellido>
+    <Telefono>123123123</Telefono>
+    <Direccion>Calle 1234</Direccion>
+    <Celular>123123123</Celular>
+    <Nombre_Empresa>RIVA</Nombre_Empresa>
+  </BE_Cliente>
+</ArrayOfBE_Cliente>

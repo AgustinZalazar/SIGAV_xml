@@ -13,7 +13,7 @@ namespace SIGAV_BLL
         public bool InsertarBitacora(EE_Bitacora bitacora)
         {
             MPP_Bitacora mpp_Bitacora = new MPP_Bitacora();
-            bool resultado = mpp_Bitacora.InsertBitacora(bitacora);
+            bool resultado = mpp_Bitacora.CrearLogXML(bitacora);
             return resultado;
         }
 

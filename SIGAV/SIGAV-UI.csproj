@@ -8,11 +8,26 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SIGAV</RootNamespace>
     <AssemblyName>SIGAV</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,9 +48,123 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLoader, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Include="MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.2.0\lib\net45\MaterialDesignColors.dll</HintPath>
@@ -107,23 +236,11 @@
     <Compile Include="Dashboard-Menu.Designer.cs">
       <DependentUpon>Dashboard-Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="Envios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Envios.Designer.cs">
       <DependentUpon>Envios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Idiomas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Idiomas.Designer.cs">
-      <DependentUpon>Idiomas.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -145,6 +262,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,14 +300,8 @@
     <EmbeddedResource Include="Dashboard-Menu.resx">
       <DependentUpon>Dashboard-Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Envios.resx">
       <DependentUpon>Envios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Idiomas.resx">
-      <DependentUpon>Idiomas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -192,14 +314,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +327,7 @@
       <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -222,10 +343,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Logo-SIGAV.png" />
+    <None Include="Resources\template.html" />
+    <Content Include="xml_files2\Bitacora.xml" />
+    <Content Include="xml_files2\Clientes.xml" />
+    <Content Include="xml_files2\Familia.xml" />
+    <Content Include="xml_files2\Ofertas.xml" />
+    <Content Include="xml_files2\Patente.xml" />
+    <Content Include="xml_files2\permiso_permiso.xml" />
+    <Content Include="xml_files2\Productos.xml" />
+    <Content Include="xml_files2\Users.xml" />
+    <Content Include="xml_files2\usuario_permiso.xml" />
     <None Include="Icons\icons8-usuario-30.png" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EE\SIGAV-BE.csproj">
       <Project>{156cc006-5819-4f1b-87a6-d50cd0168e22}</Project>
@@ -239,10 +381,119 @@
       <Project>{575ca320-3f42-4560-ae02-42969f6521be}</Project>
       <Name>SIGAV-BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SIGAV-Interfaces\SIGAV-Interfaces.csproj">
-      <Project>{8D33714A-83D2-47BB-BD95-28E78957E55A}</Project>
-      <Name>SIGAV-Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="xml_files\Bitacora.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Clientes.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Envios.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Familia.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Ofertas.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Patente.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\permiso_permiso.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Productos.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Users.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\usuario_permiso.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="xml_files\Ventas.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

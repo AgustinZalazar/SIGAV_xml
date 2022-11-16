@@ -28,41 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Envios));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbEstado_Envio = new System.Windows.Forms.ComboBox();
-            this.Btn_GuardarEstadoEnvio = new Bunifu.Framework.UI.BunifuThinButton2();
             this.DGV_Envios_Ventas = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnEnviar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cbEstado_Producto = new System.Windows.Forms.ComboBox();
             this.DGV_Envios_compras = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label4 = new System.Windows.Forms.Label();
+            this.cbPuntaje = new System.Windows.Forms.ComboBox();
+            this.crearRemito = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardarEstadoProd = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnEnviar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_GuardarEstadoEnvio = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Envios_Ventas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Envios_compras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(968, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 71;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bunifuSeparator1
             // 
@@ -90,65 +80,30 @@
             this.label1.Tag = "Ventas";
             this.label1.Text = "Envios";
             // 
-            // cbEstado_Envio
-            // 
-            this.cbEstado_Envio.FormattingEnabled = true;
-            this.cbEstado_Envio.Location = new System.Drawing.Point(18, 317);
-            this.cbEstado_Envio.Name = "cbEstado_Envio";
-            this.cbEstado_Envio.Size = new System.Drawing.Size(153, 21);
-            this.cbEstado_Envio.TabIndex = 80;
-            // 
-            // Btn_GuardarEstadoEnvio
-            // 
-            this.Btn_GuardarEstadoEnvio.ActiveBorderThickness = 1;
-            this.Btn_GuardarEstadoEnvio.ActiveCornerRadius = 5;
-            this.Btn_GuardarEstadoEnvio.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.Btn_GuardarEstadoEnvio.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_GuardarEstadoEnvio.ActiveLineColor = System.Drawing.Color.Gray;
-            this.Btn_GuardarEstadoEnvio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
-            this.Btn_GuardarEstadoEnvio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_GuardarEstadoEnvio.BackgroundImage")));
-            this.Btn_GuardarEstadoEnvio.ButtonText = "Guardar estado del envio";
-            this.Btn_GuardarEstadoEnvio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_GuardarEstadoEnvio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_GuardarEstadoEnvio.ForeColor = System.Drawing.Color.White;
-            this.Btn_GuardarEstadoEnvio.IdleBorderThickness = 1;
-            this.Btn_GuardarEstadoEnvio.IdleCornerRadius = 5;
-            this.Btn_GuardarEstadoEnvio.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_GuardarEstadoEnvio.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_GuardarEstadoEnvio.IdleLineColor = System.Drawing.Color.White;
-            this.Btn_GuardarEstadoEnvio.Location = new System.Drawing.Point(16, 346);
-            this.Btn_GuardarEstadoEnvio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_GuardarEstadoEnvio.Name = "Btn_GuardarEstadoEnvio";
-            this.Btn_GuardarEstadoEnvio.Size = new System.Drawing.Size(185, 37);
-            this.Btn_GuardarEstadoEnvio.TabIndex = 81;
-            this.Btn_GuardarEstadoEnvio.Tag = "Guardar estado del envio";
-            this.Btn_GuardarEstadoEnvio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_GuardarEstadoEnvio.Click += new System.EventHandler(this.Btn_GuardarEstadoEnvio_Click);
-            // 
             // DGV_Envios_Ventas
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DGV_Envios_Ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGV_Envios_Ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGV_Envios_Ventas.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DGV_Envios_Ventas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_Envios_Ventas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Envios_Ventas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Envios_Ventas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGV_Envios_Ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Envios_Ventas.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Envios_Ventas.DefaultCellStyle = dataGridViewCellStyle3;
             this.DGV_Envios_Ventas.DoubleBuffered = true;
             this.DGV_Envios_Ventas.EnableHeadersVisualStyles = false;
             this.DGV_Envios_Ventas.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -171,6 +126,150 @@
             this.label2.TabIndex = 83;
             this.label2.Tag = "Listado de productos:";
             this.label2.Text = "Envios por mandar:";
+            // 
+            // cbEstado_Producto
+            // 
+            this.cbEstado_Producto.FormattingEnabled = true;
+            this.cbEstado_Producto.Location = new System.Drawing.Point(258, 317);
+            this.cbEstado_Producto.Name = "cbEstado_Producto";
+            this.cbEstado_Producto.Size = new System.Drawing.Size(153, 21);
+            this.cbEstado_Producto.TabIndex = 85;
+            // 
+            // DGV_Envios_compras
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGV_Envios_compras.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DGV_Envios_compras.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DGV_Envios_compras.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV_Envios_compras.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Envios_compras.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DGV_Envios_compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Envios_compras.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DGV_Envios_compras.DoubleBuffered = true;
+            this.DGV_Envios_compras.EnableHeadersVisualStyles = false;
+            this.DGV_Envios_compras.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.DGV_Envios_compras.HeaderForeColor = System.Drawing.Color.White;
+            this.DGV_Envios_compras.Location = new System.Drawing.Point(16, 109);
+            this.DGV_Envios_compras.Name = "DGV_Envios_compras";
+            this.DGV_Envios_compras.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGV_Envios_compras.Size = new System.Drawing.Size(700, 190);
+            this.DGV_Envios_compras.TabIndex = 86;
+            this.DGV_Envios_compras.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_Envios_CellMouseClick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 20);
+            this.label4.TabIndex = 87;
+            this.label4.Tag = "Listado de productos:";
+            this.label4.Text = "Envios recibidos:";
+            // 
+            // cbPuntaje
+            // 
+            this.cbPuntaje.FormattingEnabled = true;
+            this.cbPuntaje.Location = new System.Drawing.Point(518, 317);
+            this.cbPuntaje.Name = "cbPuntaje";
+            this.cbPuntaje.Size = new System.Drawing.Size(153, 21);
+            this.cbPuntaje.TabIndex = 89;
+            // 
+            // crearRemito
+            // 
+            this.crearRemito.ActiveBorderThickness = 1;
+            this.crearRemito.ActiveCornerRadius = 5;
+            this.crearRemito.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.crearRemito.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.crearRemito.ActiveLineColor = System.Drawing.Color.Gray;
+            this.crearRemito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.crearRemito.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("crearRemito.BackgroundImage")));
+            this.crearRemito.ButtonText = "Generar remito de envio";
+            this.crearRemito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.crearRemito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crearRemito.ForeColor = System.Drawing.Color.White;
+            this.crearRemito.IdleBorderThickness = 1;
+            this.crearRemito.IdleCornerRadius = 5;
+            this.crearRemito.IdleFillColor = System.Drawing.Color.Transparent;
+            this.crearRemito.IdleForecolor = System.Drawing.Color.White;
+            this.crearRemito.IdleLineColor = System.Drawing.Color.White;
+            this.crearRemito.Location = new System.Drawing.Point(212, 637);
+            this.crearRemito.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.crearRemito.Name = "crearRemito";
+            this.crearRemito.Size = new System.Drawing.Size(218, 39);
+            this.crearRemito.TabIndex = 91;
+            this.crearRemito.Tag = "";
+            this.crearRemito.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.crearRemito.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 5;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Calificar vendedor";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 5;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(496, 346);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(185, 37);
+            this.bunifuThinButton21.TabIndex = 90;
+            this.bunifuThinButton21.Tag = "Calificar vendedor";
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // btnGuardarEstadoProd
+            // 
+            this.btnGuardarEstadoProd.ActiveBorderThickness = 1;
+            this.btnGuardarEstadoProd.ActiveCornerRadius = 5;
+            this.btnGuardarEstadoProd.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnGuardarEstadoProd.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnGuardarEstadoProd.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnGuardarEstadoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.btnGuardarEstadoProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarEstadoProd.BackgroundImage")));
+            this.btnGuardarEstadoProd.ButtonText = "Guardar estado del producto";
+            this.btnGuardarEstadoProd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarEstadoProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarEstadoProd.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarEstadoProd.IdleBorderThickness = 1;
+            this.btnGuardarEstadoProd.IdleCornerRadius = 5;
+            this.btnGuardarEstadoProd.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnGuardarEstadoProd.IdleForecolor = System.Drawing.Color.White;
+            this.btnGuardarEstadoProd.IdleLineColor = System.Drawing.Color.White;
+            this.btnGuardarEstadoProd.Location = new System.Drawing.Point(245, 346);
+            this.btnGuardarEstadoProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardarEstadoProd.Name = "btnGuardarEstadoProd";
+            this.btnGuardarEstadoProd.Size = new System.Drawing.Size(185, 37);
+            this.btnGuardarEstadoProd.TabIndex = 88;
+            this.btnGuardarEstadoProd.Tag = "Guardar estado del producto";
+            this.btnGuardarEstadoProd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardarEstadoProd.Click += new System.EventHandler(this.btnGuardarEstadoProd_Click);
             // 
             // btnEnviar
             // 
@@ -199,89 +298,44 @@
             this.btnEnviar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
-            // cbEstado_Producto
+            // Btn_GuardarEstadoEnvio
             // 
-            this.cbEstado_Producto.FormattingEnabled = true;
-            this.cbEstado_Producto.Location = new System.Drawing.Point(258, 317);
-            this.cbEstado_Producto.Name = "cbEstado_Producto";
-            this.cbEstado_Producto.Size = new System.Drawing.Size(153, 21);
-            this.cbEstado_Producto.TabIndex = 85;
-            this.cbEstado_Producto.Visible = false;
+            this.Btn_GuardarEstadoEnvio.ActiveBorderThickness = 1;
+            this.Btn_GuardarEstadoEnvio.ActiveCornerRadius = 5;
+            this.Btn_GuardarEstadoEnvio.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_GuardarEstadoEnvio.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_GuardarEstadoEnvio.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_GuardarEstadoEnvio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
+            this.Btn_GuardarEstadoEnvio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_GuardarEstadoEnvio.BackgroundImage")));
+            this.Btn_GuardarEstadoEnvio.ButtonText = "Guardar estado del envio";
+            this.Btn_GuardarEstadoEnvio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_GuardarEstadoEnvio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_GuardarEstadoEnvio.ForeColor = System.Drawing.Color.White;
+            this.Btn_GuardarEstadoEnvio.IdleBorderThickness = 1;
+            this.Btn_GuardarEstadoEnvio.IdleCornerRadius = 5;
+            this.Btn_GuardarEstadoEnvio.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_GuardarEstadoEnvio.IdleForecolor = System.Drawing.Color.White;
+            this.Btn_GuardarEstadoEnvio.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_GuardarEstadoEnvio.Location = new System.Drawing.Point(16, 307);
+            this.Btn_GuardarEstadoEnvio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_GuardarEstadoEnvio.Name = "Btn_GuardarEstadoEnvio";
+            this.Btn_GuardarEstadoEnvio.Size = new System.Drawing.Size(185, 37);
+            this.Btn_GuardarEstadoEnvio.TabIndex = 81;
+            this.Btn_GuardarEstadoEnvio.Tag = "Guardar estado del envio";
+            this.Btn_GuardarEstadoEnvio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_GuardarEstadoEnvio.Click += new System.EventHandler(this.Btn_GuardarEstadoEnvio_Click);
             // 
-            // DGV_Envios_compras
+            // pictureBox1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DGV_Envios_compras.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.DGV_Envios_compras.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.DGV_Envios_compras.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGV_Envios_compras.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Envios_compras.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.DGV_Envios_compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Envios_compras.DefaultCellStyle = dataGridViewCellStyle12;
-            this.DGV_Envios_compras.DoubleBuffered = true;
-            this.DGV_Envios_compras.EnableHeadersVisualStyles = false;
-            this.DGV_Envios_compras.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.DGV_Envios_compras.HeaderForeColor = System.Drawing.Color.White;
-            this.DGV_Envios_compras.Location = new System.Drawing.Point(16, 109);
-            this.DGV_Envios_compras.Name = "DGV_Envios_compras";
-            this.DGV_Envios_compras.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGV_Envios_compras.Size = new System.Drawing.Size(700, 190);
-            this.DGV_Envios_compras.TabIndex = 86;
-            this.DGV_Envios_compras.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_Envios_CellMouseClick);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 20);
-            this.label4.TabIndex = 87;
-            this.label4.Tag = "Listado de productos:";
-            this.label4.Text = "Envios recibidos:";
-            // 
-            // btnGuardarEstadoProd
-            // 
-            this.btnGuardarEstadoProd.ActiveBorderThickness = 1;
-            this.btnGuardarEstadoProd.ActiveCornerRadius = 5;
-            this.btnGuardarEstadoProd.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.btnGuardarEstadoProd.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.btnGuardarEstadoProd.ActiveLineColor = System.Drawing.Color.Gray;
-            this.btnGuardarEstadoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
-            this.btnGuardarEstadoProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarEstadoProd.BackgroundImage")));
-            this.btnGuardarEstadoProd.ButtonText = "Guardar estado del producto";
-            this.btnGuardarEstadoProd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarEstadoProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEstadoProd.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarEstadoProd.IdleBorderThickness = 1;
-            this.btnGuardarEstadoProd.IdleCornerRadius = 5;
-            this.btnGuardarEstadoProd.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnGuardarEstadoProd.IdleForecolor = System.Drawing.Color.White;
-            this.btnGuardarEstadoProd.IdleLineColor = System.Drawing.Color.White;
-            this.btnGuardarEstadoProd.Location = new System.Drawing.Point(258, 346);
-            this.btnGuardarEstadoProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnGuardarEstadoProd.Name = "btnGuardarEstadoProd";
-            this.btnGuardarEstadoProd.Size = new System.Drawing.Size(185, 37);
-            this.btnGuardarEstadoProd.TabIndex = 88;
-            this.btnGuardarEstadoProd.Tag = "Guardar estado del producto";
-            this.btnGuardarEstadoProd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGuardarEstadoProd.Visible = false;
-            this.btnGuardarEstadoProd.Click += new System.EventHandler(this.btnGuardarEstadoProd_Click);
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(968, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 71;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Envios
             // 
@@ -289,6 +343,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(996, 690);
+            this.Controls.Add(this.crearRemito);
+            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.cbPuntaje);
             this.Controls.Add(this.btnGuardarEstadoProd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DGV_Envios_compras);
@@ -297,7 +354,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DGV_Envios_Ventas);
             this.Controls.Add(this.Btn_GuardarEstadoEnvio);
-            this.Controls.Add(this.cbEstado_Envio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label1);
@@ -305,9 +361,9 @@
             this.Name = "Envios";
             this.Text = "Envios";
             this.Load += new System.EventHandler(this.Envios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Envios_Ventas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Envios_compras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,7 +374,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbEstado_Envio;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_GuardarEstadoEnvio;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DGV_Envios_Ventas;
         private System.Windows.Forms.Label label2;
@@ -327,5 +382,8 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DGV_Envios_compras;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 btnGuardarEstadoProd;
+        private System.Windows.Forms.ComboBox cbPuntaje;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 crearRemito;
     }
 }

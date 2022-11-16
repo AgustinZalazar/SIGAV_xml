@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using EE;
 using SIGAV_Acceso;
 
@@ -13,6 +14,53 @@ namespace SIGAV_MPP
 {
     public class MPP_Producto
     {
+        string basePath = AppDomain.CurrentDomain.BaseDirectory + @"xml_files2\";
+        public bool CrearProductoXML(BE_Producto _Producto)
+        {
+            DAL_XML dal = new DAL_XML();
+            bool resultado;
+            resultado = dal.SaveXMLFile<BE_Producto>(_Producto, "Productos.xml");
+            return resultado;
+        }
+
+        public List<BE_Producto> ListarProductosXML(string empresa)
+        {
+            DAL_XML dal = new DAL_XML();
+            List<BE_Producto> list = dal.ReadXml<BE_Producto>("Productos.xml");
+            List<BE_Producto> listFiltrada = list.FindAll(item => item.Empresa == empresa);
+            return listFiltrada;
+        }
+        public bool Update_ProductoXML(BE_Producto producto)
+        {
+            DAL_XML dal = new DAL_XML();
+            string path = basePath + "Productos.xml";
+            XDocument doc = XDocument.Load(path);
+            var consulta = from prod in doc.Descendants("BE_Producto") where (Convert.ToInt32(prod.Attribute("ID").Value) == producto.ID) && (prod.Element("Empresa").Value == producto.Empresa) select prod;
+            foreach (XElement Node in consulta)
+            {
+                Node.Element("Nombre").Value = producto.Nombre;
+                Node.Element("Descripcion").Value = producto.Descripcion;
+                Node.Element("Cantidad").Value = producto.Cantidad.ToString();
+                Node.Element("Precio").Value = producto.Precio.ToString();
+                Node.Element("Tipo").Value = producto.Tipo;
+                Node.Element("Empresa").Value = producto.Empresa;
+            }
+            doc.Save(path);
+            return true;
+        }
+        public bool Delete_ProductoXML(BE_Producto producto)
+        {
+            DAL_XML dal = new DAL_XML();
+            string path = basePath + "Productos.xml";
+            XDocument doc = XDocument.Load(path);
+            var consulta = from prod in doc.Descendants("BE_Producto") where Convert.ToInt32(prod.Attribute("ID").Value) == producto.ID select prod;
+            consulta.Remove();
+            doc.Save(path);
+            return true;
+        }
+
+
+        #region MPP Base de datos 
         public bool CrearProducto(BE_Producto e_Producto)
         {
             DAL _Dal = new DAL();
@@ -86,5 +134,7 @@ namespace SIGAV_MPP
                 return null;
             }
         }
+
+        #endregion
     }
 }

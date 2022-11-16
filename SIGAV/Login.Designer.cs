@@ -118,6 +118,7 @@
             this.Btn_Register.TabIndex = 4;
             this.Btn_Register.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_Register.Visible = false;
+            this.Btn_Register.Click += new System.EventHandler(this.Btn_Register_Click);
             // 
             // pictureBox1
             // 

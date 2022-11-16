@@ -10,58 +10,84 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Servicios.Multi_idioma;
-using SIGAV_Interfaces;
 
 namespace SIGAV
 {
-    public partial class Compra : Form, IObservador
+    public partial class Compra : Form
     {
         public Compra()
         {
             InitializeComponent();
         }
-        BLL_Venta bLL_Venta = new BLL_Venta();
-        BLL_Compra bLL_Compra = new BLL_Compra();
-        BLL_Envios bll_Envios = new BLL_Envios();
-        BE_Envios e_Envios = new BE_Envios();
-        BE_Compra eE_Compra = new BE_Compra();
-        BE_Compra eE_Compra_autorizada = new BE_Compra();
+        //BLL
+        BLL_Oferta bll_Oferta = new BLL_Oferta();
+        BLL_Bitacora bll_bitacora = new BLL_Bitacora();
+        BLL_Permisos _Permisos = new BLL_Permisos();
+        //BE
+        BE_Oferta eE_Oferta = new BE_Oferta();
+        BE_Oferta ee_OfertaAutorizada = new BE_Oferta();
+        EE_Bitacora bitacora = new EE_Bitacora();
         S_Login log = S_Login.ObtenerSesion;
         EE.BE_Usuario user;
-        BE_Idioma eE_Idioma = new BE_Idioma();
-        BLL_Permisos _Permisos = new BLL_Permisos();
+        
         public void ActualizarDGV()
         {
-            DGV_Ventas.DataSource = null;
-            DGV_Ventas.DataSource = bLL_Venta.ListarVentasOtraEmpresa(user.empresa);
-            DGV_Ventas.ForeColor = Color.Black;
+            DGV_Ofertas.DataSource = null;
+            List<BE_Oferta> List = bll_Oferta.ListarOfertasXML();
+            List<BE_Oferta> filteredList = List.FindAll(x => x.empresa != user.empresa && x.precio_oferta == 0 && Convert.ToDateTime(x.fechaFinalizacion) > DateTime.Now);
+            List<BE_Oferta> orderedList = (from o in filteredList orderby o.usuario_puntaje descending select o).ToList();
+            List<OfertaView> ofertaViews = createOfertaView(orderedList);
+            DGV_Ofertas.DataSource = ofertaViews;
+            DGV_Ofertas.ForeColor = Color.Black;
+            DGV_Ofertas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            DGV_Compras.DataSource = null;
-            DGV_Compras.DataSource = bLL_Compra.ListarCompras();
-            DGV_Compras.ForeColor = Color.Black;
+
+            DGV_Autorizacion.DataSource = null;
+            List<BE_Oferta> listOfertas = List.FindAll(x => x.empresa != user.empresa && x.precio_oferta != 0);
+            List<OfertaView> ofertaViews1 = createOfertaView(listOfertas);
+            DGV_Autorizacion.DataSource = ofertaViews1;
+            DGV_Autorizacion.ForeColor = Color.Black;
+            DGV_Autorizacion.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
-
         private void Compra_Load(object sender, EventArgs e)
         {
             user = (EE.BE_Usuario)log.Usuario;
             ActualizarDGV();
-            ChangeLenguage();
             
             this.btnAutorizarProd.Visible = false;
             HideForms();
         }
 
+        public List<OfertaView> createOfertaView(List<BE_Oferta> list)
+        {
+            List<OfertaView> listOfertaView = new List<OfertaView>();
+            foreach (var item in list)
+            {
+                OfertaView ofertaView = new OfertaView();
+                ofertaView.id_oferta = item.id_oferta;
+                ofertaView.producto = item.producto.Nombre;
+                ofertaView.cantidad = item.cantidad;
+                ofertaView.precio_inicial = item.precio_inicial;
+                ofertaView.precio_oferta = item.precio_oferta;
+                ofertaView.empresa = item.empresa;
+                ofertaView.usuario_puntaje = item.usuario_puntaje;
+                ofertaView.autorizada_oferta = item.autorizada_oferta;
+                ofertaView.fechaFinalizacion = item.fechaFinalizacion;
+                listOfertaView.Add(ofertaView);
+            }
+            return listOfertaView;
+        }
         private void DGV_Ventas_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (txtCantidad.Text != String.Empty)
-            {   
-                eE_Compra.producto = DGV_Ventas.Rows[e.RowIndex].Cells[1].Value.ToString();
-                eE_Compra.cantidad = Convert.ToInt32(txtCantidad.Text);
-                eE_Compra.empleado = user.nombre;
-                eE_Compra.empresa = user.empresa;
-                eE_Compra.precio = eE_Compra.cantidad * Convert.ToInt32(DGV_Ventas.Rows[e.RowIndex].Cells[5].Value);
-                eE_Compra.autorizada = false;
+            if (txtOferta.Text != String.Empty)
+            {
+                //Cargo la compra
+                int id = Convert.ToInt32(DGV_Ofertas.Rows[e.RowIndex].Cells[0].Value);
+                eE_Oferta = bll_Oferta.ListarOfertasXML().Find(x => x.id_oferta == id);
+                eE_Oferta.direccion_de_envio = user.direccion_empresa;
+                eE_Oferta.precio_oferta = Convert.ToInt32(txtOferta.Text);
+                eE_Oferta.autorizada_oferta = false;
+                eE_Oferta.empresa_compradora = log.Usuario.empresa;
             }
             else
             {
@@ -73,9 +99,9 @@ namespace SIGAV
         {
             try
             {
-                if (eE_Compra != null)
+                if (eE_Oferta != null)
                 {
-                    bLL_Compra.CrearOActualizarCompra(eE_Compra);
+                    bll_Oferta.ActualizarOfertaXML(eE_Oferta);
                     ActualizarDGV();
                 }
                 else
@@ -83,37 +109,32 @@ namespace SIGAV
                     MessageBox.Show("Por favor seleccione un producto");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.Message;
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void DGV_Compras_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            eE_Compra_autorizada.id_compra = Convert.ToInt32(DGV_Compras.Rows[e.RowIndex].Cells[0].Value);
-            eE_Compra_autorizada.producto = DGV_Compras.Rows[e.RowIndex].Cells[1].Value.ToString();
-            eE_Compra_autorizada.cantidad = Convert.ToInt32(DGV_Compras.Rows[e.RowIndex].Cells[2].Value);
-            eE_Compra_autorizada.empleado = DGV_Compras.Rows[e.RowIndex].Cells[3].Value.ToString();
-            eE_Compra_autorizada.empresa = DGV_Compras.Rows[e.RowIndex].Cells[4].Value.ToString();
-            eE_Compra_autorizada.precio = Convert.ToInt32(DGV_Compras.Rows[e.RowIndex].Cells[5].Value);
-            eE_Compra_autorizada.autorizada = true;
+            int id = Convert.ToInt32(DGV_Autorizacion.Rows[e.RowIndex].Cells[0].Value);
+            ee_OfertaAutorizada = bll_Oferta.ListarOfertasXML().Find(x => x.id_oferta == id);
+            ee_OfertaAutorizada.estado = "Oferta realizada";
+            ee_OfertaAutorizada.autorizada_oferta = true;
         }
 
         private void btnAutorizarProd_Click(object sender, EventArgs e)
         {
             try
             {
-                if (eE_Compra_autorizada != null)
+                if (ee_OfertaAutorizada != null)
                 {
-                    bLL_Compra.CrearOActualizarCompra(eE_Compra_autorizada);
-                    e_Envios.producto = eE_Compra_autorizada.producto;
-                    e_Envios.cantidad = eE_Compra_autorizada.cantidad;
-                    e_Envios.Estado_Envio = "Pendiente";
-                    e_Envios.Estado_Producto = " ";
-                    e_Envios.tipo = "Compra";
-                    bll_Envios.CrearEnvio(e_Envios);
+                    //Actualizo la compra a autorizada
+                    bll_Oferta.ActualizarOfertaXML(ee_OfertaAutorizada);                 
                     ActualizarDGV();
                 }
                 else
@@ -123,7 +144,11 @@ namespace SIGAV
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.Message;
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -137,10 +162,20 @@ namespace SIGAV
 
                 foreach (var subitem in item.ObtenerHijo)
                 {
-                    if (item.Nombre == "Gerente de compras" || subitem.Nombre == "Autorizar compra" || item.Nombre == "Autorizar compra")
+                    if (item.Nombre == "Gerente de compras" || subitem.Nombre == "Autorizar compra" || item.Nombre == "Autorizar compra" || item.Nombre == "admin general")
                     {
                         this.btnAutorizarProd.Visible = true;
                     }
+                    if (subitem.Nombre == "Ver compras")
+                    {
+                        this.btnAutorizarProd.Visible = false;
+                        this.btnRechazarCompra.Visible = false;
+                        this.Btn_ComprarProd.Visible = false;
+                    }
+                }
+                if (item.Nombre == "Gerente de compras" || item.Nombre == "Autorizar compra" || item.Nombre == "admin general")
+                {
+                    this.btnAutorizarProd.Visible = true;
                 }
             }
         }
@@ -149,16 +184,32 @@ namespace SIGAV
             this.Close();
         }
 
-        void ChangeLenguage()
+        private void btnRechazarCompra_Click(object sender, EventArgs e)
         {
-            eE_Idioma = EE.BE_Idioma.SharedData.SelectedLenguage;
-            Traduccion.Añadir(this);
-            Traduccion.Idioma(eE_Idioma);
-            update();
-        }
-        public void update()
-        {
-            Traduccion.Traducir(this);
+            try
+            {
+                if (ee_OfertaAutorizada != null)
+                {
+                    //Actualizo la compra a rechazada
+                    ee_OfertaAutorizada.estado = "iniciada";
+                    ee_OfertaAutorizada.autorizada_oferta = false;
+                    ee_OfertaAutorizada.precio_oferta = 0;
+                    bll_Oferta.ActualizarOfertaXML(ee_OfertaAutorizada);
+                    ActualizarDGV();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor seleccione un compra");
+                }
+            }
+            catch (Exception ex)
+            {
+                bitacora.Fecha = DateTime.Now;
+                bitacora.Usuario = log.Usuario.nombre;
+                bitacora.Log = ex.Message;
+                bll_bitacora.InsertarBitacora(bitacora);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

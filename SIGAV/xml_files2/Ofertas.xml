@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Oferta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Oferta id_oferta="1">
+    <cantidad>0</cantidad>
+    <usuario_puntaje>0</usuario_puntaje>
+    <precio_oferta>0</precio_oferta>
+    <precio_inicial>0</precio_inicial>
+    <autorizada_oferta>false</autorizada_oferta>
+  </BE_Oferta>
+  <BE_Oferta id_oferta="2">
+    <producto ID="4">
+      <Nombre>Hierros</Nombre>
+      <Descripcion>varillas</Descripcion>
+      <Cantidad>75</Cantidad>
+      <Precio>1500</Precio>
+      <Tipo>Hierros</Tipo>
+      <Empresa>Corralon El Lider</Empresa>
+    </producto>
+    <cantidad>50</cantidad>
+    <usuario>agustin</usuario>
+    <empresa>Corralon El Lider</empresa>
+    <usuario_puntaje>5</usuario_puntaje>
+    <precio_oferta>0</precio_oferta>
+    <precio_inicial>35000</precio_inicial>
+    <estado>iniciada</estado>
+    <autorizada_oferta>false</autorizada_oferta>
+    <fechaFinalizacion>02-09-2022</fechaFinalizacion>
+    <empresa_compradora />
+  </BE_Oferta>
+  <BE_Oferta id_oferta="3">
+    <producto ID="6">
+      <Nombre>Clavos</Nombre>
+      <Descripcion>bolsa de 20 clavos</Descripcion>
+      <Cantidad>480</Cantidad>
+      <Precio>1500</Precio>
+      <Tipo>Hierros</Tipo>
+      <Empresa>Corralon El Lider</Empresa>
+    </producto>
+    <cantidad>20</cantidad>
+    <usuario>agustin</usuario>
+    <empresa>Corralon El Lider</empresa>
+    <usuario_puntaje>5</usuario_puntaje>
+    <precio_oferta>0</precio_oferta>
+    <precio_inicial>15000</precio_inicial>
+    <estado>iniciada</estado>
+    <autorizada_oferta>false</autorizada_oferta>
+    <fechaFinalizacion>13-09-2022</fechaFinalizacion>
+    <empresa_compradora />
+  </BE_Oferta>
+  <BE_Oferta id_oferta="4">
+    <producto ID="7">
+      <Nombre>Arena</Nombre>
+      <Descripcion>bolson de 1000kg</Descripcion>
+      <Cantidad>35</Cantidad>
+      <Precio>7000</Precio>
+      <Tipo>Aridos</Tipo>
+      <Empresa>Corralon El Lider</Empresa>
+    </producto>
+    <cantidad>5</cantidad>
+    <usuario>agustin</usuario>
+    <empresa>Corralon El Lider</empresa>
+    <usuario_puntaje>5</usuario_puntaje>
+    <precio_oferta>0</precio_oferta>
+    <precio_inicial>5000</precio_inicial>
+    <estado>iniciada</estado>
+    <autorizada_oferta>false</autorizada_oferta>
+    <fechaFinalizacion>08-09-2022</fechaFinalizacion>
+    <empresa_compradora />
+  </BE_Oferta>
+  <BE_Oferta id_oferta="5">
+    <producto ID="3">
+      <Nombre>Revoque Fino</Nombre>
+      <Descripcion>bolsa 3kg</Descripcion>
+      <Cantidad>73</Cantidad>
+      <Precio>3000</Precio>
+      <Tipo>Aditivos Pegamentos</Tipo>
+      <Empresa>Corralon El Lider</Empresa>
+    </producto>
+    <cantidad>2</cantidad>
+    <usuario>agustin</usuario>
+    <empresa>Corralon El Lider</empresa>
+    <usuario_puntaje>5</usuario_puntaje>
+    <precio_oferta>0</precio_oferta>
+    <precio_inicial>12000</precio_inicial>
+    <estado>iniciada</estado>
+    <autorizada_oferta>false</autorizada_oferta>
+    <fechaFinalizacion>21-10-2022</fechaFinalizacion>
+    <empresa_compradora />
+  </BE_Oferta>
+</ArrayOfBE_Oferta>

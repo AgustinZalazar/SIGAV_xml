@@ -1,6 +1,4 @@
-﻿using Microsoft.SqlServer.Management.Common;
-using Microsoft.SqlServer.Management.Smo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -63,12 +61,10 @@ namespace SIGAV
 
         private void BunifuThinButton22_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "SQL SERVER database backup files |*.bak";
-            openFile.Title = "Base de datos Restaurada";
-            if (openFile.ShowDialog() == DialogResult.OK)
+            FolderBrowserDialog dlg = new FolderBrowserDialog();
+            if (dlg.ShowDialog() == DialogResult.OK)
             {
-                txtRutaRestaurarBD.Text = openFile.FileName;
+                txtRutaRestaurarBD.Text = dlg.SelectedPath;
                 BtnRestaurar_Backup.Enabled = true;
             }
         }
@@ -89,7 +85,7 @@ namespace SIGAV
                     ProgressBarRestaurar.Value = 100;
                     lblEstadoRestaurar.Text = "Completado";
                     LblPorcentajeRestaurar.Text = "100%";
-                    MessageBox.Show("Base de datos restaurada correctamente", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Datos restaurados correctamente", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }

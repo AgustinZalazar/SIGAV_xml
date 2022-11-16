@@ -10,6 +10,33 @@ namespace SIGAV_BLL
 {
     public class BLL_Cliente
     {
+        public bool CrearClienteXML(BE_Cliente ee_Cliente)
+        {
+            MPP_Cliente mpp_Cliente = new MPP_Cliente();
+            bool resultado;
+            return resultado = mpp_Cliente.CrearClienteXML(ee_Cliente);
+        }
+        public List<BE_Cliente> ListarClientesXML()
+        {
+            List<BE_Cliente> list_clientes = new List<BE_Cliente>();
+            MPP_Cliente mpp_Cliente = new MPP_Cliente();
+            return list_clientes = mpp_Cliente.ListarClientesXML();
+        }
+
+        public bool UpdateClienteXML(BE_Cliente ee_Cliente)
+        {
+            MPP_Cliente mpp_Cliente = new MPP_Cliente();
+            bool resultado;
+            return resultado = mpp_Cliente.Update_ClienteXML(ee_Cliente);
+        }
+        public bool DeleteClienteXML(BE_Cliente ee_Cliente)
+        {
+            MPP_Cliente mpp_Cliente = new MPP_Cliente();
+            bool resultado;
+            return resultado = mpp_Cliente.Delete_ClienteXML(ee_Cliente);
+        }
+
+        #region BLL Base de datos
         public bool CrearCliente(BE_Cliente ee_Cliente)
         {
             MPP_Cliente mpp_Cliente = new MPP_Cliente();
@@ -42,5 +69,7 @@ namespace SIGAV_BLL
             MPP_Cliente mpp_Cliente = new MPP_Cliente();
             return list_clientes = mpp_Cliente.ListarCliente(nombre_cliente);
         }
+
+        #endregion
     }
 }

@@ -12,68 +12,123 @@ namespace SIGAV_BLL
 {
     public class BLL_Permisos
     {
-        public bool CrearPatente(BE_Permiso _Patente)
+        public List<BE_Familia> ListarPermisos_Familia()
+        {
+            MPP_Permisos MPP_Patente = new MPP_Permisos();
+            List<BE_Familia> list = MPP_Patente.ListarPermisosXML_Familia();
+            return list;
+        }
+        public List<BE_Patente> ListarPermisos_Patente()
+        {
+            MPP_Permisos MPP_Patente = new MPP_Permisos();
+            List<BE_Patente> list = MPP_Patente.ListarPermisosXML_Patente();
+            return list;
+        }
+        public bool CrearPermiso_Familia(BE_Familia _Familia)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.CrearPermiso_Familia(_Familia);
+            return resultado;
+        }
+        public bool CrearPermiso_Patente(BE_Patente _Permiso)
         {
             MPP_Permisos MPP_Patente = new MPP_Permisos();
             bool resultado;
-            resultado = MPP_Patente.CrearPatente(_Patente);
+            resultado = MPP_Patente.CrearPermiso_Patente(_Permiso);
             return resultado;
         }
 
+        public bool UpdatePermiso_Familia(BE_Familia _Familia)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.Update_FamiliaXML(_Familia);
+            return resultado;
+        }
+        public bool UpdatePermiso_Patente(BE_Patente _Permiso)
+        {
+            MPP_Permisos MPP_Patente = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Patente.Update_PatenteXML(_Permiso);
+            return resultado;
+        }
+
+        public bool DeletePermiso_Familia(BE_Familia _Familia)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.Delete_FamiliaXML(_Familia);
+            return resultado;
+        }
+        public bool DeleteFamilia_Relacion(string id_Familia)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.DeleteFamilia(id_Familia);
+            return resultado;
+        }
+        public bool DeletePermiso_Patente(BE_Patente _Permiso)
+        {
+            MPP_Permisos MPP_Patente = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Patente.Delete_PatenteXML(_Permiso);
+            return resultado;
+        }
+        public bool DeletePatente_Relacion(string id_Patente)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.DeletePatenteRelacion(id_Patente);
+            return resultado;
+        }
+        public bool DeleteFamiliaPatente(string id_familia,string id_Patente)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.DeleteFamiliaPatente(id_familia ,id_Patente);
+            return resultado;
+        }
+        public bool DeleteFamilia_Familia(string id_familia1, string id_familia2)
+        {
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
+            bool resultado;
+            resultado = MPP_Familia.DeleteFamilia_Familia(id_familia1, id_familia2);
+            return resultado;
+        }
         public bool InsertarPatenteEnFamilia(BE_Permiso _Patente, BE_Permiso _Familia)
         {
             MPP_Permisos MPP_Patente = new MPP_Permisos();
             bool resultado;
-            resultado = MPP_Patente.InsertarPatenteEnFamilia(_Patente, _Familia);
+            resultado = MPP_Patente.InsertarPatenteEnFamiliaXML(_Patente, _Familia);
             return resultado;
         }
 
-        public bool EliminarPatente(BE_Permiso _Patente)
+        public bool DeleteUsuario_Permiso(BE_Usuario user, string id_permiso)
         {
-            MPP_Permisos MPP_Patente = new MPP_Permisos();
+            MPP_Permisos MPP_Familia = new MPP_Permisos();
             bool resultado;
-            resultado = MPP_Patente.EliminarPatente(_Patente);
+            resultado = MPP_Familia.DeletePermisosUser(user, id_permiso);
             return resultado;
         }
-
-        public List<BE_Permiso> ListarPatente()
+        public List<BE_Permiso> ListarArbolByFamilia(string familia)
         {
-            List<BE_Permiso> List_Patente = new List<BE_Permiso>();
-            MPP_Permisos MPP_Patentes = new MPP_Permisos();
-            return List_Patente = MPP_Patentes.ListarPatentes();
-        }
-        public List<BE_Permiso> ListarFamilias()
-        {
-            List<BE_Permiso> List_Familias = new List<BE_Permiso>();
-            MPP_Permisos MPP_Patentes = new MPP_Permisos();
-            return List_Familias = MPP_Patentes.ListarFamilias();
-        }
-        public IList<BE_Permiso> ListarArbol()
-        {
-            string variable = "";
-            IList<BE_Permiso> List_;
             MPP_Permisos MPP_Permisos = new MPP_Permisos();
-            return List_ = MPP_Permisos.GetAll(variable);
-        }
-        public IList<BE_Permiso> ListarArbolByFamilia(string familia)
-        {
-            IList<BE_Permiso> List_;
-            MPP_Permisos MPP_Permisos = new MPP_Permisos();
-            return List_ = MPP_Permisos.GetAll(familia);
+            return MPP_Permisos.GetFamilia_Patente(familia);
         }
 
-        public bool AsignarPermisos(int id_permiso, int id_usuario)
+        public bool AsignarPermisos(string id_permiso, int id_usuario)
         {
             MPP_Permisos mPP_AsignarPermisos = new MPP_Permisos();  
-            bool resultado = mPP_AsignarPermisos.AsignarPermisos(id_permiso, id_usuario);
+            bool resultado = mPP_AsignarPermisos.AsignarPermisosXML(id_permiso, id_usuario);
             return resultado;
         }
-        public void ListUserByPermisos(BE_Usuario user)
+        public List<BE_Permiso> ListUserByPermisos(BE_Usuario user)
         {
             MPP_Permisos mPP_ListUserByPermisos = new MPP_Permisos();
-            mPP_ListUserByPermisos.ListUserByPermisos(user);
+            return mPP_ListUserByPermisos.ListUserByPermisos(user);
         }
-        public bool Existe(BE_Permiso permiso, int id)
+        public bool Existe(BE_Permiso permiso, string id)
         {
             bool existe = false;
 

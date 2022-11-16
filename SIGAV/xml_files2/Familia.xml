@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Familia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Familia ID="F1">
+    <Nombre>Gerente de Ventas</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+  <BE_Familia ID="F2">
+    <Nombre>Gerente de compras</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+  <BE_Familia ID="F3">
+    <Nombre>Administrador de compras</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+  <BE_Familia ID="F4">
+    <Nombre>Administrador de envios</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+  <BE_Familia ID="F5">
+    <Nombre>Administrador de usuario</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+  <BE_Familia ID="F6">
+    <Nombre>admin general</Nombre>
+    <ObtenerHijo />
+  </BE_Familia>
+</ArrayOfBE_Familia>

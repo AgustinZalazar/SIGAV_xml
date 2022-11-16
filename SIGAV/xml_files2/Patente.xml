@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Patente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Patente ID="P1">
+    <Nombre>Administrar ventas</Nombre>
+    <ObtenerHijo />
+  </BE_Patente>
+  <BE_Patente ID="P2">
+    <Nombre>Ver envios</Nombre>
+    <ObtenerHijo />
+  </BE_Patente>
+  <BE_Patente ID="P3">
+    <Nombre>Ver usuarios</Nombre>
+    <ObtenerHijo />
+  </BE_Patente>
+  <BE_Patente ID="P4">
+    <Nombre>Administrar compra</Nombre>
+    <ObtenerHijo />
+  </BE_Patente>
+</ArrayOfBE_Patente>

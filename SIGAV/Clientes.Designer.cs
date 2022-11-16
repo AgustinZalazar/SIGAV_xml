@@ -44,7 +44,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtNombreCliente = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtApellidoCliente = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -52,7 +51,6 @@
             this.txtDireccion = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtCelular = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtEmpresa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.DTPFechaNac = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txtIDCliente = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.DGVCliente = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -215,18 +213,6 @@
             this.label8.Tag = "Empresa";
             this.label8.Text = "Empresa:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(35, 271);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 16);
-            this.label9.TabIndex = 29;
-            this.label9.Tag = "Fecha Nac:";
-            this.label9.Text = "Fecha Nac:";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -241,6 +227,9 @@
             // 
             // txtNombreCliente
             // 
+            this.txtNombreCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombreCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNombreCliente.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCliente.ForeColor = System.Drawing.Color.White;
@@ -253,6 +242,7 @@
             this.txtNombreCliente.LineThickness = 3;
             this.txtNombreCliente.Location = new System.Drawing.Point(127, 127);
             this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(240, 23);
             this.txtNombreCliente.TabIndex = 31;
@@ -260,6 +250,9 @@
             // 
             // txtApellidoCliente
             // 
+            this.txtApellidoCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtApellidoCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtApellidoCliente.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellidoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtApellidoCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtApellidoCliente.ForeColor = System.Drawing.Color.White;
@@ -272,6 +265,7 @@
             this.txtApellidoCliente.LineThickness = 3;
             this.txtApellidoCliente.Location = new System.Drawing.Point(127, 163);
             this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidoCliente.MaxLength = 32767;
             this.txtApellidoCliente.Name = "txtApellidoCliente";
             this.txtApellidoCliente.Size = new System.Drawing.Size(240, 24);
             this.txtApellidoCliente.TabIndex = 32;
@@ -279,6 +273,9 @@
             // 
             // txtTelefonoCliente
             // 
+            this.txtTelefonoCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTelefonoCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTelefonoCliente.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTelefonoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtTelefonoCliente.ForeColor = System.Drawing.Color.White;
@@ -291,6 +288,7 @@
             this.txtTelefonoCliente.LineThickness = 3;
             this.txtTelefonoCliente.Location = new System.Drawing.Point(127, 195);
             this.txtTelefonoCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefonoCliente.MaxLength = 32767;
             this.txtTelefonoCliente.Name = "txtTelefonoCliente";
             this.txtTelefonoCliente.Size = new System.Drawing.Size(240, 24);
             this.txtTelefonoCliente.TabIndex = 33;
@@ -298,6 +296,9 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDireccion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtDireccion.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtDireccion.ForeColor = System.Drawing.Color.White;
@@ -310,6 +311,7 @@
             this.txtDireccion.LineThickness = 3;
             this.txtDireccion.Location = new System.Drawing.Point(127, 227);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.MaxLength = 32767;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(240, 24);
             this.txtDireccion.TabIndex = 34;
@@ -317,6 +319,9 @@
             // 
             // txtCelular
             // 
+            this.txtCelular.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCelular.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCelular.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCelular.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtCelular.ForeColor = System.Drawing.Color.White;
@@ -329,6 +334,7 @@
             this.txtCelular.LineThickness = 3;
             this.txtCelular.Location = new System.Drawing.Point(478, 95);
             this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCelular.MaxLength = 32767;
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(240, 24);
             this.txtCelular.TabIndex = 36;
@@ -336,6 +342,9 @@
             // 
             // txtEmpresa
             // 
+            this.txtEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtEmpresa.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtEmpresa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmpresa.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtEmpresa.ForeColor = System.Drawing.Color.White;
@@ -348,26 +357,17 @@
             this.txtEmpresa.LineThickness = 3;
             this.txtEmpresa.Location = new System.Drawing.Point(478, 128);
             this.txtEmpresa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmpresa.MaxLength = 32767;
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(240, 24);
             this.txtEmpresa.TabIndex = 37;
             this.txtEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // DTPFechaNac
-            // 
-            this.DTPFechaNac.BackColor = System.Drawing.Color.Transparent;
-            this.DTPFechaNac.BorderRadius = 2;
-            this.DTPFechaNac.ForeColor = System.Drawing.Color.White;
-            this.DTPFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DTPFechaNac.FormatCustom = null;
-            this.DTPFechaNac.Location = new System.Drawing.Point(127, 265);
-            this.DTPFechaNac.Name = "DTPFechaNac";
-            this.DTPFechaNac.Size = new System.Drawing.Size(240, 30);
-            this.DTPFechaNac.TabIndex = 39;
-            this.DTPFechaNac.Value = new System.DateTime(2019, 10, 23, 14, 25, 12, 79);
-            // 
             // txtIDCliente
             // 
+            this.txtIDCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtIDCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtIDCliente.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtIDCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIDCliente.Enabled = false;
             this.txtIDCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -381,6 +381,7 @@
             this.txtIDCliente.LineThickness = 3;
             this.txtIDCliente.Location = new System.Drawing.Point(127, 98);
             this.txtIDCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIDCliente.MaxLength = 32767;
             this.txtIDCliente.Name = "txtIDCliente";
             this.txtIDCliente.Size = new System.Drawing.Size(240, 24);
             this.txtIDCliente.TabIndex = 41;
@@ -443,7 +444,6 @@
             this.Controls.Add(this.DGVCliente);
             this.Controls.Add(this.txtIDCliente);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.DTPFechaNac);
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.txtDireccion);
@@ -451,7 +451,6 @@
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -492,7 +491,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNombreCliente;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtApellidoCliente;
@@ -500,7 +498,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtDireccion;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtCelular;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmpresa;
-        private Bunifu.Framework.UI.BunifuDatepicker DTPFechaNac;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtIDCliente;
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DGVCliente;

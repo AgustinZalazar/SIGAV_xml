@@ -10,7 +10,6 @@ namespace Servicios.Composite
     {
        public int ID { get; set; }
        public string Nombre { get; set; }
-       public bool Es_Patente { get; set; }
        public abstract  void agregarHijo(Permiso permiso_);
        public abstract IList<Permiso> ObtenerHijo { get; }
 

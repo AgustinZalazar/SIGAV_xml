@@ -11,6 +11,7 @@ namespace SIGAV_Interfaces
         int ID { get; set; }
         string Username { get; set; }
         string Password { get; set; }
-
+        string empresa { get; set; }
+        string nombre { get; set; }
     }
 }

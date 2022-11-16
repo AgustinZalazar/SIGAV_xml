@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace EE
 {
+    [Serializable]
     public class BE_Venta
     {
+        [XmlAttribute("id_venta")]
         public int id_venta { get; set; }
-        public string producto { get; set; }
-        public int cantidad { get; set; }
-        public string empleado { get; set; }
-        public string empresa { get; set; }
-        public int precio_final { get; set; }
+        public BE_Oferta oferta { get; set; }
+        public string fecha { get; set; }
+
     }
 }
