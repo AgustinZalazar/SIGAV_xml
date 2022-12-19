@@ -49,7 +49,7 @@ namespace SIGAV
         {
             if (Panel_Menu.Width == 250)
             {
-                Panel_Menu.Width = 60;
+                Panel_Menu.Width = 70;
                 bunifuFlatButton2.Textcolor = Color.FromArgb(34, 36, 49);
                 bunifuFlatButton3.Textcolor = Color.FromArgb(34, 36, 49);
                 bunifuFlatButton4.Textcolor = Color.FromArgb(34, 36, 49);
@@ -59,11 +59,18 @@ namespace SIGAV
                 bunifuFlatButton10.Textcolor = Color.FromArgb(34, 36, 49);
                 bunifuFlatButton11.Textcolor = Color.FromArgb(34, 36, 49);
                 bunifuFlatButton12.Textcolor = Color.FromArgb(34, 36, 49);
+                btnLogout.Textcolor = Color.FromArgb(34, 36, 49);
                 btnEnvios.Textcolor = Color.FromArgb(34, 36, 49);
+                label1.Hide();
+                label3.Hide();
+                label4.Hide();
+                lblUsuario.Hide();
+                lblEmpresa.Hide();
+                lblRol.Hide();
 
                 HideSubMenus();
             }
-            else if(Panel_Menu.Width == 60)
+            else if(Panel_Menu.Width == 70)
             {
                 bunifuFlatButton2.Textcolor = Color.White;
                 bunifuFlatButton3.Textcolor = Color.White;
@@ -75,6 +82,13 @@ namespace SIGAV
                 bunifuFlatButton11.Textcolor = Color.White;
                 bunifuFlatButton12.Textcolor = Color.White;
                 btnEnvios.Textcolor = Color.White;
+                btnLogout.Textcolor = Color.White;
+                label1.Show();
+                label3.Show();
+                label4.Show();
+                lblUsuario.Show();
+                lblEmpresa.Show();
+                lblRol.Show();
                 Panel_Menu.Width = 250;
                 HideSubMenus();
             }

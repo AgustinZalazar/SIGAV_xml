@@ -25,6 +25,7 @@ namespace EE
         public string estado { get; set; }
         public bool autorizada_oferta { get; set; }
         public string fechaFinalizacion { get; set; }
+        public string fecha_oferta { get; set; }
         public string empresa_compradora { get; set; }
 
     }

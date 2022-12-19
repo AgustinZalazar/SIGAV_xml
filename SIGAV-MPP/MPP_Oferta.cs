@@ -40,6 +40,7 @@ namespace SIGAV_MPP
                 Node.Element("usuario_puntaje").Value = compra.usuario_puntaje.ToString();
                 Node.Element("autorizada_oferta").Value = compra.autorizada_oferta.ToString().ToLower();
                 Node.Element("estado").Value = compra.estado;
+                Node.Element("fecha_oferta").Value = compra.fecha_oferta;
                 Node.Element("empresa_compradora").Value = compra.empresa_compradora;
             }
             doc.Save(path);

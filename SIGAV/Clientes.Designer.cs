@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAgregarCliente = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnDeleteCliente = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -158,7 +158,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(43, 134);
+            this.label4.Location = new System.Drawing.Point(56, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 24;
@@ -170,7 +170,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(42, 168);
+            this.label5.Location = new System.Drawing.Point(55, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 16);
             this.label5.TabIndex = 25;
@@ -182,7 +182,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(38, 201);
+            this.label6.Location = new System.Drawing.Point(51, 203);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 16);
             this.label6.TabIndex = 26;
@@ -194,7 +194,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(35, 230);
+            this.label7.Location = new System.Drawing.Point(48, 235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 16);
             this.label7.TabIndex = 27;
@@ -206,7 +206,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(389, 134);
+            this.label8.Location = new System.Drawing.Point(405, 136);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 16);
             this.label8.TabIndex = 28;
@@ -218,7 +218,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(402, 102);
+            this.label10.Location = new System.Drawing.Point(418, 106);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 16);
             this.label10.TabIndex = 30;
@@ -236,9 +236,9 @@
             this.txtNombreCliente.HintForeColor = System.Drawing.Color.White;
             this.txtNombreCliente.HintText = "";
             this.txtNombreCliente.isPassword = false;
-            this.txtNombreCliente.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtNombreCliente.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtNombreCliente.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtNombreCliente.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtNombreCliente.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtNombreCliente.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtNombreCliente.LineThickness = 3;
             this.txtNombreCliente.Location = new System.Drawing.Point(127, 127);
             this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -259,9 +259,9 @@
             this.txtApellidoCliente.HintForeColor = System.Drawing.Color.White;
             this.txtApellidoCliente.HintText = "";
             this.txtApellidoCliente.isPassword = false;
-            this.txtApellidoCliente.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtApellidoCliente.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtApellidoCliente.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtApellidoCliente.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtApellidoCliente.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtApellidoCliente.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtApellidoCliente.LineThickness = 3;
             this.txtApellidoCliente.Location = new System.Drawing.Point(127, 163);
             this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -282,9 +282,9 @@
             this.txtTelefonoCliente.HintForeColor = System.Drawing.Color.White;
             this.txtTelefonoCliente.HintText = "";
             this.txtTelefonoCliente.isPassword = false;
-            this.txtTelefonoCliente.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtTelefonoCliente.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtTelefonoCliente.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtTelefonoCliente.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtTelefonoCliente.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtTelefonoCliente.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtTelefonoCliente.LineThickness = 3;
             this.txtTelefonoCliente.Location = new System.Drawing.Point(127, 195);
             this.txtTelefonoCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -305,9 +305,9 @@
             this.txtDireccion.HintForeColor = System.Drawing.Color.White;
             this.txtDireccion.HintText = "";
             this.txtDireccion.isPassword = false;
-            this.txtDireccion.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtDireccion.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtDireccion.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtDireccion.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtDireccion.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtDireccion.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtDireccion.LineThickness = 3;
             this.txtDireccion.Location = new System.Drawing.Point(127, 227);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
@@ -328,9 +328,9 @@
             this.txtCelular.HintForeColor = System.Drawing.Color.White;
             this.txtCelular.HintText = "";
             this.txtCelular.isPassword = false;
-            this.txtCelular.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtCelular.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCelular.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtCelular.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtCelular.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtCelular.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtCelular.LineThickness = 3;
             this.txtCelular.Location = new System.Drawing.Point(478, 95);
             this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
@@ -351,9 +351,9 @@
             this.txtEmpresa.HintForeColor = System.Drawing.Color.White;
             this.txtEmpresa.HintText = "";
             this.txtEmpresa.isPassword = false;
-            this.txtEmpresa.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtEmpresa.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtEmpresa.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtEmpresa.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtEmpresa.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtEmpresa.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtEmpresa.LineThickness = 3;
             this.txtEmpresa.Location = new System.Drawing.Point(478, 128);
             this.txtEmpresa.Margin = new System.Windows.Forms.Padding(4);
@@ -375,9 +375,9 @@
             this.txtIDCliente.HintForeColor = System.Drawing.Color.White;
             this.txtIDCliente.HintText = "";
             this.txtIDCliente.isPassword = false;
-            this.txtIDCliente.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtIDCliente.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtIDCliente.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtIDCliente.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtIDCliente.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtIDCliente.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtIDCliente.LineThickness = 3;
             this.txtIDCliente.Location = new System.Drawing.Point(127, 98);
             this.txtIDCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -392,7 +392,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(51, 105);
+            this.label11.Location = new System.Drawing.Point(92, 106);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(24, 16);
             this.label11.TabIndex = 40;
@@ -400,30 +400,30 @@
             // 
             // DGVCliente
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DGVCliente.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGVCliente.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.DGVCliente.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DGVCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGVCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVCliente.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVCliente.DefaultCellStyle = dataGridViewCellStyle6;
             this.DGVCliente.DoubleBuffered = true;
             this.DGVCliente.EnableHeadersVisualStyles = false;
             this.DGVCliente.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));

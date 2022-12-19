@@ -50,7 +50,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(38, 187);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(38, 223);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(68, 20);
             this.bunifuCustomLabel1.TabIndex = 2;
@@ -61,7 +61,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(39, 280);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(39, 316);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(96, 20);
             this.bunifuCustomLabel2.TabIndex = 3;
@@ -71,9 +71,9 @@
             // 
             this.Btn_IniciarSesion.ActiveBorderThickness = 1;
             this.Btn_IniciarSesion.ActiveCornerRadius = 5;
-            this.Btn_IniciarSesion.ActiveFillColor = System.Drawing.Color.Gray;
+            this.Btn_IniciarSesion.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_IniciarSesion.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_IniciarSesion.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_IniciarSesion.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_IniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Btn_IniciarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_IniciarSesion.BackgroundImage")));
             this.Btn_IniciarSesion.ButtonText = "Iniciar Sesion";
@@ -82,10 +82,10 @@
             this.Btn_IniciarSesion.ForeColor = System.Drawing.Color.White;
             this.Btn_IniciarSesion.IdleBorderThickness = 1;
             this.Btn_IniciarSesion.IdleCornerRadius = 5;
-            this.Btn_IniciarSesion.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_IniciarSesion.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_IniciarSesion.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_IniciarSesion.IdleLineColor = System.Drawing.Color.White;
-            this.Btn_IniciarSesion.Location = new System.Drawing.Point(90, 371);
+            this.Btn_IniciarSesion.IdleLineColor = System.Drawing.Color.Transparent;
+            this.Btn_IniciarSesion.Location = new System.Drawing.Point(90, 407);
             this.Btn_IniciarSesion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_IniciarSesion.Name = "Btn_IniciarSesion";
             this.Btn_IniciarSesion.Size = new System.Drawing.Size(163, 37);
@@ -97,9 +97,9 @@
             // 
             this.Btn_Register.ActiveBorderThickness = 1;
             this.Btn_Register.ActiveCornerRadius = 5;
-            this.Btn_Register.ActiveFillColor = System.Drawing.Color.Gray;
+            this.Btn_Register.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_Register.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Register.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_Register.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_Register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Btn_Register.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Register.BackgroundImage")));
             this.Btn_Register.ButtonText = "Registrarme";
@@ -108,10 +108,10 @@
             this.Btn_Register.ForeColor = System.Drawing.Color.White;
             this.Btn_Register.IdleBorderThickness = 1;
             this.Btn_Register.IdleCornerRadius = 5;
-            this.Btn_Register.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Register.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_Register.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_Register.IdleLineColor = System.Drawing.Color.White;
-            this.Btn_Register.Location = new System.Drawing.Point(90, 418);
+            this.Btn_Register.IdleLineColor = System.Drawing.Color.Transparent;
+            this.Btn_Register.Location = new System.Drawing.Point(90, 454);
             this.Btn_Register.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_Register.Name = "Btn_Register";
             this.Btn_Register.Size = new System.Drawing.Size(163, 35);
@@ -137,7 +137,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(114, 25);
+            this.pictureBox2.Location = new System.Drawing.Point(114, 61);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(125, 128);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +150,7 @@
             this.Txt_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Password.ForeColor = System.Drawing.Color.White;
-            this.Txt_Password.Location = new System.Drawing.Point(42, 309);
+            this.Txt_Password.Location = new System.Drawing.Point(42, 345);
             this.Txt_Password.Multiline = true;
             this.Txt_Password.Name = "Txt_Password";
             this.Txt_Password.PasswordChar = '*';
@@ -162,7 +162,7 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bunifuSeparator1.LineThickness = 3;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(41, 319);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(41, 355);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(274, 36);
             this.bunifuSeparator1.TabIndex = 12;
@@ -175,7 +175,7 @@
             this.Txt_Username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Username.ForeColor = System.Drawing.Color.White;
-            this.Txt_Username.Location = new System.Drawing.Point(43, 213);
+            this.Txt_Username.Location = new System.Drawing.Point(43, 249);
             this.Txt_Username.Multiline = true;
             this.Txt_Username.Name = "Txt_Username";
             this.Txt_Username.PasswordChar = '*';
@@ -188,7 +188,7 @@
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bunifuSeparator2.LineThickness = 3;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(42, 223);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(42, 259);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(274, 36);
             this.bunifuSeparator2.TabIndex = 14;

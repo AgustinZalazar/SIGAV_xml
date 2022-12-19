@@ -115,9 +115,9 @@
             // 
             this.Btn_Venta.ActiveBorderThickness = 1;
             this.Btn_Venta.ActiveCornerRadius = 5;
-            this.Btn_Venta.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Venta.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_Venta.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Venta.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_Venta.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_Venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.Btn_Venta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Venta.BackgroundImage")));
             this.Btn_Venta.ButtonText = "poner en venta";
@@ -126,9 +126,9 @@
             this.Btn_Venta.ForeColor = System.Drawing.Color.White;
             this.Btn_Venta.IdleBorderThickness = 1;
             this.Btn_Venta.IdleCornerRadius = 5;
-            this.Btn_Venta.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Venta.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_Venta.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_Venta.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_Venta.IdleLineColor = System.Drawing.Color.Transparent;
             this.Btn_Venta.Location = new System.Drawing.Point(17, 359);
             this.Btn_Venta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_Venta.Name = "Btn_Venta";
@@ -234,9 +234,9 @@
             this.txtCantidad.HintForeColor = System.Drawing.Color.White;
             this.txtCantidad.HintText = "";
             this.txtCantidad.isPassword = false;
-            this.txtCantidad.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtCantidad.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCantidad.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtCantidad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtCantidad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtCantidad.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtCantidad.LineThickness = 3;
             this.txtCantidad.Location = new System.Drawing.Point(112, 117);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
@@ -287,9 +287,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 5;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "aceptar oferta";
@@ -298,9 +298,9 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 5;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.Location = new System.Drawing.Point(13, 663);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
@@ -367,9 +367,9 @@
             this.txtPrecionInicial.HintForeColor = System.Drawing.Color.White;
             this.txtPrecionInicial.HintText = "";
             this.txtPrecionInicial.isPassword = false;
-            this.txtPrecionInicial.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtPrecionInicial.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtPrecionInicial.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtPrecionInicial.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtPrecionInicial.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtPrecionInicial.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtPrecionInicial.LineThickness = 3;
             this.txtPrecionInicial.Location = new System.Drawing.Point(390, 117);
             this.txtPrecionInicial.Margin = new System.Windows.Forms.Padding(4);

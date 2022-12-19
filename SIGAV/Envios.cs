@@ -228,7 +228,7 @@ namespace SIGAV
                            
                             pdfDoc.Open();
                             pdfDoc.Add(new Phrase(""));
-                            iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.Logo_SIGAV, System.Drawing.Imaging.ImageFormat.Png);
+                            iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.Logo_SIGAV_GRAY, System.Drawing.Imaging.ImageFormat.Png);
 
                             img.ScaleToFit(80, 80);
                             img.Alignment = iTextSharp.text.Image.UNDERLYING;
@@ -250,7 +250,7 @@ namespace SIGAV
                 }
                 else
                 {
-                    MessageBox.Show("El envio ya fue enviado, por favor seleccione otro");
+                    MessageBox.Show("Por favor seleccione un pedido enviado");
                 }
             }
             catch (Exception)

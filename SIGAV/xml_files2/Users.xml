@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfBE_Usuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <BE_Usuario ID="1">
     <Username>admin</Username>
     <Password>GaKFQUS2Oo92F6byJQGbEg==</Password>
     <empresa>Corralon El Lider</empresa>
     <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
-    <nombre>agustin</nombre>
-    <puntaje>5</puntaje>
+    <nombre>agustin2</nombre>
+    <puntaje>0</puntaje>
     <Permisos />
   </BE_Usuario>
   <BE_Usuario ID="2">
@@ -49,7 +49,7 @@
     <Username>admin_riva</Username>
     <Password>GaKFQUS2Oo92F6byJQGbEg==</Password>
     <empresa>RIVA</empresa>
-    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <direccion_empresa>Suipacha 1067, C1011 CABA</direccion_empresa>
     <nombre>luis</nombre>
     <puntaje>0</puntaje>
     <Permisos />
@@ -58,7 +58,7 @@
     <Username>admin_ventas_riva</Username>
     <Password>qXK+wR/Wc1JQwwEpTI95xw==</Password>
     <empresa>RIVA</empresa>
-    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <direccion_empresa>Suipacha 1067, C1011 CABA</direccion_empresa>
     <nombre>Jorge</nombre>
     <puntaje>0</puntaje>
     <Permisos />
@@ -67,7 +67,7 @@
     <Username>ventas_riva</Username>
     <Password>fm4mJKtf+aLcy/TOEvw77Q==</Password>
     <empresa>RIVA</empresa>
-    <direccion_empresa>Av. Nicolas Avellaneda 5770</direccion_empresa>
+    <direccion_empresa>Suipacha 1067, C1011 CABA</direccion_empresa>
     <nombre>Alfonso</nombre>
     <puntaje>0</puntaje>
     <Permisos />

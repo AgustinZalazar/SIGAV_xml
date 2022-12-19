@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBE_Envios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BE_Envios id_envio="1">
+    <oferta id_oferta="5">
+      <producto ID="3">
+        <Nombre>Revoque Fino</Nombre>
+        <Descripcion>bolsa 3kg</Descripcion>
+        <Cantidad>73</Cantidad>
+        <Precio>3000</Precio>
+        <Tipo>Aditivos Pegamentos</Tipo>
+        <Empresa>Corralon El Lider</Empresa>
+      </producto>
+      <cantidad>2</cantidad>
+      <usuario>agustin</usuario>
+      <empresa>Corralon El Lider</empresa>
+      <usuario_puntaje>5</usuario_puntaje>
+      <direccion_de_envio>Suipacha 1067, C1011 CABA</direccion_de_envio>
+      <precio_oferta>100</precio_oferta>
+      <precio_inicial>12000</precio_inicial>
+      <estado>Oferta aceptada</estado>
+      <autorizada_oferta>true</autorizada_oferta>
+      <fechaFinalizacion>21-10-2022</fechaFinalizacion>
+      <empresa_compradora>RIVA</empresa_compradora>
+    </oferta>
+    <Estado_Envio>Enviado</Estado_Envio>
+    <Estado_Producto />
+  </BE_Envios>
+  <BE_Envios id_envio="2">
+    <oferta id_oferta="11">
+      <producto ID="6">
+        <Nombre>Clavos</Nombre>
+        <Descripcion>bolsa de 20 clavos</Descripcion>
+        <Cantidad>498</Cantidad>
+        <Precio>1500</Precio>
+        <Tipo>Hierros</Tipo>
+        <Empresa>Corralon El Lider</Empresa>
+      </producto>
+      <cantidad>2</cantidad>
+      <usuario>agustin2</usuario>
+      <empresa>Corralon El Lider</empresa>
+      <usuario_puntaje>0</usuario_puntaje>
+      <direccion_de_envio />
+      <precio_oferta>3000</precio_oferta>
+      <precio_inicial>3000</precio_inicial>
+      <estado>Oferta aceptada</estado>
+      <autorizada_oferta>true</autorizada_oferta>
+      <fechaFinalizacion>03-02-2023</fechaFinalizacion>
+      <fecha_oferta>19/12/2022</fecha_oferta>
+      <empresa_compradora>RIVA</empresa_compradora>
+    </oferta>
+    <Estado_Envio>Enviado</Estado_Envio>
+    <Estado_Producto></Estado_Producto>
+  </BE_Envios>
+  <BE_Envios id_envio="3">
+    <oferta id_oferta="10">
+      <producto ID="8">
+        <Nombre>Piedra</Nombre>
+        <Descripcion>piedra 6 20</Descripcion>
+        <Cantidad>53</Cantidad>
+        <Precio>3000</Precio>
+        <Tipo>Aridos</Tipo>
+        <Empresa>Corralon El Lider</Empresa>
+      </producto>
+      <cantidad>5</cantidad>
+      <usuario>agustin2</usuario>
+      <empresa>Corralon El Lider</empresa>
+      <usuario_puntaje>0</usuario_puntaje>
+      <direccion_de_envio />
+      <precio_oferta>10000</precio_oferta>
+      <precio_inicial>9000</precio_inicial>
+      <estado>Oferta aceptada</estado>
+      <autorizada_oferta>true</autorizada_oferta>
+      <fechaFinalizacion>03-02-2023</fechaFinalizacion>
+      <fecha_oferta>19/12/2022</fecha_oferta>
+      <empresa_compradora>RIVA</empresa_compradora>
+    </oferta>
+    <Estado_Envio>Pendiente</Estado_Envio>
+    <Estado_Producto />
+  </BE_Envios>
+  <BE_Envios id_envio="4">
+    <oferta id_oferta="14">
+      <producto ID="2">
+        <Nombre>Cal</Nombre>
+        <Descripcion>bolsa 1kg</Descripcion>
+        <Cantidad>160</Cantidad>
+        <Precio>2500</Precio>
+        <Tipo>Aditivos Pegamentos</Tipo>
+        <Empresa>Corralon El Lider</Empresa>
+      </producto>
+      <cantidad>20</cantidad>
+      <usuario>agustin2</usuario>
+      <empresa>Corralon El Lider</empresa>
+      <usuario_puntaje>0</usuario_puntaje>
+      <direccion_de_envio />
+      <precio_oferta>48000</precio_oferta>
+      <precio_inicial>50000</precio_inicial>
+      <estado>Oferta aceptada</estado>
+      <autorizada_oferta>true</autorizada_oferta>
+      <fechaFinalizacion>20-01-2023</fechaFinalizacion>
+      <fecha_oferta>19/12/2022</fecha_oferta>
+      <empresa_compradora>RIVA</empresa_compradora>
+    </oferta>
+    <Estado_Envio>Enviado</Estado_Envio>
+    <Estado_Producto></Estado_Producto>
+  </BE_Envios>
+  <BE_Envios id_envio="5">
+    <oferta id_oferta="16">
+      <producto ID="7">
+        <Nombre>Arena</Nombre>
+        <Descripcion>bolson de 1000kg</Descripcion>
+        <Cantidad>37</Cantidad>
+        <Precio>7000</Precio>
+        <Tipo>Aridos</Tipo>
+        <Empresa>Corralon El Lider</Empresa>
+      </producto>
+      <cantidad>3</cantidad>
+      <usuario>agustin2</usuario>
+      <empresa>Corralon El Lider</empresa>
+      <usuario_puntaje>0</usuario_puntaje>
+      <direccion_de_envio />
+      <precio_oferta>21000</precio_oferta>
+      <precio_inicial>21000</precio_inicial>
+      <estado>Oferta aceptada</estado>
+      <autorizada_oferta>true</autorizada_oferta>
+      <fechaFinalizacion>25-01-2023</fechaFinalizacion>
+      <fecha_oferta>19/12/2022</fecha_oferta>
+      <empresa_compradora>RIVA</empresa_compradora>
+    </oferta>
+    <Estado_Envio>Enviado</Estado_Envio>
+    <Estado_Producto></Estado_Producto>
+  </BE_Envios>
+</ArrayOfBE_Envios>

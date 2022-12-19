@@ -156,6 +156,7 @@ namespace SIGAV
                     be_Oferta.usuario_puntaje = user.puntaje;
                     be_Oferta.usuario = user.nombre;
                     be_Oferta.empresa = user.empresa;
+                    be_Oferta.fecha_oferta = "00/00/0000";
                     be_Oferta.empresa_compradora = "";
                     be_Oferta.direccion_de_envio = "";
                     be_Oferta.fechaFinalizacion = DTPFechaFinalizacion.Value.Date.ToString("dd-MM-yyyy");
@@ -204,6 +205,7 @@ namespace SIGAV
         {
             int id = Convert.ToInt32(DGV_Prod_Ofertados.Rows[e.RowIndex].Cells[0].Value);
             be_OfertaPendiente = bll_Oferta.ListarOfertasXML().Find(x => x.id_oferta == id);
+            be_OfertaPendiente.fecha_oferta = DateTime.Now.ToString("dd/MM/yyyy");
             be_OfertaPendiente.estado = "Oferta aceptada";
         }
 

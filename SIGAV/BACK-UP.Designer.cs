@@ -139,9 +139,9 @@
             // 
             this.Btn_IniciarBackUP.ActiveBorderThickness = 1;
             this.Btn_IniciarBackUP.ActiveCornerRadius = 5;
-            this.Btn_IniciarBackUP.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_IniciarBackUP.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_IniciarBackUP.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_IniciarBackUP.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_IniciarBackUP.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_IniciarBackUP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.Btn_IniciarBackUP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_IniciarBackUP.BackgroundImage")));
             this.Btn_IniciarBackUP.ButtonText = "Iniciar Backup";
@@ -150,9 +150,9 @@
             this.Btn_IniciarBackUP.ForeColor = System.Drawing.Color.White;
             this.Btn_IniciarBackUP.IdleBorderThickness = 1;
             this.Btn_IniciarBackUP.IdleCornerRadius = 5;
-            this.Btn_IniciarBackUP.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_IniciarBackUP.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_IniciarBackUP.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_IniciarBackUP.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_IniciarBackUP.IdleLineColor = System.Drawing.Color.Transparent;
             this.Btn_IniciarBackUP.Location = new System.Drawing.Point(116, 284);
             this.Btn_IniciarBackUP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_IniciarBackUP.Name = "Btn_IniciarBackUP";
@@ -163,18 +163,22 @@
             // 
             // TxtRutaBD
             // 
+            this.TxtRutaBD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxtRutaBD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxtRutaBD.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.TxtRutaBD.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtRutaBD.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TxtRutaBD.ForeColor = System.Drawing.Color.White;
             this.TxtRutaBD.HintForeColor = System.Drawing.Color.White;
             this.TxtRutaBD.HintText = "";
             this.TxtRutaBD.isPassword = false;
-            this.TxtRutaBD.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.TxtRutaBD.LineIdleColor = System.Drawing.Color.Gray;
-            this.TxtRutaBD.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.TxtRutaBD.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.TxtRutaBD.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.TxtRutaBD.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.TxtRutaBD.LineThickness = 3;
             this.TxtRutaBD.Location = new System.Drawing.Point(76, 60);
             this.TxtRutaBD.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtRutaBD.MaxLength = 32767;
             this.TxtRutaBD.Name = "TxtRutaBD";
             this.TxtRutaBD.Size = new System.Drawing.Size(322, 24);
             this.TxtRutaBD.TabIndex = 52;
@@ -196,9 +200,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 5;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Examinar";
@@ -207,9 +211,9 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 5;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.Location = new System.Drawing.Point(310, 91);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(88, 32);
@@ -221,9 +225,9 @@
             // 
             this.BtnExaminar_Restaurar.ActiveBorderThickness = 1;
             this.BtnExaminar_Restaurar.ActiveCornerRadius = 5;
-            this.BtnExaminar_Restaurar.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.BtnExaminar_Restaurar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnExaminar_Restaurar.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.BtnExaminar_Restaurar.ActiveLineColor = System.Drawing.Color.Gray;
+            this.BtnExaminar_Restaurar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnExaminar_Restaurar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.BtnExaminar_Restaurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnExaminar_Restaurar.BackgroundImage")));
             this.BtnExaminar_Restaurar.ButtonText = "Examinar";
@@ -232,9 +236,9 @@
             this.BtnExaminar_Restaurar.ForeColor = System.Drawing.Color.White;
             this.BtnExaminar_Restaurar.IdleBorderThickness = 1;
             this.BtnExaminar_Restaurar.IdleCornerRadius = 5;
-            this.BtnExaminar_Restaurar.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnExaminar_Restaurar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.BtnExaminar_Restaurar.IdleForecolor = System.Drawing.Color.White;
-            this.BtnExaminar_Restaurar.IdleLineColor = System.Drawing.Color.White;
+            this.BtnExaminar_Restaurar.IdleLineColor = System.Drawing.Color.Transparent;
             this.BtnExaminar_Restaurar.Location = new System.Drawing.Point(833, 99);
             this.BtnExaminar_Restaurar.Name = "BtnExaminar_Restaurar";
             this.BtnExaminar_Restaurar.Size = new System.Drawing.Size(88, 32);
@@ -255,18 +259,22 @@
             // 
             // txtRutaRestaurarBD
             // 
+            this.txtRutaRestaurarBD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtRutaRestaurarBD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtRutaRestaurarBD.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtRutaRestaurarBD.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRutaRestaurarBD.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtRutaRestaurarBD.ForeColor = System.Drawing.Color.White;
             this.txtRutaRestaurarBD.HintForeColor = System.Drawing.Color.White;
             this.txtRutaRestaurarBD.HintText = "";
             this.txtRutaRestaurarBD.isPassword = false;
-            this.txtRutaRestaurarBD.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtRutaRestaurarBD.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtRutaRestaurarBD.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtRutaRestaurarBD.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtRutaRestaurarBD.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtRutaRestaurarBD.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtRutaRestaurarBD.LineThickness = 3;
             this.txtRutaRestaurarBD.Location = new System.Drawing.Point(599, 68);
             this.txtRutaRestaurarBD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRutaRestaurarBD.MaxLength = 32767;
             this.txtRutaRestaurarBD.Name = "txtRutaRestaurarBD";
             this.txtRutaRestaurarBD.Size = new System.Drawing.Size(322, 24);
             this.txtRutaRestaurarBD.TabIndex = 59;
@@ -277,9 +285,9 @@
             // 
             this.BtnRestaurar_Backup.ActiveBorderThickness = 1;
             this.BtnRestaurar_Backup.ActiveCornerRadius = 5;
-            this.BtnRestaurar_Backup.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.BtnRestaurar_Backup.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnRestaurar_Backup.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.BtnRestaurar_Backup.ActiveLineColor = System.Drawing.Color.Gray;
+            this.BtnRestaurar_Backup.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnRestaurar_Backup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.BtnRestaurar_Backup.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRestaurar_Backup.BackgroundImage")));
             this.BtnRestaurar_Backup.ButtonText = "Restaurar";
@@ -288,9 +296,9 @@
             this.BtnRestaurar_Backup.ForeColor = System.Drawing.Color.White;
             this.BtnRestaurar_Backup.IdleBorderThickness = 1;
             this.BtnRestaurar_Backup.IdleCornerRadius = 5;
-            this.BtnRestaurar_Backup.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnRestaurar_Backup.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.BtnRestaurar_Backup.IdleForecolor = System.Drawing.Color.White;
-            this.BtnRestaurar_Backup.IdleLineColor = System.Drawing.Color.White;
+            this.BtnRestaurar_Backup.IdleLineColor = System.Drawing.Color.Transparent;
             this.BtnRestaurar_Backup.Location = new System.Drawing.Point(639, 285);
             this.BtnRestaurar_Backup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnRestaurar_Backup.Name = "BtnRestaurar_Backup";

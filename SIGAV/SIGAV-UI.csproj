@@ -342,6 +342,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="xml_files2\Envios.xml" />
+    <Content Include="xml_files2\Ventas.xml" />
+    <None Include="Resources\Logo-SIGAV%282%29.png" />
     <Content Include="Resources\Logo-SIGAV.png" />
     <None Include="Resources\template.html" />
     <Content Include="xml_files2\Bitacora.xml" />

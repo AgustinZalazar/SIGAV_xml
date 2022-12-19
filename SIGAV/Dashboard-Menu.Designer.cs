@@ -90,71 +90,77 @@
             // 
             // lblEmpresa
             // 
+            this.lblEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblEmpresa.AutoSize = true;
-            this.lblEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpresa.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEmpresa.Location = new System.Drawing.Point(86, 977);
+            this.lblEmpresa.Location = new System.Drawing.Point(102, 981);
             this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(0, 20);
+            this.lblEmpresa.Size = new System.Drawing.Size(0, 16);
             this.lblEmpresa.TabIndex = 21;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(12, 977);
+            this.label3.Location = new System.Drawing.Point(12, 979);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 20);
+            this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 20;
             this.label3.Text = "Empresa:";
             // 
             // lblRol
             // 
+            this.lblRol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblRol.AutoSize = true;
-            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblRol.Location = new System.Drawing.Point(55, 947);
+            this.lblRol.Location = new System.Drawing.Point(57, 947);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(0, 20);
+            this.lblRol.Size = new System.Drawing.Size(0, 16);
             this.lblRol.TabIndex = 19;
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(12, 947);
+            this.label4.Location = new System.Drawing.Point(12, 945);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 20);
+            this.label4.Size = new System.Drawing.Size(39, 18);
             this.label4.TabIndex = 18;
             this.label4.Text = "Rol:";
             // 
             // lblUsuario
             // 
+            this.lblUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUsuario.Location = new System.Drawing.Point(86, 911);
+            this.lblUsuario.Location = new System.Drawing.Point(102, 920);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(0, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(0, 16);
             this.lblUsuario.TabIndex = 17;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(12, 911);
+            this.label1.Location = new System.Drawing.Point(12, 918);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.Size = new System.Drawing.Size(72, 18);
             this.label1.TabIndex = 16;
             this.label1.Text = "Usuario:";
             // 
             // btnLogout
             // 
             this.btnLogout.Active = false;
-            this.btnLogout.Activecolor = System.Drawing.Color.Gray;
+            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 0;
@@ -168,18 +174,18 @@
             this.btnLogout.Iconimage_right = null;
             this.btnLogout.Iconimage_right_Selected = null;
             this.btnLogout.Iconimage_Selected = null;
-            this.btnLogout.IconMarginLeft = 0;
+            this.btnLogout.IconMarginLeft = 15;
             this.btnLogout.IconMarginRight = 0;
             this.btnLogout.IconRightVisible = true;
             this.btnLogout.IconRightZoom = 0D;
             this.btnLogout.IconVisible = true;
-            this.btnLogout.IconZoom = 40D;
+            this.btnLogout.IconZoom = 65D;
             this.btnLogout.IsTab = true;
             this.btnLogout.Location = new System.Drawing.Point(0, 692);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLogout.OnHovercolor = System.Drawing.Color.DimGray;
+            this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogout.selected = false;
             this.btnLogout.Size = new System.Drawing.Size(250, 54);
@@ -194,7 +200,7 @@
             // bunifuFlatButton8
             // 
             this.bunifuFlatButton8.Active = false;
-            this.bunifuFlatButton8.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton8.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton8.BorderRadius = 0;
@@ -208,18 +214,18 @@
             this.bunifuFlatButton8.Iconimage_right = null;
             this.bunifuFlatButton8.Iconimage_right_Selected = null;
             this.bunifuFlatButton8.Iconimage_Selected = null;
-            this.bunifuFlatButton8.IconMarginLeft = 0;
+            this.bunifuFlatButton8.IconMarginLeft = 15;
             this.bunifuFlatButton8.IconMarginRight = 0;
             this.bunifuFlatButton8.IconRightVisible = true;
             this.bunifuFlatButton8.IconRightZoom = 0D;
             this.bunifuFlatButton8.IconVisible = true;
-            this.bunifuFlatButton8.IconZoom = 40D;
+            this.bunifuFlatButton8.IconZoom = 65D;
             this.bunifuFlatButton8.IsTab = true;
             this.bunifuFlatButton8.Location = new System.Drawing.Point(0, 638);
             this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
             this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
             this.bunifuFlatButton8.Size = new System.Drawing.Size(250, 54);
@@ -234,7 +240,7 @@
             // btnEnvios
             // 
             this.btnEnvios.Active = false;
-            this.btnEnvios.Activecolor = System.Drawing.Color.Gray;
+            this.btnEnvios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.btnEnvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEnvios.BorderRadius = 0;
@@ -248,18 +254,18 @@
             this.btnEnvios.Iconimage_right = null;
             this.btnEnvios.Iconimage_right_Selected = null;
             this.btnEnvios.Iconimage_Selected = null;
-            this.btnEnvios.IconMarginLeft = 0;
+            this.btnEnvios.IconMarginLeft = 15;
             this.btnEnvios.IconMarginRight = 0;
             this.btnEnvios.IconRightVisible = true;
             this.btnEnvios.IconRightZoom = 0D;
             this.btnEnvios.IconVisible = true;
-            this.btnEnvios.IconZoom = 40D;
+            this.btnEnvios.IconZoom = 65D;
             this.btnEnvios.IsTab = true;
             this.btnEnvios.Location = new System.Drawing.Point(0, 584);
             this.btnEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnvios.Name = "btnEnvios";
             this.btnEnvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnEnvios.OnHovercolor = System.Drawing.Color.DimGray;
+            this.btnEnvios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnEnvios.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEnvios.selected = false;
             this.btnEnvios.Size = new System.Drawing.Size(250, 54);
@@ -285,7 +291,7 @@
             // bunifuFlatButton11
             // 
             this.bunifuFlatButton11.Active = false;
-            this.bunifuFlatButton11.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton11.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton11.BorderRadius = 0;
@@ -299,18 +305,18 @@
             this.bunifuFlatButton11.Iconimage_right = null;
             this.bunifuFlatButton11.Iconimage_right_Selected = null;
             this.bunifuFlatButton11.Iconimage_Selected = null;
-            this.bunifuFlatButton11.IconMarginLeft = 0;
+            this.bunifuFlatButton11.IconMarginLeft = 15;
             this.bunifuFlatButton11.IconMarginRight = 0;
             this.bunifuFlatButton11.IconRightVisible = true;
             this.bunifuFlatButton11.IconRightZoom = 0D;
             this.bunifuFlatButton11.IconVisible = true;
-            this.bunifuFlatButton11.IconZoom = 40D;
+            this.bunifuFlatButton11.IconZoom = 65D;
             this.bunifuFlatButton11.IsTab = true;
             this.bunifuFlatButton11.Location = new System.Drawing.Point(0, 53);
             this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton11.Name = "bunifuFlatButton11";
             this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton11.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton11.selected = false;
             this.bunifuFlatButton11.Size = new System.Drawing.Size(250, 54);
@@ -325,7 +331,7 @@
             // bunifuFlatButton12
             // 
             this.bunifuFlatButton12.Active = false;
-            this.bunifuFlatButton12.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton12.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton12.BorderRadius = 0;
@@ -339,18 +345,18 @@
             this.bunifuFlatButton12.Iconimage_right = null;
             this.bunifuFlatButton12.Iconimage_right_Selected = null;
             this.bunifuFlatButton12.Iconimage_Selected = null;
-            this.bunifuFlatButton12.IconMarginLeft = 0;
+            this.bunifuFlatButton12.IconMarginLeft = 15;
             this.bunifuFlatButton12.IconMarginRight = 0;
             this.bunifuFlatButton12.IconRightVisible = true;
             this.bunifuFlatButton12.IconRightZoom = 0D;
             this.bunifuFlatButton12.IconVisible = true;
-            this.bunifuFlatButton12.IconZoom = 40D;
+            this.bunifuFlatButton12.IconZoom = 65D;
             this.bunifuFlatButton12.IsTab = true;
             this.bunifuFlatButton12.Location = new System.Drawing.Point(0, 0);
             this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton12.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton12.selected = false;
             this.bunifuFlatButton12.Size = new System.Drawing.Size(250, 53);
@@ -365,7 +371,7 @@
             // bunifuFlatButton7
             // 
             this.bunifuFlatButton7.Active = false;
-            this.bunifuFlatButton7.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton7.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton7.BorderRadius = 0;
@@ -379,18 +385,18 @@
             this.bunifuFlatButton7.Iconimage_right = null;
             this.bunifuFlatButton7.Iconimage_right_Selected = null;
             this.bunifuFlatButton7.Iconimage_Selected = null;
-            this.bunifuFlatButton7.IconMarginLeft = 0;
+            this.bunifuFlatButton7.IconMarginLeft = 15;
             this.bunifuFlatButton7.IconMarginRight = 0;
             this.bunifuFlatButton7.IconRightVisible = true;
             this.bunifuFlatButton7.IconRightZoom = 0D;
             this.bunifuFlatButton7.IconVisible = true;
-            this.bunifuFlatButton7.IconZoom = 40D;
+            this.bunifuFlatButton7.IconZoom = 65D;
             this.bunifuFlatButton7.IsTab = true;
             this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 414);
             this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
             this.bunifuFlatButton7.Size = new System.Drawing.Size(250, 53);
@@ -405,7 +411,7 @@
             // bunifuFlatButton5
             // 
             this.bunifuFlatButton5.Active = false;
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton5.BorderRadius = 0;
@@ -419,18 +425,18 @@
             this.bunifuFlatButton5.Iconimage_right = null;
             this.bunifuFlatButton5.Iconimage_right_Selected = null;
             this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 0;
+            this.bunifuFlatButton5.IconMarginLeft = 15;
             this.bunifuFlatButton5.IconMarginRight = 0;
             this.bunifuFlatButton5.IconRightVisible = true;
             this.bunifuFlatButton5.IconRightZoom = 0D;
             this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 40D;
+            this.bunifuFlatButton5.IconZoom = 65D;
             this.bunifuFlatButton5.IsTab = true;
             this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 361);
             this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
             this.bunifuFlatButton5.Size = new System.Drawing.Size(250, 53);
@@ -445,7 +451,7 @@
             // bunifuFlatButton10
             // 
             this.bunifuFlatButton10.Active = false;
-            this.bunifuFlatButton10.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton10.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton10.BorderRadius = 0;
@@ -459,18 +465,18 @@
             this.bunifuFlatButton10.Iconimage_right = null;
             this.bunifuFlatButton10.Iconimage_right_Selected = null;
             this.bunifuFlatButton10.Iconimage_Selected = null;
-            this.bunifuFlatButton10.IconMarginLeft = 0;
+            this.bunifuFlatButton10.IconMarginLeft = 15;
             this.bunifuFlatButton10.IconMarginRight = 0;
             this.bunifuFlatButton10.IconRightVisible = true;
             this.bunifuFlatButton10.IconRightZoom = 0D;
             this.bunifuFlatButton10.IconVisible = true;
-            this.bunifuFlatButton10.IconZoom = 40D;
+            this.bunifuFlatButton10.IconZoom = 65D;
             this.bunifuFlatButton10.IsTab = true;
             this.bunifuFlatButton10.Location = new System.Drawing.Point(0, 308);
             this.bunifuFlatButton10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton10.Name = "bunifuFlatButton10";
             this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton10.selected = false;
             this.bunifuFlatButton10.Size = new System.Drawing.Size(250, 53);
@@ -485,7 +491,7 @@
             // bunifuFlatButton4
             // 
             this.bunifuFlatButton4.Active = false;
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton4.BorderRadius = 0;
@@ -499,18 +505,18 @@
             this.bunifuFlatButton4.Iconimage_right = null;
             this.bunifuFlatButton4.Iconimage_right_Selected = null;
             this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
+            this.bunifuFlatButton4.IconMarginLeft = 15;
             this.bunifuFlatButton4.IconMarginRight = 0;
             this.bunifuFlatButton4.IconRightVisible = true;
             this.bunifuFlatButton4.IconRightZoom = 0D;
             this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 40D;
+            this.bunifuFlatButton4.IconZoom = 65D;
             this.bunifuFlatButton4.IsTab = true;
             this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 255);
             this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = false;
             this.bunifuFlatButton4.Size = new System.Drawing.Size(250, 53);
@@ -525,7 +531,7 @@
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.Active = false;
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
@@ -539,18 +545,18 @@
             this.bunifuFlatButton3.Iconimage_right = null;
             this.bunifuFlatButton3.Iconimage_right_Selected = null;
             this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
+            this.bunifuFlatButton3.IconMarginLeft = 15;
             this.bunifuFlatButton3.IconMarginRight = 0;
             this.bunifuFlatButton3.IconRightVisible = true;
             this.bunifuFlatButton3.IconRightZoom = 0D;
             this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 40D;
+            this.bunifuFlatButton3.IconZoom = 65D;
             this.bunifuFlatButton3.IsTab = true;
             this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 203);
             this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = false;
             this.bunifuFlatButton3.Size = new System.Drawing.Size(250, 52);
@@ -565,7 +571,7 @@
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Active = false;
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
@@ -579,18 +585,18 @@
             this.bunifuFlatButton2.Iconimage_right = null;
             this.bunifuFlatButton2.Iconimage_right_Selected = null;
             this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginLeft = 15;
             this.bunifuFlatButton2.IconMarginRight = 0;
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconRightZoom = 0D;
             this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 40D;
+            this.bunifuFlatButton2.IconZoom = 65D;
             this.bunifuFlatButton2.IsTab = true;
             this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 150);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.DimGray;
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.Size = new System.Drawing.Size(250, 53);
@@ -631,7 +637,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(85, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

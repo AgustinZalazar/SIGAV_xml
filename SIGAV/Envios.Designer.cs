@@ -205,9 +205,9 @@
             this.crearRemito.ForeColor = System.Drawing.Color.White;
             this.crearRemito.IdleBorderThickness = 1;
             this.crearRemito.IdleCornerRadius = 5;
-            this.crearRemito.IdleFillColor = System.Drawing.Color.Transparent;
+            this.crearRemito.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.crearRemito.IdleForecolor = System.Drawing.Color.White;
-            this.crearRemito.IdleLineColor = System.Drawing.Color.White;
+            this.crearRemito.IdleLineColor = System.Drawing.Color.Transparent;
             this.crearRemito.Location = new System.Drawing.Point(212, 637);
             this.crearRemito.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.crearRemito.Name = "crearRemito";
@@ -221,9 +221,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 5;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Calificar vendedor";
@@ -232,9 +232,9 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 5;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.Location = new System.Drawing.Point(496, 346);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
@@ -248,9 +248,9 @@
             // 
             this.btnGuardarEstadoProd.ActiveBorderThickness = 1;
             this.btnGuardarEstadoProd.ActiveCornerRadius = 5;
-            this.btnGuardarEstadoProd.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnGuardarEstadoProd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnGuardarEstadoProd.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.btnGuardarEstadoProd.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnGuardarEstadoProd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnGuardarEstadoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnGuardarEstadoProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarEstadoProd.BackgroundImage")));
             this.btnGuardarEstadoProd.ButtonText = "Guardar estado del producto";
@@ -259,9 +259,9 @@
             this.btnGuardarEstadoProd.ForeColor = System.Drawing.Color.White;
             this.btnGuardarEstadoProd.IdleBorderThickness = 1;
             this.btnGuardarEstadoProd.IdleCornerRadius = 5;
-            this.btnGuardarEstadoProd.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnGuardarEstadoProd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.btnGuardarEstadoProd.IdleForecolor = System.Drawing.Color.White;
-            this.btnGuardarEstadoProd.IdleLineColor = System.Drawing.Color.White;
+            this.btnGuardarEstadoProd.IdleLineColor = System.Drawing.Color.Transparent;
             this.btnGuardarEstadoProd.Location = new System.Drawing.Point(245, 346);
             this.btnGuardarEstadoProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardarEstadoProd.Name = "btnGuardarEstadoProd";
@@ -275,9 +275,9 @@
             // 
             this.btnEnviar.ActiveBorderThickness = 1;
             this.btnEnviar.ActiveCornerRadius = 5;
-            this.btnEnviar.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnEnviar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnEnviar.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.btnEnviar.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnEnviar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
             this.btnEnviar.ButtonText = "Pedido enviado";
@@ -286,9 +286,9 @@
             this.btnEnviar.ForeColor = System.Drawing.Color.White;
             this.btnEnviar.IdleBorderThickness = 1;
             this.btnEnviar.IdleCornerRadius = 5;
-            this.btnEnviar.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnEnviar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.btnEnviar.IdleForecolor = System.Drawing.Color.White;
-            this.btnEnviar.IdleLineColor = System.Drawing.Color.White;
+            this.btnEnviar.IdleLineColor = System.Drawing.Color.Transparent;
             this.btnEnviar.Location = new System.Drawing.Point(12, 637);
             this.btnEnviar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnviar.Name = "btnEnviar";
@@ -302,9 +302,9 @@
             // 
             this.Btn_GuardarEstadoEnvio.ActiveBorderThickness = 1;
             this.Btn_GuardarEstadoEnvio.ActiveCornerRadius = 5;
-            this.Btn_GuardarEstadoEnvio.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_GuardarEstadoEnvio.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_GuardarEstadoEnvio.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_GuardarEstadoEnvio.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_GuardarEstadoEnvio.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_GuardarEstadoEnvio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.Btn_GuardarEstadoEnvio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_GuardarEstadoEnvio.BackgroundImage")));
             this.Btn_GuardarEstadoEnvio.ButtonText = "Guardar estado del envio";
@@ -313,9 +313,9 @@
             this.Btn_GuardarEstadoEnvio.ForeColor = System.Drawing.Color.White;
             this.Btn_GuardarEstadoEnvio.IdleBorderThickness = 1;
             this.Btn_GuardarEstadoEnvio.IdleCornerRadius = 5;
-            this.Btn_GuardarEstadoEnvio.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_GuardarEstadoEnvio.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_GuardarEstadoEnvio.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_GuardarEstadoEnvio.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_GuardarEstadoEnvio.IdleLineColor = System.Drawing.Color.Transparent;
             this.Btn_GuardarEstadoEnvio.Location = new System.Drawing.Point(16, 307);
             this.Btn_GuardarEstadoEnvio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_GuardarEstadoEnvio.Name = "Btn_GuardarEstadoEnvio";

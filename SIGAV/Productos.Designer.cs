@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
             this.DGVProducto = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtIDProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -62,6 +63,9 @@
             // DGVProducto
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Empty;
             this.DGVProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
@@ -78,7 +82,7 @@
             this.DGVProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlLight;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -92,6 +96,14 @@
             this.DGVProducto.Location = new System.Drawing.Point(24, 301);
             this.DGVProducto.Name = "DGVProducto";
             this.DGVProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVProducto.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVProducto.Size = new System.Drawing.Size(885, 329);
             this.DGVProducto.TabIndex = 76;
             this.DGVProducto.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGVProducto_CellMouseClick);
@@ -108,9 +120,9 @@
             this.txtIDProducto.HintForeColor = System.Drawing.Color.White;
             this.txtIDProducto.HintText = "";
             this.txtIDProducto.isPassword = false;
-            this.txtIDProducto.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtIDProducto.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtIDProducto.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtIDProducto.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtIDProducto.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtIDProducto.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtIDProducto.LineThickness = 3;
             this.txtIDProducto.Location = new System.Drawing.Point(120, 98);
             this.txtIDProducto.Margin = new System.Windows.Forms.Padding(4);
@@ -125,7 +137,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(44, 105);
+            this.label11.Location = new System.Drawing.Point(82, 106);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(24, 16);
             this.label11.TabIndex = 74;
@@ -143,9 +155,9 @@
             this.txtPrecio.HintForeColor = System.Drawing.Color.White;
             this.txtPrecio.HintText = "";
             this.txtPrecio.isPassword = false;
-            this.txtPrecio.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtPrecio.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtPrecio.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtPrecio.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtPrecio.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtPrecio.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtPrecio.LineThickness = 3;
             this.txtPrecio.Location = new System.Drawing.Point(120, 195);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
@@ -166,9 +178,9 @@
             this.txtDescripcion.HintForeColor = System.Drawing.Color.White;
             this.txtDescripcion.HintText = "";
             this.txtDescripcion.isPassword = false;
-            this.txtDescripcion.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtDescripcion.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtDescripcion.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtDescripcion.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtDescripcion.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtDescripcion.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtDescripcion.LineThickness = 3;
             this.txtDescripcion.Location = new System.Drawing.Point(120, 163);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
@@ -189,9 +201,9 @@
             this.txtNombreProd.HintForeColor = System.Drawing.Color.White;
             this.txtNombreProd.HintText = "";
             this.txtNombreProd.isPassword = false;
-            this.txtNombreProd.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtNombreProd.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtNombreProd.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtNombreProd.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtNombreProd.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtNombreProd.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtNombreProd.LineThickness = 3;
             this.txtNombreProd.Location = new System.Drawing.Point(120, 127);
             this.txtNombreProd.Margin = new System.Windows.Forms.Padding(4);
@@ -206,7 +218,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(16, 203);
+            this.label6.Location = new System.Drawing.Point(3, 203);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 16);
             this.label6.TabIndex = 61;
@@ -218,7 +230,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(23, 168);
+            this.label5.Location = new System.Drawing.Point(23, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 16);
             this.label5.TabIndex = 60;
@@ -230,7 +242,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(27, 134);
+            this.label4.Location = new System.Drawing.Point(46, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 59;
@@ -339,9 +351,9 @@
             this.txtTipo.HintForeColor = System.Drawing.Color.White;
             this.txtTipo.HintText = "";
             this.txtTipo.isPassword = false;
-            this.txtTipo.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtTipo.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtTipo.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtTipo.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtTipo.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtTipo.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtTipo.LineThickness = 3;
             this.txtTipo.Location = new System.Drawing.Point(492, 129);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
@@ -362,9 +374,9 @@
             this.txtCantidad.HintForeColor = System.Drawing.Color.White;
             this.txtCantidad.HintText = "";
             this.txtCantidad.isPassword = false;
-            this.txtCantidad.LineFocusedColor = System.Drawing.Color.DimGray;
-            this.txtCantidad.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCantidad.LineMouseHoverColor = System.Drawing.Color.DimGray;
+            this.txtCantidad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtCantidad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtCantidad.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.txtCantidad.LineThickness = 3;
             this.txtCantidad.Location = new System.Drawing.Point(492, 97);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
@@ -379,7 +391,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(403, 135);
+            this.label7.Location = new System.Drawing.Point(429, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 16);
             this.label7.TabIndex = 78;
@@ -391,7 +403,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(395, 102);
+            this.label8.Location = new System.Drawing.Point(403, 105);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 16);
             this.label8.TabIndex = 77;

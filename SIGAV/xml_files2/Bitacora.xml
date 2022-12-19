@@ -100,4 +100,9 @@
    en SIGAV.Usuarios.BtnModificarUser_Click(Object sender, EventArgs e) en D:\Documents\Facultad\TP_Final\SIGAV_2.0\SIGAV\Usuarios.cs:línea 272</Log>
     <Fecha>2022-08-06T20:59:24.8724495-03:00</Fecha>
   </EE_Bitacora>
+  <EE_Bitacora ID_Bitacora="13">
+    <Usuario>agustin2</Usuario>
+    <Log>La cadena de entrada no tiene el formato correcto.</Log>
+    <Fecha>2022-12-19T11:36:34.3866992-03:00</Fecha>
+  </EE_Bitacora>
 </ArrayOfEE_Bitacora>

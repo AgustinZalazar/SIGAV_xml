@@ -50,13 +50,13 @@
             this.btnConfigurarFamilia = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cbFamilia = new System.Windows.Forms.ComboBox();
             this.cbPatentes = new System.Windows.Forms.ComboBox();
-            this.txtNombrePermisos = new MetroFramework.Controls.MetroTextBox();
             this.DGVFamilias = new System.Windows.Forms.DataGridView();
             this.DGVPatentes = new System.Windows.Forms.DataGridView();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtID = new MetroFramework.Controls.MetroTextBox();
+            this.txtNombrePermisos = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.BtnModificarPermiso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEliminarPermiso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarPermisos)).BeginInit();
@@ -69,7 +69,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(29, 97);
+            this.label7.Location = new System.Drawing.Point(65, 97);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 16);
             this.label7.TabIndex = 57;
@@ -209,7 +209,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Familia",
             "Patente"});
-            this.comboBox1.Location = new System.Drawing.Point(131, 161);
+            this.comboBox1.Location = new System.Drawing.Point(101, 160);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(240, 21);
             this.comboBox1.TabIndex = 61;
@@ -219,7 +219,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(26, 161);
+            this.label6.Location = new System.Drawing.Point(50, 161);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 16);
             this.label6.TabIndex = 62;
@@ -230,9 +230,9 @@
             // 
             this.Btn_AgregarFamilia.ActiveBorderThickness = 1;
             this.Btn_AgregarFamilia.ActiveCornerRadius = 5;
-            this.Btn_AgregarFamilia.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.Btn_AgregarFamilia.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_AgregarFamilia.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_AgregarFamilia.ActiveLineColor = System.Drawing.Color.Gray;
+            this.Btn_AgregarFamilia.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.Btn_AgregarFamilia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.Btn_AgregarFamilia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_AgregarFamilia.BackgroundImage")));
             this.Btn_AgregarFamilia.ButtonText = "Agregar Familia al arbol";
@@ -241,9 +241,9 @@
             this.Btn_AgregarFamilia.ForeColor = System.Drawing.Color.White;
             this.Btn_AgregarFamilia.IdleBorderThickness = 1;
             this.Btn_AgregarFamilia.IdleCornerRadius = 5;
-            this.Btn_AgregarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_AgregarFamilia.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.Btn_AgregarFamilia.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_AgregarFamilia.IdleLineColor = System.Drawing.Color.White;
+            this.Btn_AgregarFamilia.IdleLineColor = System.Drawing.Color.Transparent;
             this.Btn_AgregarFamilia.Location = new System.Drawing.Point(410, 400);
             this.Btn_AgregarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_AgregarFamilia.Name = "Btn_AgregarFamilia";
@@ -257,9 +257,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 5;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Agregar Patente a la familia";
@@ -268,9 +268,9 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 5;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.Location = new System.Drawing.Point(410, 574);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
@@ -296,9 +296,9 @@
             // 
             this.BtnEliminarPatente.ActiveBorderThickness = 1;
             this.BtnEliminarPatente.ActiveCornerRadius = 5;
-            this.BtnEliminarPatente.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.BtnEliminarPatente.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnEliminarPatente.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.BtnEliminarPatente.ActiveLineColor = System.Drawing.Color.Gray;
+            this.BtnEliminarPatente.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnEliminarPatente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.BtnEliminarPatente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarPatente.BackgroundImage")));
             this.BtnEliminarPatente.ButtonText = "Eliminar Patente de la familia";
@@ -307,9 +307,9 @@
             this.BtnEliminarPatente.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarPatente.IdleBorderThickness = 1;
             this.BtnEliminarPatente.IdleCornerRadius = 5;
-            this.BtnEliminarPatente.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnEliminarPatente.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.BtnEliminarPatente.IdleForecolor = System.Drawing.Color.White;
-            this.BtnEliminarPatente.IdleLineColor = System.Drawing.Color.White;
+            this.BtnEliminarPatente.IdleLineColor = System.Drawing.Color.Transparent;
             this.BtnEliminarPatente.Location = new System.Drawing.Point(661, 576);
             this.BtnEliminarPatente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnEliminarPatente.Name = "BtnEliminarPatente";
@@ -323,9 +323,9 @@
             // 
             this.BtnEliminarFamilia.ActiveBorderThickness = 1;
             this.BtnEliminarFamilia.ActiveCornerRadius = 5;
-            this.BtnEliminarFamilia.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.BtnEliminarFamilia.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnEliminarFamilia.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.BtnEliminarFamilia.ActiveLineColor = System.Drawing.Color.Gray;
+            this.BtnEliminarFamilia.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.BtnEliminarFamilia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.BtnEliminarFamilia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarFamilia.BackgroundImage")));
             this.BtnEliminarFamilia.ButtonText = "Eliminar Familia del arbol";
@@ -334,9 +334,9 @@
             this.BtnEliminarFamilia.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarFamilia.IdleBorderThickness = 1;
             this.BtnEliminarFamilia.IdleCornerRadius = 5;
-            this.BtnEliminarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnEliminarFamilia.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.BtnEliminarFamilia.IdleForecolor = System.Drawing.Color.White;
-            this.BtnEliminarFamilia.IdleLineColor = System.Drawing.Color.White;
+            this.BtnEliminarFamilia.IdleLineColor = System.Drawing.Color.Transparent;
             this.BtnEliminarFamilia.Location = new System.Drawing.Point(661, 400);
             this.BtnEliminarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnEliminarFamilia.Name = "BtnEliminarFamilia";
@@ -350,9 +350,9 @@
             // 
             this.btnConfigurarFamilia.ActiveBorderThickness = 1;
             this.btnConfigurarFamilia.ActiveCornerRadius = 5;
-            this.btnConfigurarFamilia.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnConfigurarFamilia.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnConfigurarFamilia.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.btnConfigurarFamilia.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnConfigurarFamilia.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
             this.btnConfigurarFamilia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.btnConfigurarFamilia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfigurarFamilia.BackgroundImage")));
             this.btnConfigurarFamilia.ButtonText = "Configurar Familia";
@@ -361,9 +361,9 @@
             this.btnConfigurarFamilia.ForeColor = System.Drawing.Color.White;
             this.btnConfigurarFamilia.IdleBorderThickness = 1;
             this.btnConfigurarFamilia.IdleCornerRadius = 5;
-            this.btnConfigurarFamilia.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnConfigurarFamilia.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
             this.btnConfigurarFamilia.IdleForecolor = System.Drawing.Color.White;
-            this.btnConfigurarFamilia.IdleLineColor = System.Drawing.Color.White;
+            this.btnConfigurarFamilia.IdleLineColor = System.Drawing.Color.Transparent;
             this.btnConfigurarFamilia.Location = new System.Drawing.Point(729, 338);
             this.btnConfigurarFamilia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnConfigurarFamilia.Name = "btnConfigurarFamilia";
@@ -394,13 +394,6 @@
             this.cbPatentes.Name = "cbPatentes";
             this.cbPatentes.Size = new System.Drawing.Size(294, 21);
             this.cbPatentes.TabIndex = 70;
-            // 
-            // txtNombrePermisos
-            // 
-            this.txtNombrePermisos.Location = new System.Drawing.Point(131, 125);
-            this.txtNombrePermisos.Name = "txtNombrePermisos";
-            this.txtNombrePermisos.Size = new System.Drawing.Size(240, 23);
-            this.txtNombrePermisos.TabIndex = 71;
             // 
             // DGVFamilias
             // 
@@ -460,13 +453,52 @@
             this.label10.Tag = "Nombre:";
             this.label10.Text = "Patentes:";
             // 
+            // txtNombrePermisos
+            // 
+            this.txtNombrePermisos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombrePermisos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNombrePermisos.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNombrePermisos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombrePermisos.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNombrePermisos.ForeColor = System.Drawing.Color.White;
+            this.txtNombrePermisos.HintForeColor = System.Drawing.Color.White;
+            this.txtNombrePermisos.HintText = "";
+            this.txtNombrePermisos.isPassword = false;
+            this.txtNombrePermisos.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtNombrePermisos.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtNombrePermisos.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtNombrePermisos.LineThickness = 3;
+            this.txtNombrePermisos.Location = new System.Drawing.Point(101, 125);
+            this.txtNombrePermisos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombrePermisos.MaxLength = 32767;
+            this.txtNombrePermisos.Name = "txtNombrePermisos";
+            this.txtNombrePermisos.Size = new System.Drawing.Size(188, 24);
+            this.txtNombrePermisos.TabIndex = 83;
+            this.txtNombrePermisos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // txtID
             // 
+            this.txtID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(131, 96);
+            this.txtID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtID.ForeColor = System.Drawing.Color.White;
+            this.txtID.HintForeColor = System.Drawing.Color.White;
+            this.txtID.HintText = "";
+            this.txtID.isPassword = false;
+            this.txtID.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(89)))), ((int)(((byte)(150)))));
+            this.txtID.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(83)))), ((int)(((byte)(140)))));
+            this.txtID.LineThickness = 3;
+            this.txtID.Location = new System.Drawing.Point(101, 97);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtID.MaxLength = 32767;
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(76, 23);
-            this.txtID.TabIndex = 77;
+            this.txtID.Size = new System.Drawing.Size(86, 24);
+            this.txtID.TabIndex = 84;
+            this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Permisos
             // 
@@ -475,12 +507,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1093, 642);
             this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtNombrePermisos);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.DGVPatentes);
             this.Controls.Add(this.DGVFamilias);
-            this.Controls.Add(this.txtNombrePermisos);
             this.Controls.Add(this.cbPatentes);
             this.Controls.Add(this.cbFamilia);
             this.Controls.Add(this.btnConfigurarFamilia);
@@ -541,12 +573,12 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnConfigurarFamilia;
         private System.Windows.Forms.ComboBox cbFamilia;
         private System.Windows.Forms.ComboBox cbPatentes;
-        private MetroFramework.Controls.MetroTextBox txtNombrePermisos;
         private System.Windows.Forms.DataGridView DGVFamilias;
         private System.Windows.Forms.DataGridView DGVPatentes;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private MetroFramework.Controls.MetroTextBox txtID;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtNombrePermisos;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtID;
     }
 }
